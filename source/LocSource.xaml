@@ -677,9 +677,8 @@ You can try to resolve the issue:
     <sys:String x:Key="LOCUpdateCheckFailMessage">Failed to check for new version.</sys:String>
     <sys:String x:Key="LOCUpdateNoNewUpdateMessage">No new version found, you are up to date.</sys:String>
     <sys:String x:Key="LOCGeneralUpdateFailMessage">Failed to download and install update.</sys:String>
-    <sys:String x:Key="LOCUpdateProgressCancelAsk">Some background task is currently in progress. Do you want to cancel it and proceed with the update?</sys:String>
-    <sys:String x:Key="LOCBackgroundProgressCancelAskExit">Some background task is currently in progress. Do you want to cancel it and exit Playnite?</sys:String>
-    <sys:String x:Key="LOCBackgroundProgressCancelAskSwitchMode">Some background task is currently in progress. Switching modes will cancel the task, do you want to switch anyways?</sys:String>
+    <sys:String x:Key="LOCUpdateProgressCancelAsk">The background task is currently in progress. Do you want to cancel it and proceed with the update?</sys:String>
+    <sys:String x:Key="LOCBackgroundProgressCancelAskExit">The background task is currently in progress. Do you want to cancel it and exit Playnite?</sys:String>
     <sys:String x:Key="LOCUpdateIsAvailableNotificationBody">An update for Playnite is available</sys:String>
     <sys:String x:Key="LOCThemeTestReloadList">Reload theme list</sys:String>
     <sys:String x:Key="LOCThemeTestApplySkin">Apply selected theme</sys:String>
@@ -1022,9 +1021,9 @@ If you start experiencing some issues after installing a theme or an extension, 
     <sys:String x:Key="LOCCompletionStatusPlayedStatusDesc">Status assigned to games played for the first time</sys:String>
     <sys:String x:Key="LOCPowerShellCreationError">Failed to initialize PowerShell script runtime. If you are Windows 7 user, try (re)installing PowerShell 5.1 to fix the issue.</sys:String>
     <sys:String x:Key="LOCFilterPresetNameConflict">Filter preset with specified name already exists. Update preset with new settings?</sys:String>
-    <sys:String x:Key="LOCNahimicServiceWarning" xml:space="preserve">Nahimic service has been detected to be running on your system. This service is known to cause rendering issues to Playnite (and other apps).
+    <sys:String x:Key="LOCNahimicServiceWarning" xml:space="preserve">Nahimic service has been detected to be running on your system. This service is know to cause serious rendering issues to Playnite (and other apps).        
 
-If you encounter any graphics corruption or other rendering issues in Playnite, we recommend disabling or completely uninstalling Nahimic service.
+We recommend disabling or completely uninstalling it to prevent these issues.
 
 More information at https://playnite.link/nahimicsucks</sys:String>
     <sys:String x:Key="LOCElevatedProcessWarning" xml:space="preserve">Playnite is running with elevated privileges (as an administrator). This is not recommended since it gives elevated privileges to all installed extensions and all games/apps started from Playnite!

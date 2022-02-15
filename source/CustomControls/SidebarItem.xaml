@@ -5,12 +5,15 @@
         <Setter Property="WindowChrome.IsHitTestVisibleInChrome" Value="True" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="VerticalAlignment" Value="Stretch" />
-        <Setter Property="Foreground" Value="#dbdbdb" />
+        <Setter Property="Foreground" Value="{DynamicResource SidebarItemForegroundBrush}" />
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
-        <Setter Property="BorderThickness" Value="3,0,0,0" />
+        <Setter Property="BorderThickness" Value="0,0,0,0" />
+        <Setter Property="Margin" Value="0,10,0,0" />
+        <Setter Property="Opacity" Value="0.4" />
         <Setter Property="Width" Value="44" />
-        <Setter Property="Height" Value="44" />
+	  	<Setter Property="Height" Value="44" />
+        <Setter Property="Cursor" Value="Hand" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type SidebarItem}">
@@ -31,32 +34,29 @@
             </Setter.Value>
         </Setter>
         <Style.Triggers>
-            <DataTrigger Binding="{Binding Selected}" Value="True">
-                <Setter Property="Foreground" Value="{DynamicResource GlyphBrush}" />
-                <Setter Property="BorderBrush" Value="{DynamicResource GlyphBrush}" />
-            </DataTrigger>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="{DynamicResource HoverBrush}" />
-                <Setter Property="BorderBrush" Value="{DynamicResource GlyphBrush}" />
+            <Trigger Property="IsMouseOver" Value="False">
+                <Setter Property="Opacity" Value="0.50" />
             </Trigger>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Opacity" Value="1" />
+            </Trigger>
+            <DataTrigger Binding="{Binding Selected}" Value="True">
+                <Setter Property="BorderBrush" Value="{DynamicResource SidebarMarginBrush}" />
+                <Setter Property="Opacity" Value="1" />
+            </DataTrigger>
             <DataTrigger Binding="{Settings SidebarPosition}" Value="Right">
-                <Setter Property="BorderThickness" Value="0,0,3,0" />
+                <Setter Property="BorderThickness" Value="0,0,0,0" />
+                <Setter Property="Margin" Value="0,10,0,0" />
             </DataTrigger>
             <DataTrigger Binding="{Settings SidebarPosition}" Value="Top">
-                <Setter Property="BorderThickness" Value="0,3,0,0" />
+                <Setter Property="BorderThickness" Value="0,0,0,0" />
+                <Setter Property="VerticalAlignment" Value="Stretch" />
+                <Setter Property="Margin" Value="10,0,0,0" />
             </DataTrigger>
             <DataTrigger Binding="{Settings SidebarPosition}" Value="Bottom">
-                <Setter Property="BorderThickness" Value="0,0,0,3" />
+                <Setter Property="BorderThickness" Value="0,0,0,0" />
+                <Setter Property="Margin" Value="10,0,0,0" />
             </DataTrigger>
-            <MultiTrigger>
-                <MultiTrigger.Conditions>
-                    <Condition Property="Content" Value="{x:Null}" />
-                    <Condition Property="ContentTemplate" Value="{x:Null}" />
-                </MultiTrigger.Conditions>
-                <MultiTrigger.Setters>
-                    <Setter Property="Background" Value="OrangeRed" />
-                </MultiTrigger.Setters>
-            </MultiTrigger>
         </Style.Triggers>
     </Style>
 </ResourceDictionary>

@@ -5,17 +5,18 @@
         <Setter Property="MinWidth" Value="35" />
         <Setter Property="WindowChrome.IsHitTestVisibleInChrome" Value="True" />
         <Setter Property="Margin" Value="8,0,0,0" />
-        <Setter Property="Background" Value="#990a0e1e" />
+        <Setter Property="Background" Value="{DynamicResource TopPanelItemBackgroundBrush}" />
         <Setter Property="Focusable" Value="False" />
         <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="HorizontalContentAlignment" Value="Center" />
         <Setter Property="Padding" Value="0" />
+        <Setter Property="Cursor" Value="Hand"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type TopPanelItem}">
                     <Border x:Name="Border" BorderThickness="0" Background="{TemplateBinding Background}"
-                            CornerRadius="3" BorderBrush="{TemplateBinding BorderBrush}">
+                            CornerRadius="{DynamicResource ControlCornerRadius}" BorderBrush="{TemplateBinding BorderBrush}">
                         <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                           VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" />
@@ -24,11 +25,12 @@
             </Setter.Value>
         </Setter>
         <Style.Triggers>
-            <Trigger Property="IsToggled" Value="True">
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource TopPanelItemHoverBackgroundBrush}" />
                 <Setter Property="Foreground" Value="{DynamicResource GlyphBrush}" />
             </Trigger>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Foreground" Value="{DynamicResource GlyphBrush}" />
+            <Trigger Property="IsToggled" Value="True">
+                <Setter Property="Foreground" Value="{DynamicResource DetailsIconsBackgroundBrush}" />
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>

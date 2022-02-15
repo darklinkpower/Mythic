@@ -5,16 +5,14 @@
         <Setter Property="Foreground" Value="{DynamicResource TextBrushDarker}" />
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
-        <Setter Property="FontSize" Value="{DynamicResource FontSizeLarge}" />
+        <Setter Property="FontSize" Value="{DynamicResource FontSize}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ListBoxItem}">
                     <Grid>
                         <Border x:Name="SelectedRectangle" IsHitTestVisible="False" Visibility="Collapsed"
-                                                        BorderThickness="5,0,0,0" BorderBrush="{DynamicResource GlyphBrush}"/>
-                        <Border x:Name="HoverRectangle" IsHitTestVisible="False" Visibility="Collapsed"
-                                                        BorderThickness="5,0,0,0" BorderBrush="{DynamicResource GlyphBrush}"/>
-                        <Border Padding="{TemplateBinding Padding}" Background="Transparent">
+                                BorderThickness="4,0,0,0" BorderBrush="{DynamicResource GlyphBrush}"/>
+                        <Border x:Name="ItemBackground" Padding="{TemplateBinding Padding}" Background="Transparent">
                             <ContentPresenter />
                         </Border>
                     </Grid>
@@ -24,14 +22,26 @@
                         </DataTrigger>
                         <DataTrigger Binding="{Binding IsInstalled}" Value="False">
                             <Setter Property="Foreground" Value="{DynamicResource TextBrushDarker}" />
-                        </DataTrigger>                        
-                        <Trigger Property="IsSelected" Value="True">
-                            <Setter Property="Visibility" Value="Visible" TargetName="SelectedRectangle" />
-                            <Setter Property="Foreground" Value="{DynamicResource GlyphBrush}" />
-                        </Trigger>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding IsLaunching}" Value="True">
+                            <Setter Property="Foreground" Value="{DynamicResource LibraryDetailsViewIsLaunchingForegroundBrush}" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding IsInstalling}" Value="True">
+                            <Setter Property="Foreground" Value="{DynamicResource LibraryDetailsViewIsLaunchingForegroundBrush}" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding IsUninstalling}" Value="True">
+                            <Setter Property="Foreground" Value="{DynamicResource LibraryDetailsViewIsLaunchingForegroundBrush}" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding IsRunning}" Value="True">
+                            <Setter Property="Foreground" Value="{DynamicResource LibraryDetailsViewIsRunningForegroundBrush}" />
+                        </DataTrigger>
                         <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource DetailsViewLibraryHoverBackgroundBrush}" TargetName="ItemBackground" />
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource DetailsViewLibrarySelectedBackgroundBrush}" TargetName="ItemBackground" />
+                            <Setter Property="BorderBrush" Value="{DynamicResource GlyphBrush}" TargetName="SelectedRectangle" />
                             <Setter Property="Visibility" Value="Visible" TargetName="SelectedRectangle" />
-                            <Setter Property="Foreground" Value="{DynamicResource GlyphBrush}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

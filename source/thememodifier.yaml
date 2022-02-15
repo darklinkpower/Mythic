@@ -1,0 +1,14 @@
+Constants:
+    - "Library"
+    - LibraryDarkenLayerOpacity(0.0,1.0): 'Darken amount of window background image'
+    - "Details View"
+    - DetailsViewDetailsIconsVisibility: 'Visibility of icons in details'
+    - DetailsViewAllowUseOfLogos: 'Allow use of Extra Metadata Loader logos'
+    - DetailsViewLibraryGameShowFavorite: 'Show favorites icon in game list'
+    - "Grid View"
+    - GridViewDetailsIconsVisibility: 'Visibility of icons in details'
+    - GridViewAllowUseOfLogos: 'Allow use of Extra Metadata Loader logos'
+    - GridViewLibraryGameShowFavorite: 'Show favorites icon on game covers'
+    - GridViewCoverSubtitleVisibility: 'Visibility of time played under game covers'
+    - "Top Panel"
+    - TopPanelBottomDistance(6,31): 'Distance from top panel to view'
