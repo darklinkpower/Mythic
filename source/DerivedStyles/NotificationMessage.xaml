@@ -20,7 +20,7 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="{DynamicResource PurpleButtonBrushHighlight}" TargetName="NotificationMessageBorder"/>
+                            <Setter Property="Background" Value="#5651e9" TargetName="NotificationMessageBorder"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
