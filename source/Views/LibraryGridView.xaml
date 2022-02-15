@@ -19,6 +19,7 @@
                                 <RowDefinition Height="*" />
                                 <RowDefinition Height="Auto" />
                             </Grid.RowDefinitions>
+                            <Separator Background="{DynamicResource DetailsSeparatorBrush}" VerticalAlignment="Top" Margin="15,0,25,0" />
                             <ExtendedListBox x:Name="PART_ListGames" Padding="5"
                                              ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                                              ScrollViewer.PanningMode="VerticalOnly"
