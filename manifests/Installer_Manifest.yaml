@@ -1,0 +1,152 @@
+AddonId: Stardust 2.0_1fb333b2-255b-43dd-aec1-8e2f2d5ea002
+Packages:
+  - Version: 2.0
+    RequiredApiVersion: 2.0.0
+    ReleaseDate: 2021-09-07
+    PackageUrl: https://github.com/darklinkpower/Stardust/releases/download/2.0-beta.1/Stardust_2.0_1fb333b2-255b-43dd-aec1-8e2f2d5ea002_2_0.pthm
+    Changelog:
+      - Playnite 9 support
+      - DuplicateHider Extension support
+  - Version: 2.1
+    RequiredApiVersion: 2.0.0
+    ReleaseDate: 2021-09-09
+    PackageUrl: https://github.com/darklinkpower/Stardust/releases/download/2.1/Stardust_2.0_1fb333b2-255b-43dd-aec1-8e2f2d5ea002_2_1.pthm
+    Changelog:
+      - Details View - Add SuccessStory, SystemChecker and CheckLocalizations plugins support
+      - Details View - Add SuccessStory achievements summary
+      - Details View - Fix Completion status button style
+      - Details View - Fix notes tab showing when game doesn't have notes
+      - Details View - Fix certain plugin elements showing when games don't have data
+      - Grid View - Add SuccessStory support
+      - Grid View - Fix item border not having corner radius
+      - Grid View - Fix certain plugin elements showing when games don't have data
+      - Top panel - Fix plugins buttons position setting not affecting their position
+      - Top panel - Moved notification icon position
+      - Explorer Panel - Change template of items in list
+      - Misc fixes and improvements
+  - Version: 2.2
+    RequiredApiVersion: 2.0.0
+    ReleaseDate: 2021-09-18
+    PackageUrl: https://github.com/darklinkpower/Stardust/releases/download/2.2/Stardust_2.0_1fb333b2-255b-43dd-aec1-8e2f2d5ea002_2_2.pthm
+    Changelog:
+      - 'Details View: Fix plugin butttons using all available width'
+      - 'Details View: Add logo and video support using Extra Metadata Loader extension'
+      - 'Grid View: Add logo support using Extra Metadata Loader extension'
+  - Version: 2.3
+    RequiredApiVersion: 2.0.0
+    ReleaseDate: 2021-09-30
+    PackageUrl: https://github.com/darklinkpower/Stardust/releases/download/2.3/Stardust_2.0_1fb333b2-255b-43dd-aec1-8e2f2d5ea002_2_3.pthm
+    Changelog:
+      - 'Update to changes in Playnite 9 stable release'
+      - 'Top Panel: View button show toggle state'
+      - 'Details View: Add Review Viewer extension support'
+      - 'Details View: Fix all text inside tabs having bold font weight'
+      - 'Grid View: Add Review Viewer extension support'
+      - 'List View: Group count styling'
+  - Version: 2.4
+    RequiredApiVersion: 2.0.0
+    ReleaseDate: 2021-10-06
+    PackageUrl: https://github.com/darklinkpower/Stardust/releases/download/2.4/Stardust_2.0_1fb333b2-255b-43dd-aec1-8e2f2d5ea002_2_4.pthm
+    Changelog:
+      - 'Grid View: Increase opacity of Duplicated Hider extension icons'
+      - 'Explorer Panel: Remove custom control template'
+      - 'Top Panel: Use hand cursor for notification button and messages'
+      - 'Minor fixes and improvements'
+  - Version: 2.5
+    RequiredApiVersion: 2.0.0
+    ReleaseDate: 2021-10-24
+    PackageUrl: https://github.com/darklinkpower/Stardust/releases/download/2.5/Stardust_2.0_1fb333b2-255b-43dd-aec1-8e2f2d5ea002_2_5.pthm
+    Changelog:
+      - 'DetailsView: Fix text in horizontal details being cut when font is too large'
+      - 'Details View: Add ThemeModifier variable to configure if Extra Metadata Loader logos can be used in the view'
+      - 'Grid View: Add ThemeModifier variable to configure if Extra Metadata Loader logos can be used in the view'
+  - Version: 2.6
+    RequiredApiVersion: 2.0.0
+    ReleaseDate: 2021-11-09
+    PackageUrl: https://github.com/darklinkpower/Stardust/releases/download/2.6/Stardust_2.0_1fb333b2-255b-43dd-aec1-8e2f2d5ea002_2_6.pthm
+    Changelog:
+      - 'Details View: Added support for "News Viewer" extension'
+      - 'Details View: Use Hand cursor when hovering game items'
+      - 'Grid View: Fix missing cover show option not showing in grid view when configured'
+  - Version: 2.7
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2021-11-27
+    PackageUrl: https://github.com/darklinkpower/Stardust/releases/download/2.7/Stardust_2.0_1fb333b2-255b-43dd-aec1-8e2f2d5ea002_2_7.pthm
+    Changelog:
+      - 'Update to Playnite themes API 2.1.0'
+      - 'Details View: Support for Background image extension BackgroundImage control'
+      - 'Sidebar: Use hand cursor for sidebar items'
+  - Version: 2.8
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2021-11-27
+    PackageUrl: https://github.com/darklinkpower/Stardust/releases/download/2.7/Stardust_2.0_1fb333b2-255b-43dd-aec1-8e2f2d5ea002_2_8.pthm
+    Changelog:
+      - 'Style filter ComboBox'
+  - Version: 2.9
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2021-11-28
+    PackageUrl: https://github.com/darklinkpower/Stardust/releases/download/2.9/Stardust_2.0_1fb333b2-255b-43dd-aec1-8e2f2d5ea002_2_9.pthm
+    Changelog:
+      - 'Details View: Fix background image not showing when BackgroundChanger extension is enabled but control is disabled in settings'
+      - 'Grid View: Add support for ExtraMetadataLoader video player control'
+      - 'Grid View: Add support for NewsViewer extension control'
+  - Version: 2.10
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2021-12-12
+    PackageUrl: https://github.com/darklinkpower/Stardust/releases/download/2.10/Stardust_2.0_1fb333b2-255b-43dd-aec1-8e2f2d5ea002_2_10.pthm
+    Changelog:
+      - 'General: Adjustments to ThemeModifier variable names'
+      - 'Details View: Add support for ExtraMetadataLoader extension alternative video player'
+  - Version: 2.11
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2021-12-12
+    PackageUrl: https://github.com/darklinkpower/Stardust/releases/download/2.11/Stardust_2.0_1fb333b2-255b-43dd-aec1-8e2f2d5ea002_2_11.pthm
+    Changelog:
+      - 'Details View: Fix Background changer extension background fade not correctly applying'
+  - Version: 2.12
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-02-03
+    PackageUrl: https://github.com/darklinkpower/Stardust/releases/download/2.12/Stardust_2.0_1fb333b2-255b-43dd-aec1-8e2f2d5ea002_2_12.pthm
+    Changelog:
+      - 'Details View: Increase opacity of icons of uninstalled games'
+      - 'Details View: Show favorites icon in game list for games marked as favorite. Can be enabled or disabled via ThemeModifier extension'
+      - 'Grid View: Show favorites icon in game covers for games marked as favorite. Can be enabled or disabled via ThemeModifier extension'
+  - Version: 2.13
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-02-11
+    PackageUrl: https://github.com/darklinkpower/Stardust/releases/download/2.13/Stardust_2.0_1fb333b2-255b-43dd-aec1-8e2f2d5ea002_2_13.pthm
+    Changelog:
+      - 'General: Changed theme icon'
+      - 'General: Modified background image used in library views'
+      - 'General: Decreased saturation of background in library views'
+      - 'Top Panel: Changed background color of buttons'
+      - 'Sidebar: Changed color of items'
+      - 'Details View: Apply slight shadow effect to game cover'
+      - 'Details View: Decrease saturation of game background image in game details'
+      - 'Details View: Changed colors of icons in view'
+      - 'Details View: General changes to text colors'
+      - 'Details View: Icons next to game properties are enabled by default. Can be enabled or disabled with ThemeModifier extension'
+      - 'Details View: Changed selection and hover background color in library items'
+      - 'Details View: Change game text color when status changed (Launching, Running, etc)'
+      - 'Details View: Style changes to group view header in library list'
+      - 'Grid View: Display game playtime under game cover. Can be enabled or disabled with ThemeModifier extension'
+      - 'Grid View: Always center ExtraMetadataLoader extension logo vertically'
+      - 'Grid View: Icons next to game properties are enabled by default. Can be enabled or disabled with ThemeModifier extension'
+      - 'Grid View: Adjustments to spacing between sections in details overview'
+      - 'Grid View: Style changes to group view header in library list'
+      - 'Misc changes'
+  - Version: 2.14
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-02-11
+    PackageUrl: https://github.com/darklinkpower/Stardust/releases/download/2.14/Stardust_2.0_1fb333b2-255b-43dd-aec1-8e2f2d5ea002_2_14.pthm
+    Changelog:
+      - 'Details View: Decreased font size in Tabs Headers and Details label'
+  - Version: 2.15
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-02-14
+    PackageUrl: https://github.com/darklinkpower/Stardust/releases/download/2.15/Stardust_2.0_1fb333b2-255b-43dd-aec1-8e2f2d5ea002_2_15.pthm
+    Changelog:
+      - 'General: Changed icon'
+      - 'TopPanel: Added ThemeModifier option to modify distance to view'
+      - 'Library: Added ThemeModified option to adjust background image darken layer'
+      - 'Sidebar: Increase default opacity of items'
