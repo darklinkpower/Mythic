@@ -3,6 +3,6 @@ Packages:
   - Version: 0.1
     RequiredApiVersion: 2.1.0
     ReleaseDate: 2022-02-15
-    PackageUrl: hhttps://github.com/darklinkpower/Mythic/releases/download/0.1/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_0_1.pthm
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/0.1/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_0_1.pthm
     Changelog:
       - 'Initial release'
