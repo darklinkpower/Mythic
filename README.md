@@ -2,7 +2,7 @@
 # Mythic
 Theme inspired by Epic Games Launcher for [Playnite](https://github.com/JosefNemec/Playnite) Desktop Mode.
 
-Playnite forum thread: https://playnite.link/forum/thread-468.html
+Playnite forum thread: https://playnite.link/forum/thread-1136.html
 
 ## Theme goals
 - Use Epic Games Launcher as inspiration to create a polished Playnite UI.
