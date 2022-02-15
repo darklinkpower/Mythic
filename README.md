@@ -12,9 +12,10 @@ Playnite forum thread: https://playnite.link/forum/thread-1136.html
 - Polish certain parts of the UI to give a better user experience.
 - Achieve features that are not available by default on Playnite via community extensions
 
-## Installation 
-1. Download the latest packaged `pthm` theme file from the [Releases page.](https://github.com/darklinkpower/Mythic/releases/latest)
-2. Open it to automatically install on Playnite or drag and drop it to the main Playnite window to start installation.
+## Installation
+Option A. Click [here](https://github.com/darklinkpower/Mythic/releases/latest) to start the install process.
+Option B. Download the latest packaged `pthm` theme file from the [Releases page.](https://github.com/darklinkpower/Mythic/releases/latest) and open it.
+Option C. Download from the Addons browser in Playnite.
 
 ## Functionalities and features
 - Full support for features available in the default Playnite Desktop themes
@@ -24,8 +25,8 @@ Playnite forum thread: https://playnite.link/forum/thread-1136.html
 - Game statistics: via custom integration of the [GameActivity](https://github.com/Lacro59/playnite-gameactivity-plugin) extension.
 - Screenshots: via custom integration of the [ScreenshotsVisualizer](https://github.com/Lacro59/playnite-screenshotsvisualizer-plugin) extension.
 - Duplicate copies handling: via custom integration of the [DuplicateHider](https://github.com/felixkmh/DuplicateHider) extension.
-- Logos: download of logos for use in the theme via [Extra Metadata Tools](https://playnite.link/forum/thread-575.html) extension.
-- Videos: download of trailer and microtrailer videos for use in the theme via [Extra Metadata Tools Video](https://playnite.link/forum/thread-575.html) extension.
+- Logos: download of logos for use in the theme via [Extra Metadata Loader](https://playnite.link/forum/thread-814.html) extension.
+- Videos: download of trailer and microtrailer videos for use in the theme via [Extra Metadata Loader](https://playnite.link/forum/thread-814.html) extension.
 - More...
 
 ## Screenshots
