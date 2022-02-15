@@ -13,9 +13,11 @@ Playnite forum thread: https://playnite.link/forum/thread-1136.html
 - Achieve features that are not available by default on Playnite via community extensions
 
 ## Installation
-Option A. Click [here](https://github.com/darklinkpower/Mythic/releases/latest) to start the install process.
-Option B. Download the latest packaged `pthm` theme file from the [Releases page.](https://github.com/darklinkpower/Mythic/releases/latest) and open it.
-Option C. Download from the Addons browser in Playnite.
+Option A: Click the `Download` button in the [addon database entry here](https://playnite.link/addons.html#Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8) to start the install process.
+
+Option B: Download the latest packaged `pthm` theme file from the [Releases page](https://github.com/darklinkpower/Mythic/releases/latest) and open it.
+
+Option C: Download from the Addons browser in Playnite.
 
 ## Functionalities and features
 - Full support for features available in the default Playnite Desktop themes
