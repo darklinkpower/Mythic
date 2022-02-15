@@ -13,7 +13,7 @@ Playnite forum thread: https://playnite.link/forum/thread-468.html
 - Achieve features that are not available by default on Playnite via community extensions
 
 ## Installation 
-1. Download the latest packaged `pthm` theme file from the [Releases page.](https://github.com/darklinkpower/Stardust/releases/latest)
+1. Download the latest packaged `pthm` theme file from the [Releases page.](https://github.com/darklinkpower/Mythic/releases/latest)
 2. Open it to automatically install on Playnite or drag and drop it to the main Playnite window to start installation.
 
 ## Functionalities and features
