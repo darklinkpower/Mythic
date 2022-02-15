@@ -16,7 +16,7 @@
                     <Grid>
                         <Rectangle x:Name="HoverRectangle" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                                    Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" RadiusX="3" RadiusY="4"
-                                   Stroke="{x:Null}" Margin="0" MinHeight="10" MaxWidth="7"
+                                   Stroke="{x:Null}" Margin="0" MinHeight="10" MaxWidth="6.5"
                                    Fill="{TemplateBinding Background}" />
                     </Grid>
                     <ControlTemplate.Triggers>

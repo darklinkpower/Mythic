@@ -24,5 +24,10 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsFocused" Value="True" >
+                <Setter Property="Background" Value="Red" />
+            </Trigger>
+        </Style.Triggers>
     </Style>
 </ResourceDictionary>

@@ -1,10 +1,10 @@
 ThemeApiVersion: 2.1.0
-Id: Stardust 2.0_1fb333b2-255b-43dd-aec1-8e2f2d5ea002
-Name: Stardust
+Id: Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8
+Name: Mythic
 Author: darklinkpower
-Version: 2.15
+Version: 0.1
 Links:
 - Name: GitHub
-  Url: https://github.com/darklinkpower/Stardust
+  Url: https://github.com/darklinkpower/Mythic
 - Name: Playnite Forums thread
   Url: https://playnite.link/forum/thread-468.html

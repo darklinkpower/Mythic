@@ -152,19 +152,24 @@
                                                     ColumnCount="2" StarColumns="1"
                                                     RowCount="21" AutoLayoutColumns="2">
                                                 <Grid.Resources>
-                                                    <Style TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}" />
                                                     <Style x:Key="Icon" TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}">
                                                         <Setter Property="Width" Value="24"/>
+                                                        <Setter Property="Foreground" Value="{DynamicResource DetailsIcons2BackgroundBrush}"/>
+                                                    </Style>
+                                                    <Style TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}">
+                                                        <Setter Property="Foreground" Value="{DynamicResource DetailsDarkForegroundBrush}" />
+                                                        <Setter Property="Margin" Value="0,0,15,0" />
                                                     </Style>
                                                     <Style TargetType="Label">
                                                         <Setter Property="FontWeight" Value="Normal" />
-                                                        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+                                                        <Setter Property="Foreground" Value="{DynamicResource DetailsDarkForegroundBrush}" />
+                                                        <Setter Property="Margin" Value="0,0,0,0" />
                                                     </Style>
                                                 </Grid.Resources>
 
                                                 <Label Name="PART_ElemPlayTime" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="&#xEEDC;" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIcons2BackgroundBrush}"
+                                                        <TextBlock Text="&#xEEDC;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCTimePlayed}" />
@@ -174,7 +179,7 @@
 
                                                 <Label Name="PART_ElemLastPlayed" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="&#xEC45;" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIcons2BackgroundBrush}"
+                                                        <TextBlock Text="&#xEC45;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCLastPlayed}" />
@@ -184,7 +189,7 @@
 
                                                 <Label Name="PART_ElemCompletionStatus" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="&#xEED6;" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIcons2BackgroundBrush}"
+                                                        <TextBlock Text="&#xEED6;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCCompletionStatus}" />
@@ -194,7 +199,7 @@
 
                                                 <Label Name="PART_ElemLibrary" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="&#xEF65;" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIcons2BackgroundBrush}"
+                                                        <TextBlock Text="&#xEF65;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCGameProviderTitle}" />
@@ -203,7 +208,7 @@
                                                 <Button Name="PART_ButtonLibrary" VerticalAlignment="Center" />
                                                 <Label Name="PART_ElemSource" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="&#xEF65;" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIcons2BackgroundBrush}"
+                                                        <TextBlock Text="&#xEF65;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCSourceLabel}" />
@@ -212,7 +217,7 @@
                                                 <Button Name="PART_ButtonSource" VerticalAlignment="Center" />
                                                 <Label Name="PART_ElemPlatform" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="&#xEEEE;" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIcons2BackgroundBrush}"
+                                                        <TextBlock Text="&#xEEEE;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCGamePlatformTitle}" />
@@ -222,7 +227,7 @@
 
                                                 <Label Name="PART_ElemCategories" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="&#xEF74;" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIcons2BackgroundBrush}"
+                                                        <TextBlock Text="&#xEF74;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCGameCategoriesTitle}" />
@@ -232,7 +237,7 @@
 
                                                 <Label Name="PART_ElemGenres" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="&#xEF74;" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIcons3BackgroundBrush}"
+                                                        <TextBlock Text="&#xEF74;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCGenreLabel}" />
@@ -242,7 +247,7 @@
 
                                                 <Label Name="PART_ElemReleaseDate" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIcons3BackgroundBrush}"
+                                                        <TextBlock Text="" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCGameReleaseDateTitle}" />
@@ -252,7 +257,7 @@
 
                                                 <Label Name="PART_ElemDevelopers" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="&#xEEF3;" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIcons3BackgroundBrush}"
+                                                        <TextBlock Text="&#xEEF3;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCDeveloperLabel}" />
@@ -262,7 +267,7 @@
 
                                                 <Label Name="PART_ElemPublishers" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="&#xEEF3;" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIcons3BackgroundBrush}"
+                                                        <TextBlock Text="&#xEEF3;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCPublisherLabel}" />
@@ -272,7 +277,7 @@
 
                                                 <Label Name="PART_ElemAgeRating" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIconsBackgroundBrush}"
+                                                        <TextBlock Text="" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCAgeRatingLabel}" />
@@ -282,7 +287,7 @@
 
                                                 <Label Name="PART_ElemSeries" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="&#xEEEF;" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIconsBackgroundBrush}"
+                                                        <TextBlock Text="&#xEEEF;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCSeriesLabel}" />
@@ -292,7 +297,7 @@
 
                                                 <Label Name="PART_ElemRegion" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="&#xF02C;" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIconsBackgroundBrush}"
+                                                        <TextBlock Text="&#xF02C;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCRegionLabel}" />
@@ -302,7 +307,7 @@
 
                                                 <Label Name="PART_ElemVersion" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="&#xEFD1;" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIconsBackgroundBrush}"
+                                                        <TextBlock Text="&#xEFD1;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCVersionLabel}" />
@@ -312,7 +317,7 @@
 
                                                 <Label Name="PART_ElemCommunityScore" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="&#xF000;" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIconsBackgroundBrush}"
+                                                        <TextBlock Text="&#xF000;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCCommunityScore}" />
@@ -322,7 +327,7 @@
 
                                                 <Label Name="PART_ElemCriticScore" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="&#xF000;" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIconsBackgroundBrush}"
+                                                        <TextBlock Text="&#xF000;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCCriticScore}" />
@@ -332,7 +337,7 @@
 
                                                 <Label Name="PART_ElemUserScore" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="&#xF000;" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIconsBackgroundBrush}"
+                                                        <TextBlock Text="&#xF000;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCUserScore}" />
@@ -342,7 +347,7 @@
 
                                                 <Label Name="PART_ElemFeatures" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="&#xEF74;" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIconsBackgroundBrush}"
+                                                        <TextBlock Text="&#xEF74;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCFeaturesLabel}" />
@@ -352,7 +357,7 @@
 
                                                 <Label Name="PART_ElemTags" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="&#xEC85;" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIconsBackgroundBrush}"
+                                                        <TextBlock Text="&#xEC85;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCTagsLabel}" />
@@ -362,7 +367,7 @@
 
                                                 <Label Name="PART_ElemLinks" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="&#xEF71;" Style="{StaticResource Icon}" Foreground="{DynamicResource DetailsIconsBackgroundBrush}"
+                                                        <TextBlock Text="&#xEF71;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCLinksLabel}" />
@@ -393,7 +398,7 @@
                                                        FontWeight="Bold"
                                                        Style="{DynamicResource BaseTextBlockStyle}" />
                                             <Separator Background="{DynamicResource GridViewSeparatorBrush}" Margin="0,5,0,5" />
-                                            <ContentControl x:Name="ExtraMetadataLoader_VideoLoaderControl" />
+                                            <ContentControl x:Name="ExtraMetadataLoader_VideoLoaderControl" Margin="0,15,0,0"/>
                                         </StackPanel>
                                         <!--#endregion -->
                                         
@@ -409,7 +414,7 @@
                                                      Margin="-1,0,-1,0" Padding="0" Background="Transparent"/>
                                         </StackPanel>
 
-                                        <StackPanel DockPanel.Dock="Top" Margin="5,25,5,0">
+                                        <StackPanel Name="PART_ElemDescription" DockPanel.Dock="Top" Margin="5,25,5,0">
                                             <TextBlock Text="{DynamicResource LOCGameDescriptionTitle}"
                                                        Foreground="{DynamicResource DetailsViewDetailsLabelForegroundBrush}"
                                                        FontWeight="Bold" Style="{DynamicResource BaseTextBlockStyle}" />

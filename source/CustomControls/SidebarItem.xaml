@@ -10,7 +10,6 @@
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="BorderThickness" Value="0,0,0,0" />
         <Setter Property="Margin" Value="0,10,0,0" />
-        <Setter Property="Opacity" Value="0.4" />
         <Setter Property="Width" Value="44" />
 	  	<Setter Property="Height" Value="44" />
         <Setter Property="Cursor" Value="Hand" />
@@ -22,8 +21,9 @@
                                      BorderThickness="0" Background="Transparent"
                                      HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
                         <Border Background="{TemplateBinding Background}"
-                                Padding="{Binding IconPadding}"
+                                Padding="13"
                                 BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="10"
                                 BorderBrush="{TemplateBinding BorderBrush}">
                             <Viewbox>
                                 <ContentPresenter HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
@@ -34,15 +34,11 @@
             </Setter.Value>
         </Setter>
         <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="False">
-                <Setter Property="Opacity" Value="0.50" />
-            </Trigger>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Opacity" Value="1" />
+                <Setter Property="Background" Value="{DynamicResource SidebarHoverBackgroundBrush}" />
             </Trigger>
             <DataTrigger Binding="{Binding Selected}" Value="True">
-                <Setter Property="BorderBrush" Value="{DynamicResource SidebarMarginBrush}" />
-                <Setter Property="Opacity" Value="1" />
+                <Setter Property="Background" Value="{DynamicResource SidebarSelectedBackgroundBrush}" />
             </DataTrigger>
             <DataTrigger Binding="{Settings SidebarPosition}" Value="Right">
                 <Setter Property="BorderThickness" Value="0,0,0,0" />

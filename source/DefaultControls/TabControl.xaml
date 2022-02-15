@@ -109,7 +109,7 @@
                             <RowDefinition Height="*" x:Name="RowDefinition1" />
                         </Grid.RowDefinitions>
                         <Border x:Name="HeaderBorder" Background="Transparent"
-                                BorderThickness="0,0,0,2" BorderBrush="{DynamicResource PanelSeparatorBrush}">
+                                BorderThickness="0,0,0,2" BorderBrush="Transparent">
                             <TabPanel x:Name="HeaderPanel" IsItemsHost="True" Panel.ZIndex="1" Width="Auto" Height="Auto"
                                       KeyboardNavigation.TabIndex="1" RenderTransformOrigin="0.5,0.5">
                                 <TabPanel.LayoutTransform>
@@ -195,10 +195,10 @@
                         <Border x:Name="SelectedBorder" Visibility="Collapsed" Margin="1,0,1,-1"
                                 SnapsToDevicePixels="True"
                                 BorderThickness="0,0,0,1" BorderBrush="{DynamicResource TextBrush}"/>
-                        <TextBlock x:Name="TextContent" Padding="5" Style="{DynamicResource BaseTextBlockStyle}"
-                                   Foreground="{TemplateBinding Foreground}">
+                        <TextBlock x:Name="TextContent" Margin="5" Style="{DynamicResource BaseTextBlockStyle}"
+                                   Foreground="{TemplateBinding Foreground}" Cursor="Hand">
                             <ContentPresenter x:Name="ContentSite" RecognizesAccessKey="True" ContentSource="Header"
-                                              HorizontalAlignment="Center" Margin="8" VerticalAlignment="Center" Cursor="Hand"/>
+                                              HorizontalAlignment="Center" Margin="8" VerticalAlignment="Center" />
                         </TextBlock>
                     </Grid>
                     <ControlTemplate.Triggers>

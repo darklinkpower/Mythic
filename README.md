@@ -1,16 +1,15 @@
-![DownloadCount](https://img.shields.io/github/downloads/darklinkpower/Stardust/total.svg)
-# Stardust
-Theme inspired by GOG Galaxy 2.0 for [Playnite](https://github.com/JosefNemec/Playnite) Desktop Mode.
+![DownloadCount](https://img.shields.io/github/downloads/darklinkpower/Mythic/total.svg)
+# Mythic
+Theme inspired by Epic Games Launcher for [Playnite](https://github.com/JosefNemec/Playnite) Desktop Mode.
 
 Playnite forum thread: https://playnite.link/forum/thread-468.html
 
 ## Theme goals
-- Use GOG Galaxy 2.0 UI as inspiration to create a polished Playnite UI. The font used by it can be downloaded from [from here](https://www.1001freefonts.com/es/lato.font) to be used in Playnite. The font used by Playnite can be configured in `Settings` -> `Appearance` -> `Application font`
+- Use Epic Games Launcher as inspiration to create a polished Playnite UI.
 - Achieve a more modern and clean design with the chosen pallete and things like rounded corners in certain elements like the windows, borders, buttons and controls.
 - Improve the user experience with small animations in certain parts.
 - Change the aesthetic without affecting functionality.
 - Polish certain parts of the UI to give a better user experience.
-- Different aesthetic of other available themes available by default in Playnite and created by the community.
 - Achieve features that are not available by default on Playnite via community extensions
 
 ## Installation 
@@ -27,12 +26,13 @@ Playnite forum thread: https://playnite.link/forum/thread-468.html
 - Duplicate copies handling: via custom integration of the [DuplicateHider](https://github.com/felixkmh/DuplicateHider) extension.
 - Logos: download of logos for use in the theme via [Extra Metadata Tools](https://playnite.link/forum/thread-575.html) extension.
 - Videos: download of trailer and microtrailer videos for use in the theme via [Extra Metadata Tools Video](https://playnite.link/forum/thread-575.html) extension.
+- More...
 
 ## Screenshots
-![Screenshot](https://raw.githubusercontent.com/darklinkpower/Stardust/master/Screenshots/screenshot_01.jpg)
+![Screenshot](https://raw.githubusercontent.com/darklinkpower/Mythic/master/screenshots/screenshot_01.jpg)
 
-![Screenshot](https://raw.githubusercontent.com/darklinkpower/Stardust/master/Screenshots/screenshot_02.jpg)
+![Screenshot](https://raw.githubusercontent.com/darklinkpower/Mythic/master/screenshots/screenshot_02.jpg)
 
-![Screenshot](https://raw.githubusercontent.com/darklinkpower/Stardust/master/Screenshots/screenshot_03.jpg)
+![Screenshot](https://raw.githubusercontent.com/darklinkpower/Mythic/master/screenshots/screenshot_03.jpg)
 
-![Screenshot](https://raw.githubusercontent.com/darklinkpower/Stardust/master/Screenshots/screenshot_04.jpg)
+![Screenshot](https://raw.githubusercontent.com/darklinkpower/Mythic/master/screenshots/screenshot_04.jpg)

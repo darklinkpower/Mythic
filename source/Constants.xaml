@@ -3,15 +3,13 @@
                     xmlns:sys="clr-namespace:System;assembly=mscorlib">
 
     <!--Theme settings region start-->
-    <sys:Double x:Key="LibraryDarkenLayerOpacity">1.0</sys:Double>
-    <Visibility x:Key="DetailsViewDetailsIconsVisibility">Visible</Visibility>
-    <Visibility x:Key="GridViewDetailsIconsVisibility">Visible</Visibility>
+    <Visibility x:Key="DetailsViewDetailsIconsVisibility">Collapsed</Visibility>
+    <Visibility x:Key="GridViewDetailsIconsVisibility">Collapsed</Visibility>
     <Visibility x:Key="GridViewCoverSubtitleVisibility">Visible</Visibility>
     <sys:Boolean x:Key="DetailsViewAllowUseOfLogos">true</sys:Boolean>
     <sys:Boolean x:Key="GridViewAllowUseOfLogos">true</sys:Boolean>
     <sys:Boolean x:Key="DetailsViewLibraryGameShowFavorite">true</sys:Boolean>
     <sys:Boolean x:Key="GridViewLibraryGameShowFavorite">true</sys:Boolean>
-    <sys:Double x:Key="TopPanelBottomDistance">31</sys:Double>
     <!--region end-->
 
     <sys:Double x:Key="FontSizeSmall">12</sys:Double>
@@ -21,9 +19,10 @@
     <sys:Double x:Key="FontSizeLargest">29</sys:Double>
     <FontFamily x:Key="FontFamily">Trebuchet MS</FontFamily>
     <FontFamily x:Key="MonospaceFontFamily">Consolas</FontFamily>
-    <Thickness x:Key="PopupBorderThickness">1</Thickness>
-    <Thickness x:Key="ControlBorderThickness">1</Thickness>
+    <Thickness x:Key="PopupBorderThickness">0</Thickness>
+    <Thickness x:Key="ControlBorderThickness">0</Thickness>
     <sys:Double x:Key="EllipseBorderThickness">1</sys:Double>
+    <CornerRadius x:Key="TopPanelItemCornerRadius">16</CornerRadius>
     <CornerRadius x:Key="ControlCornerRadius">5</CornerRadius>
     <CornerRadius x:Key="ControlCornerRadiusViewPlayButtons">5</CornerRadius>
     <CornerRadius x:Key="ControlCornerRadiusSmall">0</CornerRadius>
@@ -40,18 +39,18 @@
 
     <Color x:Key="BlackColor">#FF000000</Color>
     <Color x:Key="WhiteColor">#FFFFFFFF</Color>
-    <Color x:Key="TextColor">#f2f2f2</Color>
+    <Color x:Key="TextColor">#f5f5f5</Color>
     <Color x:Key="TextColorDarker">#c2c2c2</Color>
     <Color x:Key="TextColorDark">#2f3543</Color>
     <Color x:Key="MainColor">#262c38</Color>
     <Color x:Key="MainColorDark">#2f3543</Color>
     <Color x:Key="HoverColor">#373538</Color>
-    <Color x:Key="GlyphColor">#b75ecf</Color>
+    <Color x:Key="GlyphColor">#433de7</Color>
     <Color x:Key="GlyphColorSecondary">#2f3543</Color>
     <!---->
     <Color x:Key="HighlightGlyphColor">#373538</Color>
-    <Color x:Key="PopupBackgroundColor">#302e32</Color>
-    <Color x:Key="PopupBorderColor">#373538</Color>
+    <Color x:Key="PopupBackgroundColor">#2b2b2b</Color>
+    <Color x:Key="PopupBorderColor">#2b2b2b</Color>
     <Color x:Key="BackgroundToneColor">#262c38</Color>
     <Color x:Key="GridItemBackgroundColor">Transparent</Color>
     <Color x:Key="PanelSeparatorColor">#373538</Color>
@@ -62,33 +61,34 @@
     <Color x:Key="NormalBorderControlsHoverTransparencyColor">#4c919191</Color>
     <Color x:Key="DetailsViewGrouCountBackgroundColor">#555555</Color>
 
-    <Color x:Key="PurpleButtonBrushColor">#b75ecf</Color>
-    <Color x:Key="PurpleButtonBrushHighlightColor">#c077d6</Color>
-    <Color x:Key="PurpleButtonBrushSelectedColor">#cc90dd</Color>
+    <Color x:Key="ButtonsTextBrushColor">#f5f5f5</Color>
+    <Color x:Key="PurpleButtonBrushColor">#202020</Color>
+    <Color x:Key="PurpleButtonBrushHighlightColor">#373737</Color>
+    <Color x:Key="PurpleButtonBrushSelectedColor">#5651e9</Color>
 
-    <Color x:Key="ToggleButtonNotCheckedColor">#2e2c2f</Color>
+    <Color x:Key="ToggleButtonNotCheckedColor">#202020</Color>
     <Color x:Key="ToggleButtonNotCheckedBorderColor">#6f6d70</Color>
     <Color x:Key="ToggleButtonNotCheckedHighlightBorderColor">#acabad</Color>
 
-    <Color x:Key="ThumbFillColor">#6f7275</Color>
-    <Color x:Key="ThumbFillHoverColor">#8f9495</Color>
+    <Color x:Key="ThumbFillColor">#a6a6a6</Color>
+    <Color x:Key="ThumbFillHoverColor">#cacaca</Color>
 
     <Color x:Key="TextBoxBorderColor">#6f6d70</Color>
     <Color x:Key="TextBoxBorderHoverColor">#acabad</Color>
 
-    <Color x:Key="TitleButtonsBorderBackgroundColor">#2e2c2f</Color>
+    <Color x:Key="TitleButtonsBorderBackgroundColor">#202020</Color>
 
     <Color x:Key="StandardWindowTitleBackgroundColor">#121212</Color>
     <Color x:Key="StandardWindowBackgroundColor">#121212</Color>
 
-    <Color x:Key="TitleWindowStateHoverColor">#424242</Color>
-    <Color x:Key="TitleWindowCloseHoverColor">#d22e00</Color>
-    <Color x:Key="ControlsBackgroundColor">#2e2c2f</Color>
+    <Color x:Key="TitleWindowStateHoverColor">#54b2de</Color>
+    <Color x:Key="TitleWindowCloseHoverColor">#e62e4c</Color>
+    <Color x:Key="ControlsBackgroundColor">#202020</Color>
 
-    <Color x:Key="TopPanelItemBackgroundColor">#B3000000</Color>
-    <Color x:Key="TopPanelItemHoverBackgroundColor">#B3000000</Color>
-    <Color x:Key="TopPanelSearchBoxBackgroundColor">#B3000000</Color>
-    <Color x:Key="TopPanelFilterToggleBackgroundColor">#B3000000</Color>
+    <Color x:Key="TopPanelItemBackgroundColor">#202020</Color>
+    <Color x:Key="TopPanelItemHoverBackgroundColor">#2a2a2a</Color>
+    <Color x:Key="TopPanelSearchBoxBackgroundColor">#202020</Color>
+    <Color x:Key="TopPanelFilterToggleBackgroundColor">#202020</Color>
 
     <SolidColorBrush x:Key="TopPanelItemBackgroundBrush" Color="{DynamicResource TopPanelItemBackgroundColor}" />
     <SolidColorBrush x:Key="TopPanelItemHoverBackgroundBrush" Color="{DynamicResource TopPanelItemHoverBackgroundColor}" />
@@ -96,6 +96,7 @@
     <SolidColorBrush x:Key="TopPanelFilterToggleBackgroundBrush" Color="{DynamicResource TopPanelFilterToggleBackgroundColor}" />
 
     <SolidColorBrush x:Key="ControlBackgroundBrush" Color="{DynamicResource ControlsBackgroundColor}" />
+    <SolidColorBrush x:Key="ControlHoverBackgroundBrush" Color="{DynamicResource NormalBorderControlsHoverColor}" />
     <SolidColorBrush x:Key="TextBrush" Color="{DynamicResource TextColor}" />
     <SolidColorBrush x:Key="TextBrushDarker" Color="{DynamicResource TextColorDarker}" />
     <SolidColorBrush x:Key="TextBrushDark" Color="{DynamicResource TextColorDark}" />
@@ -107,7 +108,7 @@
     <SolidColorBrush x:Key="HighlightGlyphBrush" Color="{DynamicResource HighlightGlyphColor}" />
     <SolidColorBrush x:Key="PopupBorderBrush" Color="{DynamicResource PopupBorderColor}" />
     <SolidColorBrush x:Key="TooltipBackgroundBrush" Color="{DynamicResource PopupBackgroundColor}" />
-    <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="#2e2c2f" />
+    <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="#202020" />
     <SolidColorBrush x:Key="GridItemBackgroundBrush" Color="{DynamicResource GridItemBackgroundColor}" />
     <SolidColorBrush x:Key="PanelSeparatorBrush" Color="{DynamicResource PanelSeparatorColor}" />
     <SolidColorBrush x:Key="WindowPanelSeparatorBrush" Color="{DynamicResource WindowPanelSeparatorColor}" />
@@ -126,6 +127,7 @@
     <SolidColorBrush x:Key="DetailsViewGameListBackground" Color="Transparent" />
     <SolidColorBrush x:Key="DetailsViewGrouCountBackgroundBrush" Color="{DynamicResource DetailsViewGrouCountBackgroundColor}" />
 
+    <SolidColorBrush x:Key="ButtonTextBrush" Color="{DynamicResource ButtonsTextBrushColor}" />
     <SolidColorBrush x:Key="PurpleButtonBrush" Color="{DynamicResource PurpleButtonBrushColor}" />
     <SolidColorBrush x:Key="PurpleButtonBrushHighlight" Color="{DynamicResource PurpleButtonBrushHighlightColor}" />
     <SolidColorBrush x:Key="PurpleButtonBrushSelected" Color="{DynamicResource PurpleButtonBrushSelectedColor}" />
@@ -161,7 +163,9 @@
 
     <SolidColorBrush x:Key="WarningBrush" Color="#c85429" />
 
-    <SolidColorBrush x:Key="SidebarBackgroundBrush" Color="{DynamicResource ControlsBackgroundColor}" />
+    <SolidColorBrush x:Key="SidebarBackgroundBrush" Color="#121212" />
+    <SolidColorBrush x:Key="SidebarHoverBackgroundBrush" Color="#2a2a2a" />
+    <SolidColorBrush x:Key="SidebarSelectedBackgroundBrush" Color="#202020" />
     <SolidColorBrush x:Key="SidebarMarginBrush" Color="Transparent" />
 
     <LinearGradientBrush x:Key="ExpanderBackgroundBrush" StartPoint="-0.1,0.5" EndPoint="1.2,1" >
@@ -174,7 +178,7 @@
         <GradientStop Color="#002C3A67" Offset="0.7"/>
     </LinearGradientBrush>
 
-    <SolidColorBrush x:Key="WindowBackgourndBrush" Color="#302e32" />
+    <SolidColorBrush x:Key="WindowBackgourndBrush" Color="#121212" />
     
     <LinearGradientBrush x:Key="DetailsViewFadeBorder" StartPoint="0.5,0.5" EndPoint="0.5,1">
         <GradientStop Color="#0DA8A8A8" Offset="0.0" />
@@ -203,25 +207,34 @@
     </LinearGradientBrush>
 
     <LinearGradientBrush x:Key="SidebarItemForegroundBrush" StartPoint="0.5,1.0" EndPoint="0.5,0.0">
-        <GradientStop Color="#9a00c4" Offset="0.3" />
-        <GradientStop Color="#cb16db" Offset="0.95" />
+        <GradientStop Color="#f5f5f5" Offset="0.3" />
+        <GradientStop Color="#f5f5f5" Offset="0.95" />
     </LinearGradientBrush>
 
     <LinearGradientBrush x:Key="DetailsIconsBackgroundBrush" StartPoint="0.5,1.0" EndPoint="0.5,0.0">
-        <GradientStop Color="#9a00c4" Offset="0.3" />
-        <GradientStop Color="#cb16db" Offset="0.95" />
+        <GradientStop Color="#ff0000" Offset="0.3" />
+        <GradientStop Color="#ff0000" Offset="0.95" />
     </LinearGradientBrush>
 
     <LinearGradientBrush x:Key="DetailsIcons2BackgroundBrush" StartPoint="0.5,1.0" EndPoint="0.5,0.0">
-        <GradientStop Color="#009377" Offset="0.4" />
-        <GradientStop Color="#00d492" Offset="0.95" />
+        <GradientStop Color="#ff0000" Offset="0.4" />
+        <GradientStop Color="#ff0000" Offset="0.95" />
     </LinearGradientBrush>
 
     <LinearGradientBrush x:Key="DetailsIcons3BackgroundBrush" StartPoint="0.5,1.0" EndPoint="0.5,0.0">
-        <GradientStop Color="#f27302" Offset="0.4" />
-        <GradientStop Color="#f0a300" Offset="0.95" />
+        <GradientStop Color="#ff0000" Offset="0.4" />
+        <GradientStop Color="#ff0000" Offset="0.95" />
     </LinearGradientBrush>
 
+    <Color x:Key="GlyphBrushAlternativeColor">#ff0000</Color>
+    <SolidColorBrush x:Key="GlyphBrushAlternativeBrush" Color="{DynamicResource GlyphBrushAlternativeColor}" />
+
+    <SolidColorBrush x:Key="DetailsPanelFillBackgroundBrush" Color="#202020" />
+    <SolidColorBrush x:Key="DetailsPanelFillIconBackgroundBrush" Color="#a0a0a0" />
+    <Color x:Key="DetailsDarkForegroundColor">#939393</Color>
+    <SolidColorBrush x:Key="DetailsDarkForegroundBrush" Color="{DynamicResource DetailsDarkForegroundColor}" />
+    <SolidColorBrush x:Key="DetailsSeparatorBrush" Color="#2a2a2a" />
+    
     <SolidColorBrush x:Key="LibraryDetailsViewIsRunningForegroundBrush" Color="#00d492" />
     <SolidColorBrush x:Key="LibraryDetailsViewIsLaunchingForegroundBrush" Color="#f0a300" />
 
@@ -230,13 +243,13 @@
     <SolidColorBrush x:Key="GridViewSeparatorBrush" Color="#4Dc2c2c2" />
     
     <LinearGradientBrush x:Key="DetailsViewLibraryHoverBackgroundBrush" StartPoint="0.0,0.5" EndPoint="1.0,0.5">
-        <GradientStop Color="#409a00c4" Offset="0.4" />
-        <GradientStop Color="#00cb16db" Offset="0.95" />
+        <GradientStop Color="#2a2a2a" Offset="0.4" />
+        <GradientStop Color="#2a2a2a" Offset="0.95" />
     </LinearGradientBrush>
     
     <LinearGradientBrush x:Key="DetailsViewLibrarySelectedBackgroundBrush" StartPoint="0.0,0.5" EndPoint="1.0,0.5">
-        <GradientStop Color="#66cb16db" Offset="0.4" />
-        <GradientStop Color="#00cb16db" Offset="0.95" />
+        <GradientStop Color="#373737" Offset="0.4" />
+        <GradientStop Color="#373737" Offset="0.95" />
     </LinearGradientBrush>
 
     <!-- Noise Brush obtained from https://github.com/felixkmh/StartPage-for-Playnite/-->
