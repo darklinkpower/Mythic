@@ -400,7 +400,7 @@
                                         <TabControl Margin="0,0,0,0" Style="{StaticResource TabControlDetailsView}">
                                             <TabItem>
                                                 <TabItem.Header>
-                                                    <TextBlock Text="{DynamicResource LOCExtra_Metadata_Loader_VideoLabel}" Foreground="{DynamicResource TextBrush}"
+                                                    <TextBlock Text="{DynamicResource LOCExtra_Metadata_Loader_VideoLabel}"
                                                                FontSize="{DynamicResource FontSizeLarger}" />
                                                 </TabItem.Header>
                                                 <TabItem.Style>
@@ -440,7 +440,7 @@
                                                     </Style>
                                                 </TabItem.Style>
                                                 <TabItem.Header>
-                                                    <TextBlock Text="{DynamicResource LOCSuccessStoryAchievements}" Foreground="{DynamicResource TextBrush}"
+                                                    <TextBlock Text="{DynamicResource LOCSuccessStoryAchievements}"
                                                                FontSize="{DynamicResource FontSizeLarger}" />
                                                 </TabItem.Header>
                                                 <StackPanel Orientation="Vertical" Background="{TemplateBinding Background}" Margin="0,15,0,0">
@@ -467,7 +467,7 @@
                                                     </Style>
                                                 </TabItem.Style>
                                                 <TabItem.Header>
-                                                    <TextBlock Text="{DynamicResource LOCSsvTitle}" Foreground="{DynamicResource TextBrush}"
+                                                    <TextBlock Text="{DynamicResource LOCSsvTitle}"
                                                                FontSize="{DynamicResource FontSizeLarger}" />
                                                 </TabItem.Header>
                                                 <StackPanel Orientation="Vertical" Background="{TemplateBinding Background}" Margin="0,15,0,0">
@@ -489,7 +489,7 @@
                                                     </Style>
                                                 </TabItem.Style>
                                                 <TabItem.Header>
-                                                    <TextBlock Text="{DynamicResource LOCGameActivityTitle}" Foreground="{DynamicResource TextBrush}"
+                                                    <TextBlock Text="{DynamicResource LOCGameActivityTitle}"
                                                                FontSize="{DynamicResource FontSizeLarger}" />
                                                 </TabItem.Header>
                                                 <StackPanel Orientation="Vertical" Background="{TemplateBinding Background}" Margin="0,15,0,0">
@@ -500,7 +500,7 @@
                                             <!--region ReviewViewer-->
                                             <TabItem Visibility="{PluginStatus Plugin=Review_Viewer_ca24e37a-76d9-49bf-89ab-d3cba4a54bd1, Status=Installed}" >
                                                 <TabItem.Header>
-                                                    <TextBlock Text="{DynamicResource LOCReview_Viewer_ReviewsLabel}" Foreground="{DynamicResource TextBrush}"
+                                                    <TextBlock Text="{DynamicResource LOCReview_Viewer_ReviewsLabel}"
                                                                FontSize="{DynamicResource FontSizeLarger}" />
                                                 </TabItem.Header>
                                                 <StackPanel Orientation="Vertical" Margin="0,15,0,0">
@@ -522,7 +522,6 @@
                                                 </TabItem.Style>
                                                 <TabItem.Header>
                                                     <TextBlock Text="{DynamicResource LOC_NewsViewer_NewsViewerControl_NewsLabel}"
-                                                               Foreground="{DynamicResource TextBrush}"
                                                                FontSize="{DynamicResource FontSizeLarger}" />
                                                 </TabItem.Header>
                                                 <StackPanel Orientation="Vertical" Margin="0,15,0,0">
