@@ -29,7 +29,7 @@
                                 </Border>
                                 <Border Background="#AA000000" x:Name="BorderMouseOver" Visibility="Collapsed" />
                                 <DockPanel HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5">
-                                    <TextBlock Text="&#xF000;" Foreground="{DynamicResource DetailsIconsBackgroundBrush}"
+                                    <TextBlock Text="&#xF000;" Foreground="{DynamicResource GlyphBrush}"
                                                    Opacity="0.75" FontSize="16"
                                                    Margin="3,0,0,0"
                                                    VerticalAlignment="Center"
