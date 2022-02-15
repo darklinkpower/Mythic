@@ -39,6 +39,7 @@
             </Trigger>
             <DataTrigger Binding="{Binding Selected}" Value="True">
                 <Setter Property="Background" Value="{DynamicResource SidebarSelectedBackgroundBrush}" />
+                <Setter Property="Foreground" Value="{DynamicResource SidebarItemSelectedForegroundBrush}" />
             </DataTrigger>
             <DataTrigger Binding="{Settings SidebarPosition}" Value="Right">
                 <Setter Property="BorderThickness" Value="0,0,0,0" />

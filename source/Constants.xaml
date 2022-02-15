@@ -48,7 +48,7 @@
     <Color x:Key="GlyphColor">#433de7</Color>
     <Color x:Key="GlyphColorSecondary">#2f3543</Color>
     <!---->
-    <Color x:Key="HighlightGlyphColor">#373538</Color>
+    <Color x:Key="HighlightGlyphColor">#2a2a2a</Color>
     <Color x:Key="PopupBackgroundColor">#2b2b2b</Color>
     <Color x:Key="PopupBorderColor">#2b2b2b</Color>
     <Color x:Key="BackgroundToneColor">#262c38</Color>
@@ -206,10 +206,8 @@
         <GradientStop Color="#00414244" Offset="0.95" />
     </LinearGradientBrush>
 
-    <LinearGradientBrush x:Key="SidebarItemForegroundBrush" StartPoint="0.5,1.0" EndPoint="0.5,0.0">
-        <GradientStop Color="#f5f5f5" Offset="0.3" />
-        <GradientStop Color="#f5f5f5" Offset="0.95" />
-    </LinearGradientBrush>
+    <SolidColorBrush x:Key="SidebarItemForegroundBrush" Color="#9a9a9a" />
+    <SolidColorBrush x:Key="SidebarItemSelectedForegroundBrush" Color="#f5f5f5" />
 
     <LinearGradientBrush x:Key="DetailsIconsBackgroundBrush" StartPoint="0.5,1.0" EndPoint="0.5,0.0">
         <GradientStop Color="#ff0000" Offset="0.3" />

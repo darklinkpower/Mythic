@@ -46,11 +46,11 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ListBoxItem}">
-                    <Grid>
+                    <Grid Margin="1">
                         <Border x:Name="HoverRectangle" IsHitTestVisible="False" Visibility="Collapsed"
-                                Background="{DynamicResource HoverBrush}" CornerRadius="{DynamicResource ControlCornerRadiusSmall}" />
+                                Background="{DynamicResource HoverBrush}" CornerRadius="6" />
                         <Border x:Name="SelectedRectangle" IsHitTestVisible="False" Visibility="Collapsed"
-                                Background="{DynamicResource GlyphBrush}" CornerRadius="{DynamicResource ControlCornerRadiusSmall}"/>
+                                Background="{DynamicResource GlyphBrush}" CornerRadius="6" />
                         <Border Padding="{TemplateBinding Padding}" Background="Transparent">
                             <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                               VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
