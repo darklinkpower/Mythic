@@ -195,9 +195,8 @@
                                                     </Style.Triggers>
                                                 </Style>
                                             </Grid.Style>
-                                            <Border Padding="0" Height="{PluginSettings Plugin=ExtraMetadataLoader, Path=LogoMaxHeight, FallbackValue=0}" MaxWidth="{PluginSettings Plugin=ExtraMetadataLoader, Path=LogoMaxWidth, FallbackValue=0}">
-                                                <ContentControl x:Name="ExtraMetadataLoader_LogoLoaderControl" />
-                                            </Border>
+                                            <Border Padding="0" Height="{PluginSettings Plugin=ExtraMetadataLoader, Path=LogoMaxHeight, FallbackValue=0}" MaxWidth="{PluginSettings Plugin=ExtraMetadataLoader, Path=LogoMaxWidth, FallbackValue=0}" />
+                                            <ContentControl x:Name="ExtraMetadataLoader_LogoLoaderControl" />
                                         </Grid>
 
                                         <Grid HorizontalAlignment="Center" VerticalAlignment="Bottom">
@@ -227,8 +226,8 @@
                                                 <ColumnDefinition Width="*" />
                                                 <ColumnDefinition Width="*" />
                                             </Grid.ColumnDefinitions>
-                                            <Button Grid.Column="0" Name="PART_ButtonMoreActions" Height="50" Content="{DynamicResource LOCMoreAction}" FontFamily="{DynamicResource FontIcoFont}" Margin="0,0,0,0" Style="{DynamicResource MoreActionButtonViews}" Padding="0" />
-                                            <Button Grid.Column="1" x:Name="PART_ButtonEditGame" Content="{DynamicResource LOCEditGame}" Margin="10,0,0,0" Height="50" Focusable="False" FontFamily="{DynamicResource FontIcoFont}" Style="{DynamicResource MoreActionButtonViews}" />
+                                            <Button Grid.Column="0" Name="PART_ButtonMoreActions" Height="50" Content="{DynamicResource LOCMoreAction}" FontFamily="{DynamicResource FontIcoFont}" Margin="0,0,5,0" Style="{DynamicResource MoreActionButtonViews}" Padding="0" />
+                                            <Button Grid.Column="1" x:Name="PART_ButtonEditGame" Content="{DynamicResource LOCEditGame}" Margin="5,0,0,0" Height="50" Focusable="False" FontFamily="{DynamicResource FontIcoFont}" Style="{DynamicResource MoreActionButtonViews}" />
                                         </Grid>
 
                                         <!--#region Game Details-->
@@ -733,7 +732,7 @@
                                                                 <ItemsControl.ItemTemplate>
                                                                     <DataTemplate>
                                                                         <Button Content="{Binding Name}" Style="{StaticResource PropertyItemFeedPanelButton}"
-                                                                        Command="{Binding RelativeSource={RelativeSource AncestorType=Grid}, Path=DataContext.SetGenreFilterCommand}"
+                                                                        Command="{Binding RelativeSource={RelativeSource AncestorType=Grid}, Path=DataContext.SetFeatureFilterCommand}"
                                                                         CommandParameter="{Binding}"/>
                                                                     </DataTemplate>
                                                                 </ItemsControl.ItemTemplate>

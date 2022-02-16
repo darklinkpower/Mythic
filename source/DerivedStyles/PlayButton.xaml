@@ -50,7 +50,7 @@
                                 Style="{DynamicResource PlayButtonBorderBackground}"
                                 Opacity="1" CornerRadius="{DynamicResource ControlCornerRadiusViewPlayButtons}">
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                                <Border Height="16" Margin="0,-1,0,0">
+                                <Border Height="16" Margin="0,-1,0,0" Visibility="Collapsed">
                                     <Viewbox Stretch="UniformToFill">
                                         <Canvas Width="16" Height="16">
                                             <Canvas>
@@ -146,6 +146,12 @@
         <Style.Resources>
             <Color x:Key="PlayButtonBackgroundColor">#433de7</Color>
             <Color x:Key="PlayButtonHighlightBackgroundColor">#5651e9</Color>
+            <!--<Color x:Key="PlayButtonBackgroundColor">#ffffff</Color>
+            <Color x:Key="PlayButtonHighlightBackgroundColor">#ffffff</Color>-->
+            <!--<Color x:Key="PlayButtonBackgroundColor">#ff2b30</Color>
+            <Color x:Key="PlayButtonHighlightBackgroundColor">#ff5c5f</Color>-->
+            <!--<Color x:Key="PlayButtonBackgroundColor">#ff0208</Color>
+            <Color x:Key="PlayButtonHighlightBackgroundColor">#ff2b30</Color>-->
             <SolidColorBrush x:Key="PlayButtonBackgroundBrush" Color="{StaticResource PlayButtonBackgroundColor}" />
         </Style.Resources>
         <Setter Property="Background" Value="{StaticResource PlayButtonBackgroundBrush}" />
