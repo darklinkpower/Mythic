@@ -3,6 +3,9 @@
                     xmlns:sys="clr-namespace:System;assembly=mscorlib">
 
     <!--Theme settings region start-->
+
+    <sys:Double x:Key="TopPanelSearchBoxWidth">240</sys:Double>
+    <sys:Double x:Key="DetailsBackgroundDarkenLayerOpacity">1.0</sys:Double>
     <Visibility x:Key="DetailsViewDetailsIconsVisibility">Collapsed</Visibility>
     <Visibility x:Key="GridViewDetailsIconsVisibility">Collapsed</Visibility>
     <Visibility x:Key="GridViewCoverSubtitleVisibility">Visible</Visibility>

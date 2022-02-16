@@ -179,7 +179,7 @@
                                 </Style.Triggers>
                             </Style>
                         </Border.Style>
-                        <DockPanel Margin="0,3,222,3">
+                        <DockPanel Margin="0,3,175,3">
                             <Border x:Name="PART_ElemMainMenu" Background="Transparent"
                                     DockPanel.Dock="Left" Margin="5,0,0,0" Cursor="Hand"
                                     WindowChrome.IsHitTestVisibleInChrome="True">
@@ -191,7 +191,7 @@
                             <SearchBox x:Name="PART_TextMainSearch"
                                         Margin="12,6,0,6" DockPanel.Dock="Left"
                                         WindowChrome.IsHitTestVisibleInChrome="True"
-                                        Width="180" Background="{DynamicResource TopPanelSearchBoxBackgroundBrush}" />
+                                        Width="{DynamicResource TopPanelSearchBoxWidth}" Background="{DynamicResource TopPanelSearchBoxBackgroundBrush}" />
 
                             <StackPanel x:Name="PART_PanelMainItems" Orientation="Horizontal"
                                         VerticalAlignment="Stretch" Margin="0,6,0,6"/>
@@ -210,7 +210,7 @@
 
                             <StackPanel Orientation="Horizontal" DockPanel.Dock="Left"
                                         HorizontalAlignment="Left" Margin="10,5,0,5">
-                                <Grid MaxWidth="600" MinWidth="150">
+                                <Grid MaxWidth="600" MinWidth="200">
                                     <ProgressBar Name="PART_ProgressGlobal" />
                                     <TextBlock Name="PART_TextProgressText"
                                                VerticalAlignment="Center" HorizontalAlignment="Center"

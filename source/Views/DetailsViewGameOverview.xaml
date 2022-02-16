@@ -41,7 +41,8 @@
                                 </WrapPanel.Style>
                                 <Grid>
                                     <FadeImage x:Name="PART_ImageBackground" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Top" />
-                                    <Border Background="{StaticResource DarkNoiseBrush}" IsHitTestVisible="False">
+                                    <Border Background="{StaticResource DarkNoiseBrush}" IsHitTestVisible="False"
+                                            Opacity="{DynamicResource DetailsBackgroundDarkenLayerOpacity}">
                                         <Border.OpacityMask>
                                             <LinearGradientBrush StartPoint="0,1" EndPoint="0,0">
                                                 <LinearGradientBrush.GradientStops>
@@ -67,7 +68,8 @@
                                 <Grid>
                                     <ContentControl x:Name="BackgroundChanger_PluginBackgroundImage"
                                                     HorizontalAlignment="Center" VerticalAlignment="Top" />
-                                    <Border Background="{StaticResource DarkNoiseBrush}" IsHitTestVisible="False">
+                                    <Border Background="{StaticResource DarkNoiseBrush}" IsHitTestVisible="False"
+                                            Opacity="{DynamicResource DetailsBackgroundDarkenLayerOpacity}">
                                         <Border.OpacityMask>
                                             <LinearGradientBrush StartPoint="0,1" EndPoint="0,0">
                                                 <LinearGradientBrush.GradientStops>
