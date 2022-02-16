@@ -86,7 +86,7 @@
                                     </TextBlock>
                                 </DockPanel>
 
-                                <Grid DockPanel.Dock="Top" Margin="0,10,0,10" Background="Transparent">
+                                <Grid DockPanel.Dock="Top" Margin="0,10,0,10">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*" MaxWidth="150" />
                                         <ColumnDefinition Width="*" MaxWidth="150" />
