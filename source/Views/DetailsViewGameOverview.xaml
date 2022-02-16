@@ -90,7 +90,7 @@
 
                             <Grid HorizontalAlignment="Stretch" Margin="20,0,20,0">
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="{Settings CalculatedGameDetailsIndentation}" MaxHeight="30"/>
+                                    <RowDefinition Height="{Settings CalculatedGameDetailsIndentation}" MaxHeight="5"/>
                                     <RowDefinition Height="Auto" />
                                     <RowDefinition Height="Auto" />
                                     <RowDefinition Height="*" />
@@ -238,7 +238,7 @@
                                             <Grid.Resources>
                                                 <Style x:Key="Icon" TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}">
                                                     <Setter Property="Width" Value="24"/>
-                                                    <Setter Property="Foreground" Value="{DynamicResource DetailsIcons2BackgroundBrush}"/>
+                                                    <Setter Property="Foreground" Value="{DynamicResource GlyphBrush}"/>
                                                 </Style>
                                                 <Style TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}">
                                                     <Setter Property="Foreground" Value="{DynamicResource DetailsDarkForegroundBrush}" />
@@ -399,7 +399,7 @@
                                     </StackPanel>
                                     <StackPanel Margin="0,0,25,0">
                                         <TabControl Margin="0,0,0,0" Style="{StaticResource TabControlDetailsView}">
-                                            <TabItem>
+                                            <TabItem x:Name="TabVideo">
                                                 <TabItem.Header>
                                                     <TextBlock Text="{DynamicResource LOCExtra_Metadata_Loader_VideoLabel}"
                                                                FontSize="{DynamicResource FontSizeLarger}" />
@@ -421,7 +421,7 @@
                                                     </Style>
                                                 </TabItem.Style>
                                                 <Grid Margin="0,16,0,0">
-                                                    <Viewbox Stretch="Uniform" >
+                                                    <Viewbox Stretch="Uniform" Visibility="{Binding ElementName=TabVideo, Path=Visibility}">
                                                         <Rectangle Width="16" Height="9" Fill="Transparent" IsHitTestVisible="False" />
                                                     </Viewbox>
                                                     <ContentControl x:Name="ExtraMetadataLoader_VideoLoaderControl" MaxWidth="1024" VerticalAlignment="Top"/>

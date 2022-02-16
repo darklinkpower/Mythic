@@ -144,8 +144,8 @@
 
     <Style x:Key="PlayButtonBorderBackground" TargetType="Border">
         <Style.Resources>
-            <Color x:Key="PlayButtonBackgroundColor">#ff0000</Color>
-            <Color x:Key="PlayButtonHighlightBackgroundColor">#ff2828</Color>
+            <Color x:Key="PlayButtonBackgroundColor">#433de7</Color>
+            <Color x:Key="PlayButtonHighlightBackgroundColor">#5651e9</Color>
             <SolidColorBrush x:Key="PlayButtonBackgroundBrush" Color="{StaticResource PlayButtonBackgroundColor}" />
         </Style.Resources>
         <Setter Property="Background" Value="{StaticResource PlayButtonBackgroundBrush}" />

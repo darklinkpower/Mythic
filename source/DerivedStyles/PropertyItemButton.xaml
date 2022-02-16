@@ -17,7 +17,7 @@
         </Setter>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Foreground" Value="{DynamicResource GlyphBrushAlternativeBrush}" />
+                <Setter Property="Foreground" Value="{DynamicResource GlyphBrush}" />
                 <Setter Property="Cursor" Value="Hand" />
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
