@@ -25,7 +25,6 @@
     <Style x:Key="FilterPanelFilterSearchBox" TargetType="SearchBox" BasedOn="{StaticResource {x:Type SearchBox}}">
         <Setter Property="Margin" Value="8,0,6,0" />
         <Setter Property="ShowImage" Value="False" />
-        <Setter Property="Background" Value="{DynamicResource ControlBackgroundBrush}" />
     </Style>
     
     <Style x:Key="FilterPanelFilterSelectionBox" TargetType="FilterSelectionBox" BasedOn="{StaticResource {x:Type FilterSelectionBox}}">

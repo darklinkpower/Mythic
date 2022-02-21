@@ -8,7 +8,7 @@
                 Style="{DynamicResource HighlightBorder}"
                 Background="{DynamicResource ControlBackgroundBrush}"
                 x:Name="Root">
-            <Grid>
+            <Grid Cursor="Hand">
                 <DockPanel>
                     <Viewbox Margin="0,0,2,0" DockPanel.Dock="Right">
                         <TextBlock Text="6" FontFamily="Marlett"
@@ -40,21 +40,7 @@
                     </ToggleButton.Style>
                 </ToggleButton>
                 <TextBox x:Name="PART_TextFilterInput" BorderThickness="0"
-                         VerticalAlignment="Center" Margin="1,0,30,0">
-                    <TextBox.Style>
-                        <Style TargetType="TextBox">
-                            <Setter Property="Template">
-                                <Setter.Value>
-                                    <ControlTemplate TargetType="{x:Type TextBox}">
-                                        <Border Background="Transparent">
-                                            <ContentPresenter />
-                                        </Border>
-                                    </ControlTemplate>
-                                </Setter.Value>
-                            </Setter>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+                         VerticalAlignment="Center" Margin="1,0,30,0" Background="Transparent" />
                 <Button x:Name="PART_ButtonClearFilter"
                         Margin="0,0,20,0" FontSize="18"
                         Background="Transparent" HorizontalAlignment="Right"
