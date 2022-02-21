@@ -40,7 +40,21 @@
                     </ToggleButton.Style>
                 </ToggleButton>
                 <TextBox x:Name="PART_TextFilterInput" BorderThickness="0"
-                         VerticalAlignment="Center" Margin="1,0,30,0"/>
+                         VerticalAlignment="Center" Margin="1,0,30,0">
+                    <TextBox.Style>
+                        <Style TargetType="TextBox">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type TextBox}">
+                                        <Border Background="Transparent">
+                                            <ContentPresenter />
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </TextBox.Style>
+                </TextBox>
                 <Button x:Name="PART_ButtonClearFilter"
                         Margin="0,0,20,0" FontSize="18"
                         Background="Transparent" HorizontalAlignment="Right"
@@ -68,6 +82,14 @@
                 </Popup>
             </Grid>
         </Border>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ControlHoverBackgroundBrush}" TargetName="Root"/>
+            </Trigger>
+            <Trigger Property="IsFocused" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ControlHoverBackgroundBrush}" TargetName="Root" />
+            </Trigger>
+        </ControlTemplate.Triggers>
     </ControlTemplate>
 
     <Style x:Key="FilterSelectionBoxItemStyle" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource {x:Type CheckBox}}">
