@@ -59,17 +59,17 @@
     <Color x:Key="PanelSeparatorColor">#373538</Color>
     <Color x:Key="WindowPanelSeparatorColor">Transparent</Color>
 
-    <Color x:Key="NormalBorderControlsColor">#202020</Color>
-    <Color x:Key="NormalBorderControlsHoverColor">#2a2a2a</Color>
+    <Color x:Key="NormalBorderControlsColor">#262626</Color>
+    <Color x:Key="NormalBorderControlsHoverColor">#5a5a5a</Color>
     <Color x:Key="NormalBorderControlsHoverTransparencyColor">#4c919191</Color>
     <Color x:Key="DetailsViewGrouCountBackgroundColor">#555555</Color>
 
     <Color x:Key="ButtonsTextBrushColor">#f5f5f5</Color>
-    <Color x:Key="PurpleButtonBrushColor">#202020</Color>
+    <Color x:Key="PurpleButtonBrushColor">#262626</Color>
     <Color x:Key="PurpleButtonBrushHighlightColor">#373737</Color>
     <Color x:Key="PurpleButtonBrushSelectedColor">#5651e9</Color>
 
-    <Color x:Key="ToggleButtonNotCheckedColor">#202020</Color>
+    <Color x:Key="ToggleButtonNotCheckedColor">#262626</Color>
     <Color x:Key="ToggleButtonNotCheckedBorderColor">#6f6d70</Color>
     <Color x:Key="ToggleButtonNotCheckedHighlightBorderColor">#acabad</Color>
 
@@ -79,19 +79,19 @@
     <Color x:Key="TextBoxBorderColor">#6f6d70</Color>
     <Color x:Key="TextBoxBorderHoverColor">#acabad</Color>
 
-    <Color x:Key="TitleButtonsBorderBackgroundColor">#202020</Color>
+    <Color x:Key="TitleButtonsBorderBackgroundColor">#262626</Color>
 
-    <Color x:Key="StandardWindowTitleBackgroundColor">#121212</Color>
-    <Color x:Key="StandardWindowBackgroundColor">#121212</Color>
+    <Color x:Key="StandardWindowTitleBackgroundColor">#141414</Color>
+    <Color x:Key="StandardWindowBackgroundColor">#141414</Color>
 
     <Color x:Key="TitleWindowStateHoverColor">#54b2de</Color>
     <Color x:Key="TitleWindowCloseHoverColor">#e62e4c</Color>
-    <Color x:Key="ControlsBackgroundColor">#202020</Color>
+    <Color x:Key="ControlsBackgroundColor">#262626</Color>
 
-    <Color x:Key="TopPanelItemBackgroundColor">#202020</Color>
-    <Color x:Key="TopPanelItemHoverBackgroundColor">#2a2a2a</Color>
-    <Color x:Key="TopPanelSearchBoxBackgroundColor">#202020</Color>
-    <Color x:Key="TopPanelFilterToggleBackgroundColor">#202020</Color>
+    <Color x:Key="TopPanelItemBackgroundColor">#262626</Color>
+    <Color x:Key="TopPanelItemHoverBackgroundColor">#5a5a5a</Color>
+    <Color x:Key="TopPanelSearchBoxBackgroundColor">#262626</Color>
+    <Color x:Key="TopPanelFilterToggleBackgroundColor">#262626</Color>
 
     <SolidColorBrush x:Key="TopPanelItemBackgroundBrush" Color="{DynamicResource TopPanelItemBackgroundColor}" />
     <SolidColorBrush x:Key="TopPanelItemHoverBackgroundBrush" Color="{DynamicResource TopPanelItemHoverBackgroundColor}" />
@@ -111,7 +111,7 @@
     <SolidColorBrush x:Key="HighlightGlyphBrush" Color="{DynamicResource HighlightGlyphColor}" />
     <SolidColorBrush x:Key="PopupBorderBrush" Color="{DynamicResource PopupBorderColor}" />
     <SolidColorBrush x:Key="TooltipBackgroundBrush" Color="{DynamicResource PopupBackgroundColor}" />
-    <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="#202020" />
+    <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="#262626" />
     <SolidColorBrush x:Key="GridItemBackgroundBrush" Color="{DynamicResource GridItemBackgroundColor}" />
     <SolidColorBrush x:Key="PanelSeparatorBrush" Color="{DynamicResource PanelSeparatorColor}" />
     <SolidColorBrush x:Key="WindowPanelSeparatorBrush" Color="{DynamicResource WindowPanelSeparatorColor}" />
@@ -166,9 +166,9 @@
 
     <SolidColorBrush x:Key="WarningBrush" Color="#c85429" />
 
-    <SolidColorBrush x:Key="SidebarBackgroundBrush" Color="#121212" />
-    <SolidColorBrush x:Key="SidebarHoverBackgroundBrush" Color="#2a2a2a" />
-    <SolidColorBrush x:Key="SidebarSelectedBackgroundBrush" Color="#202020" />
+    <SolidColorBrush x:Key="SidebarBackgroundBrush" Color="#141414" />
+    <SolidColorBrush x:Key="SidebarHoverBackgroundBrush" Color="#5a5a5a" />
+    <SolidColorBrush x:Key="SidebarSelectedBackgroundBrush" Color="#262626" />
     <SolidColorBrush x:Key="SidebarMarginBrush" Color="Transparent" />
 
     <LinearGradientBrush x:Key="ExpanderBackgroundBrush" StartPoint="-0.1,0.5" EndPoint="1.2,1" >
@@ -181,7 +181,7 @@
         <GradientStop Color="#002C3A67" Offset="0.7"/>
     </LinearGradientBrush>
 
-    <SolidColorBrush x:Key="WindowBackgourndBrush" Color="#121212" />
+    <SolidColorBrush x:Key="WindowBackgourndBrush" Color="#141414" />
     
     <LinearGradientBrush x:Key="DetailsViewFadeBorder" StartPoint="0.5,0.5" EndPoint="0.5,1">
         <GradientStop Color="#0DA8A8A8" Offset="0.0" />
@@ -231,11 +231,11 @@
     <Color x:Key="GlyphBrushAlternativeColor">#ff0000</Color>
     <SolidColorBrush x:Key="GlyphBrushAlternativeBrush" Color="{DynamicResource GlyphBrushAlternativeColor}" />
 
-    <SolidColorBrush x:Key="DetailsPanelFillBackgroundBrush" Color="#202020" />
+    <SolidColorBrush x:Key="DetailsPanelFillBackgroundBrush" Color="#262626" />
     <SolidColorBrush x:Key="DetailsPanelFillIconBackgroundBrush" Color="#a0a0a0" />
     <Color x:Key="DetailsDarkForegroundColor">#939393</Color>
     <SolidColorBrush x:Key="DetailsDarkForegroundBrush" Color="{DynamicResource DetailsDarkForegroundColor}" />
-    <SolidColorBrush x:Key="DetailsSeparatorBrush" Color="#2a2a2a" />
+    <SolidColorBrush x:Key="DetailsSeparatorBrush" Color="#5a5a5a" />
     
     <SolidColorBrush x:Key="LibraryDetailsViewIsRunningForegroundBrush" Color="#00d492" />
     <SolidColorBrush x:Key="LibraryDetailsViewIsLaunchingForegroundBrush" Color="#f0a300" />
@@ -243,11 +243,8 @@
     <SolidColorBrush x:Key="GridViewCoverSelectionBrush" Color="{DynamicResource GlyphColor}" />
     <SolidColorBrush x:Key="GridViewCoverSubtitleBrush" Color="#b7b7b7" />
     <SolidColorBrush x:Key="GridViewSeparatorBrush" Color="#4Dc2c2c2" />
-    
-    <LinearGradientBrush x:Key="DetailsViewLibraryHoverBackgroundBrush" StartPoint="0.0,0.5" EndPoint="1.0,0.5">
-        <GradientStop Color="#2a2a2a" Offset="0.4" />
-        <GradientStop Color="#2a2a2a" Offset="0.95" />
-    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="DetailsViewLibraryHoverBackgroundBrush" Color="#5a5a5a" />
     
     <LinearGradientBrush x:Key="DetailsViewLibrarySelectedBackgroundBrush" StartPoint="0.0,0.5" EndPoint="1.0,0.5">
         <GradientStop Color="#373737" Offset="0.4" />
