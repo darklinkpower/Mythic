@@ -20,7 +20,7 @@
                             <Border Background="Transparent">
                                 <Grid Width="14" Height="14">
                                     <Ellipse x:Name="BulletBorder" Width="14" Height="14"
-                                            Stroke="{DynamicResource NormalBorderBrushControls}"
+                                            Stroke="{TemplateBinding Background}"
                                             StrokeThickness="{DynamicResource EllipseBorderThickness}" />
                                     <Viewbox x:Name="CheckIcon" Visibility="Collapsed" >
                                         <TextBlock x:Name="CheckText" Text="h" FontFamily="Marlett" Foreground="{DynamicResource TextBrushDarker}"
@@ -29,7 +29,7 @@
                                 </Grid>
                             </Border>
                         </BulletDecorator.Bullet>
-                        <Border Padding="{TemplateBinding Padding}" Background="{TemplateBinding Background}">
+                        <Border Padding="{TemplateBinding Padding}">
                             <ContentPresenter RecognizesAccessKey="True" Margin="5,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
                         </Border>
                     </BulletDecorator>
