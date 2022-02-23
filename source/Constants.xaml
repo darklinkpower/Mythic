@@ -236,6 +236,7 @@
     <Color x:Key="DetailsDarkForegroundColor">#939393</Color>
     <SolidColorBrush x:Key="DetailsDarkForegroundBrush" Color="{DynamicResource DetailsDarkForegroundColor}" />
     <SolidColorBrush x:Key="DetailsSeparatorBrush" Color="#e0646464" />
+    <SolidColorBrush x:Key="LibraryTopSeparatorBrush" Color="#1affffff" />
     
     <SolidColorBrush x:Key="LibraryDetailsViewIsRunningForegroundBrush" Color="#00d492" />
     <SolidColorBrush x:Key="LibraryDetailsViewIsLaunchingForegroundBrush" Color="#f0a300" />

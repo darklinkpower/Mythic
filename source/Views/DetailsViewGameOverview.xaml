@@ -16,7 +16,7 @@
                                   d:DesignHeight="1550"
                                   d:DataContext="{x:Static DesignMainViewModel.DesignSelectedGameDetailsIntance}">
                         <Grid Margin="0,0,0,20">
-                            <Separator Background="{DynamicResource DetailsSeparatorBrush}" VerticalAlignment="Top" Margin="15,0,25,0" />
+                            <Separator Background="{DynamicResource LibraryTopSeparatorBrush}" VerticalAlignment="Top" Margin="15,0,25,0" />
                             <!-- Background Image -->
                             <WrapPanel>
                                 <WrapPanel.Style>
