@@ -93,7 +93,7 @@
     </Style>
 
     <Style x:Key="ContextButtonViews" TargetType="{x:Type Button}">
-        <Setter Property="Background" Value="#2e2c2f" />
+        <Setter Property="Background" Value="#262626" />
         <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource NormalBorderBrush}" />
         <Setter Property="BorderThickness" Value="0" />
@@ -106,7 +106,8 @@
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Grid x:Name="Grid">
                         <Border x:Name="DefaultBorder" BorderBrush="{TemplateBinding BorderBrush}"
-                                BorderThickness="{TemplateBinding BorderThickness}"  Background="{TemplateBinding Background}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Style="{DynamicResource ContextButtonBorderBackground}"
                                 Opacity="1" CornerRadius="{DynamicResource ControlCornerRadiusViewPlayButtons}"/>
                         <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" RecognizesAccessKey="True" />
                     </Grid>
@@ -120,24 +121,6 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-        <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="true">
-                <Trigger.EnterActions>
-                    <BeginStoryboard>
-                        <Storyboard TargetProperty="(Background).(SolidColorBrush.Color)">
-                            <ColorAnimation To="#FF3F3D40" Duration="0:0:0.2" FillBehavior="HoldEnd"/>
-                        </Storyboard>
-                    </BeginStoryboard>
-                </Trigger.EnterActions>
-                <Trigger.ExitActions>
-                    <BeginStoryboard>
-                        <Storyboard TargetProperty="(Background).(SolidColorBrush.Color)">
-                            <ColorAnimation To="#2e2c2f" Duration="0:0:0.2" FillBehavior="HoldEnd"/>
-                        </Storyboard>
-                    </BeginStoryboard>
-                </Trigger.ExitActions>
-            </Trigger>
-        </Style.Triggers>
     </Style>
 
     <Style x:Key="PlayButtonBorderBackground" TargetType="Border">
@@ -169,6 +152,39 @@
                     <BeginStoryboard>
                         <Storyboard>
                             <ColorAnimation To="{StaticResource PlayButtonBackgroundColor}" 
+                                    Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" 
+                                    FillBehavior="HoldEnd"
+                                    Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </DataTrigger.ExitActions>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="ContextButtonBorderBackground" TargetType="Border">
+        <Style.Resources>
+            <Color x:Key="ContextButtonBackgroundColor">#505050</Color>
+            <Color x:Key="ContextButtonHighlightBackgroundColor">#646464</Color>
+            <SolidColorBrush x:Key="ContextButtonBackgroundBrush" Color="{StaticResource ContextButtonBackgroundColor}" />
+        </Style.Resources>
+        <Setter Property="Background" Value="{StaticResource ContextButtonBackgroundBrush}" />
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsMouseOver}" Value="True">
+                <DataTrigger.EnterActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation To="{StaticResource ContextButtonHighlightBackgroundColor}" 
+                                    Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" 
+                                    FillBehavior="HoldEnd"
+                                    Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </DataTrigger.EnterActions>
+                <DataTrigger.ExitActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation To="{StaticResource ContextButtonBackgroundColor}" 
                                     Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" 
                                     FillBehavior="HoldEnd"
                                     Duration="0:0:0.2"/>
