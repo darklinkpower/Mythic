@@ -29,7 +29,7 @@
                                     <DockPanel DockPanel.Dock="Top" LastChildFill="False">
                                         <TextBlock Text="{TemplateBinding Title}" DockPanel.Dock="Left" Margin="10,3,0,0" VerticalAlignment="Center"
                                                    Opacity="0.75" Style="{DynamicResource BaseTextBlockStyle}" x:Name="PART_TextTitle" />
-                                        <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" Margin="0,16,30,34">
+                                        <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" Margin="0,15,20,0">
                                             <Button Style="{DynamicResource WindowBarButtonMainWindowMinimize}" Content="0" x:Name="PART_ButtonMinimize" />
                                             <Button Style="{DynamicResource WindowBarButtonMainWindowMaximize}" Content="1" x:Name="PART_ButtonMaximize" />
                                             <Button Style="{DynamicResource WindowBarButtonMainWindowClose}" Content="r" x:Name="PART_ButtonClose"/>

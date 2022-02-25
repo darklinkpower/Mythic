@@ -5,7 +5,7 @@
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
-        <Setter Property="Margin" Value="5,0,5,0" />
+        <Setter Property="Margin" Value="0" />
         <Setter Property="Padding" Value="3" />
         <Setter Property="Focusable" Value="False" />
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
@@ -35,7 +35,7 @@
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
-        <Setter Property="Padding" Value="8,5,3,3" />
+        <Setter Property="Padding" Value="6,5,2,2" />
         <Setter Property="Focusable" Value="False" />
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="WindowChrome.IsHitTestVisibleInChrome" Value="True" />
@@ -70,7 +70,7 @@
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
-        <Setter Property="Padding" Value="6,9,3,3" />
+        <Setter Property="Padding" Value="5,9,2,2" />
         <Setter Property="Focusable" Value="False" />
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="WindowChrome.IsHitTestVisibleInChrome" Value="True" />
@@ -106,7 +106,7 @@
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
-        <Setter Property="Padding" Value="6,9,8,6" />
+        <Setter Property="Padding" Value="2,9,2,2" />
         <Setter Property="Focusable" Value="False" />
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="WindowChrome.IsHitTestVisibleInChrome" Value="True" />
