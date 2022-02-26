@@ -186,12 +186,16 @@
                                         </StackPanel.Resources>
                                         
                                         <!--#region Logo & Cover Image-->
-                                        <Grid Margin="0,0,0,20">
+                                        <Grid Margin="0,0,0,20"
+                                              Tag="{DynamicResource DetailsViewAllowUseOfLogos}" >
                                             <Grid.Style>
                                                 <Style TargetType="Grid">
                                                     <Setter Property="Visibility" Value="Visible" />
                                                     <Style.Triggers>
                                                         <DataTrigger Binding="{PluginSettings Plugin=ExtraMetadataLoader, Path=EnableLogos, FallbackValue=False}" Value="false">
+                                                            <Setter Property="Visibility" Value="Collapsed" />
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding Tag, RelativeSource={RelativeSource Self}, FallbackValue=true}" Value="false" >
                                                             <Setter Property="Visibility" Value="Collapsed" />
                                                         </DataTrigger>
                                                     </Style.Triggers>
