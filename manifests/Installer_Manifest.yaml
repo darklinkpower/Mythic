@@ -18,3 +18,19 @@ Packages:
     PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.0/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_0.pthm
     Changelog:
       - 'Initial full release'
+  - Version: 1.1
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-02-25
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.1/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_1.pthm
+    Changelog:
+      - 'Adjustments to main window bar buttons'
+      - 'Changes to window and controls background colors to improve contrast between different elements'
+      - 'Add border to Checkboxes'
+      - 'Color adjustment to library views top separator'
+      - 'Adjusted background color of details context button'
+      - 'DatePicker buttons and calendar fixes and style changes'
+      - 'FilterPanel: Fix filters combo box not completely changing background color on hover or focus'
+      - 'Fixes related to background color change on hover and focus'
+      - 'Made control background colors slightly transparent'
+      - 'RadioButton: Remove background'
+      - 'Game descriptions text will no longer be justified'
