@@ -2,6 +2,7 @@ Constants:
     - "Top Panel"
     - TopPanelSearchBoxWidth(180,300): 'Width of Search box'
     - "Details View"
+    - DetailsViewGameNameVisibility: 'Visibility of game name in details'
     - DetailsViewDetailsMaxWidth(1024,1600): 'Maximum width of details'
     - DetailsBackgroundDarkenLayerOpacity(0.0,1.0): 'Darken amount of background image'
     - DetailsViewDetailsIconsVisibility: 'Visibility of icons in details'
