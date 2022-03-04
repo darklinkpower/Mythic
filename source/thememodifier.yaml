@@ -2,13 +2,14 @@ Constants:
     - "Top Panel"
     - TopPanelSearchBoxWidth(180,300): 'Width of Search box'
     - "Details View"
-    - DetailsViewGameNameVisibility: 'Visibility of game name in details'
+    - DetailsViewDisplayGameNameIfLogoVisible: 'Display game name if logo is visible'
     - DetailsViewDetailsMaxWidth(1024,1600): 'Maximum width of details'
     - DetailsBackgroundDarkenLayerOpacity(0.0,1.0): 'Darken amount of background image'
     - DetailsViewDetailsIconsVisibility: 'Visibility of icons in details'
     - DetailsViewAllowUseOfLogos: 'Allow use of Extra Metadata Loader logos'
     - DetailsViewLibraryGameShowFavorite: 'Show favorites icon in game list'
     - "Grid View"
+    - GridViewDisplayGameNameIfLogoVisible: 'Display game name if logo is visible'
     - GridViewDetailsIconsVisibility: 'Visibility of icons in details'
     - GridViewAllowUseOfLogos: 'Allow use of Extra Metadata Loader logos'
     - GridViewLibraryGameShowFavorite: 'Show favorites icon on game covers'
