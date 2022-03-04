@@ -47,3 +47,10 @@ Packages:
     Changelog:
       - 'DetailsView: Added ThemeModifier extension option to adjust the maximum width of game details'
       - 'DetailsView: Added ThemeModifier extension option to adjust visibility of game name'
+  - Version: 1.4
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-03-03
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.4/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_4.pthm
+    Changelog:
+      - 'DetailsView: Removed ThemeModifier extension option to adjust game name visibility and added ThemeModifier extension option to display game name if logo is visible or not.'
+      - 'GridView: Added ThemeModifier extension option to display game name if logo is visible or not'
