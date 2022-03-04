@@ -54,3 +54,11 @@ Packages:
     Changelog:
       - 'DetailsView: Removed ThemeModifier extension option to adjust game name visibility and added ThemeModifier extension option to display game name if logo is visible or not.'
       - 'GridView: Added ThemeModifier extension option to display game name if logo is visible or not'
+  - Version: 1.5
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-03-04
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.5/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_5.pthm
+    Changelog:
+      - 'GridView: Fix Hltb data grid text color (No log)'
+      - 'GridView: Prevent video section from changing height while ExtraMetadataLoader extension video is loading'
+      - 'GridView: Show HowLongToBeat extension data grid with game data. Can be enabled or disabled with ThemeModifier extension.'
