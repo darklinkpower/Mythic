@@ -69,3 +69,9 @@ Packages:
     Changelog:
       - 'General: Add background color to list boxes'
       - 'General: Small styling changes to checkboxes'
+  - Version: 1.7
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-03-21
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.7/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_7.pthm
+    Changelog:
+      - 'Grid View: Added ThemeModifier option to enable cover highlight animation (Same as Helium Theme). Disabled by default.'
