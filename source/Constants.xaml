@@ -124,6 +124,8 @@
     <SolidColorBrush x:Key="MainPanelBackgroundBrush" Color="{DynamicResource MainColor}" />
     <SolidColorBrush x:Key="CheckBoxCheckMarkBkBrush" Color="{DynamicResource ControlBackgroundColorDark}" />
 
+    <SolidColorBrush x:Key="CheckboxBorderBrush" Color="#141414" />
+    
     <SolidColorBrush x:Key="NormalBorderBrushControls" Color="{DynamicResource NormalBorderControlsColor}" />
     <SolidColorBrush x:Key="NormalBorderBrushControlsHover" Color="{DynamicResource NormalBorderControlsHoverColor}" />
     <SolidColorBrush x:Key="NormalBorderBrushControlsSelected" Color="{DynamicResource GlyphColor}" />
