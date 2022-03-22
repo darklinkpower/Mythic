@@ -75,3 +75,10 @@ Packages:
     PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.7/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_7.pthm
     Changelog:
       - 'Grid View: Added ThemeModifier option to enable cover highlight animation (Same as Helium Theme). Disabled by default.'
+  - Version: 1.8
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-03-22
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.8/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_8.pthm
+    Changelog:
+      - 'General: Changed background color of menus and hover background of menu items'
+      - 'Grid View: Fix highlight animation applying to game name area when using horizontal aspect ratios'
