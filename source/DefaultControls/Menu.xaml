@@ -7,7 +7,7 @@
                     mc:Ignorable="d">
 
     <Style TargetType="{x:Type Separator}">
-        <Setter Property="Background" Value="{DynamicResource PanelSeparatorBrush}" />
+        <Setter Property="Background" Value="{DynamicResource MenusSeparatorBrush}" />
         <Setter Property="Margin" Value="0,2,0,2" />
         <Setter Property="Focusable" Value="False"/>
         <Setter Property="Template">
@@ -26,7 +26,7 @@
     <Style TargetType="{x:Type Menu}">
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
-        <Setter Property="Background" Value="{DynamicResource ControlBackgroundBrush}"/>
+        <Setter Property="Background" Value="{DynamicResource PopupBackgroundBrush}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Menu">
@@ -42,7 +42,7 @@
     <ControlTemplate x:Key="{x:Static MenuItem.TopLevelHeaderTemplateKey}" TargetType="{x:Type MenuItem}">
         <Border x:Name="Border">
             <Grid>
-                <Border x:Name="HoverBorder" Background="{DynamicResource HoverBrush}" Visibility="Collapsed"  />
+                <Border x:Name="HoverBorder" Background="{DynamicResource MenusHoverBackgroundBrush}" Visibility="Collapsed"  />
                 <TextBlock VerticalAlignment="Center" Padding="5" Style="{DynamicResource BaseTextBlockStyle}"
                            Foreground="{TemplateBinding Foreground}">
                     <ContentPresenter ContentSource="Header" RecognizesAccessKey="True" />
@@ -80,7 +80,7 @@
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
             <Border x:Name="HoverBorder" Grid.Column="0" Grid.ColumnSpan="4"
-                    Background="{DynamicResource HoverBrush}" Visibility="Collapsed"  />
+                    Background="{DynamicResource MenusHoverBackgroundBrush}" Visibility="Collapsed"  />
             <ContentPresenter x:Name="Icon" Grid.Column="0" Margin="4,0,-5,0"
                               MaxHeight="16" MaxWidth="16"
                               VerticalAlignment="Center" ContentSource="Icon" />
@@ -127,7 +127,7 @@
 
     <!-- SubmenuItem -->
     <ControlTemplate x:Key="{x:Static MenuItem.SubmenuItemTemplateKey}" TargetType="{x:Type MenuItem}">
-        <Border x:Name="HoverBorder" Background="{DynamicResource HoverBrush}">
+        <Border x:Name="HoverBorder" Background="{DynamicResource MenusHoverBackgroundBrush}">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" SharedSizeGroup="MenuItemIconColumnGroup" />

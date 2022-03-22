@@ -27,16 +27,16 @@
     <sys:Double x:Key="FontSizeLargest">29</sys:Double>
     <FontFamily x:Key="FontFamily">Trebuchet MS</FontFamily>
     <FontFamily x:Key="MonospaceFontFamily">Consolas</FontFamily>
-    <Thickness x:Key="PopupBorderThickness">0</Thickness>
+    <Thickness x:Key="PopupBorderThickness">1</Thickness>
     <Thickness x:Key="ControlBorderThickness">0</Thickness>
     <sys:Double x:Key="EllipseBorderThickness">1</sys:Double>
     <CornerRadius x:Key="TopPanelItemCornerRadius">16</CornerRadius>
     <CornerRadius x:Key="ControlCornerRadius">5</CornerRadius>
     <CornerRadius x:Key="ControlCornerRadiusViewPlayButtons">5</CornerRadius>
     <CornerRadius x:Key="ControlCornerRadiusSmall">0</CornerRadius>
-    <CornerRadius x:Key="MainMenuCornerRadius">5</CornerRadius>
-    <CornerRadius x:Key="GeneralMenuCornerRadius">5</CornerRadius>
-    <CornerRadius x:Key="TrayMenuCornerRadius">5</CornerRadius>
+    <CornerRadius x:Key="MainMenuCornerRadius">0</CornerRadius>
+    <CornerRadius x:Key="GeneralMenuCornerRadius">0</CornerRadius>
+    <CornerRadius x:Key="TrayMenuCornerRadius">0</CornerRadius>
     <CornerRadius x:Key="TooltipCornerRadius">5</CornerRadius>
     <CornerRadius x:Key="GridViewCoverCornerRadius">5</CornerRadius>
     <CornerRadius x:Key="GridViewCoverGridBackgroundDisabledCornerRadius">5,5,0,0</CornerRadius>
@@ -57,7 +57,7 @@
     <Color x:Key="GlyphColorSecondary">#2f3543</Color>
     <!---->
     <Color x:Key="HighlightGlyphColor">#373538</Color>
-    <Color x:Key="PopupBackgroundColor">#2b2b2b</Color>
+    <Color x:Key="PopupBackgroundColor">#121212</Color>
     <Color x:Key="PopupBorderColor">#2b2b2b</Color>
     <Color x:Key="BackgroundToneColor">#262c38</Color>
     <Color x:Key="GridItemBackgroundColor">Transparent</Color>
@@ -253,12 +253,15 @@
     <SolidColorBrush x:Key="GridViewSeparatorBrush" Color="#4Dc2c2c2" />
 
     <SolidColorBrush x:Key="DetailsViewLibraryHoverBackgroundBrush" Color="#e0646464" />
-    
+
     <LinearGradientBrush x:Key="DetailsViewLibrarySelectedBackgroundBrush" StartPoint="0.0,0.5" EndPoint="1.0,0.5">
         <GradientStop Color="#373737" Offset="0.4" />
         <GradientStop Color="#373737" Offset="0.95" />
     </LinearGradientBrush>
-
+    
+    <SolidColorBrush x:Key="MenusSeparatorBrush" Color="#6b6b6b" />
+    <SolidColorBrush x:Key="MenusHoverBackgroundBrush" Color="#0066da" />
+    
     <!-- Noise Brush obtained from https://github.com/felixkmh/StartPage-for-Playnite/-->
     <ImageBrush x:Key="DarkNoiseBrush" ImageSource="{ThemeFile 'Images/dark_noise.png'}" TileMode="Tile" Viewport="0,0,100,100" ViewportUnits="Absolute"
                     Opacity="1"/>
