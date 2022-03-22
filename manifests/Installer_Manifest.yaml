@@ -82,3 +82,9 @@ Packages:
     Changelog:
       - 'General: Changed background color of menus and hover background of menu items'
       - 'Grid View: Fix highlight animation applying to game name area when using horizontal aspect ratios'
+  - Version: 1.9
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-03-22
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.9/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_9.pthm
+    Changelog:
+      - 'Grid View: Fix option to draw grid item background not working correctly when enabled'
