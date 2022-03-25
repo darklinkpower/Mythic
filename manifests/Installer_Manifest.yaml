@@ -88,3 +88,9 @@ Packages:
     PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.9/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_9.pthm
     Changelog:
       - 'Grid View: Fix option to draw grid item background not working correctly when enabled'
+  - Version: 1.10
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-03-24
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.10/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_10.pthm
+    Changelog:
+      - 'Details View: Add support for cover control of BackgroundChanger extension'
