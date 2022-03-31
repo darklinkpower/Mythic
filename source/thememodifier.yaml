@@ -1,4 +1,6 @@
 Constants:
+    - "Library"
+    - LibraryUseNoiseOpacityLayer: 'Use noise opacity layer'
     - "Top Panel"
     - TopPanelSearchBoxWidth(180,300): 'Width of Search box'
     - "Details View"
