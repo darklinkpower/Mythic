@@ -100,3 +100,11 @@ Packages:
     PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.11/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_11.pthm
     Changelog:
       - 'Grid View: Fix covers being darkened on hover when option to darken uninstalled games is disabled'
+  - Version: 1.12
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-04-01
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.12/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_12.pthm
+    Changelog:
+      - 'Library: Use noise opacity layer. Enabled by default, can be disabled with ThemeModifier extension'
+      - 'ListBox: Added rounded corners'
+      - 'ProgressBar: Changed background color to solid color'
