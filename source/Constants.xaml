@@ -103,8 +103,9 @@
     <SolidColorBrush x:Key="TopPanelItemHoverBackgroundBrush" Color="{DynamicResource TopPanelItemHoverBackgroundColor}" />
     <SolidColorBrush x:Key="TopPanelSearchBoxBackgroundBrush" Color="{DynamicResource TopPanelSearchBoxBackgroundColor}" />
     <SolidColorBrush x:Key="TopPanelFilterToggleBackgroundBrush" Color="{DynamicResource TopPanelFilterToggleBackgroundColor}" />
-
+    
     <SolidColorBrush x:Key="ProgressBarBackgroundBrush" Color="#262626" />
+    <SolidColorBrush x:Key="GridViewItemMaskBackgroundBrush" Color="#282828" />
     <SolidColorBrush x:Key="ControlBackgroundBrush" Color="{DynamicResource ControlsBackgroundColor}" />
     <SolidColorBrush x:Key="ControlHoverBackgroundBrush" Color="{DynamicResource NormalBorderControlsHoverColor}" />
     <SolidColorBrush x:Key="TextBrush" Color="{DynamicResource TextColor}" />
