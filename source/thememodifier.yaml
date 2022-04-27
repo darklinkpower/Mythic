@@ -18,3 +18,5 @@ Constants:
     - GridViewEnableCoverShineAnimation: 'Enable cover highlight animation'
     - GridViewLibraryGameShowFavorite: 'Show favorites icon on game covers'
     - GridViewCoverSubtitleVisibility: 'Visibility of time played under game covers'
+    - GridViewCoverDisplayLibraryBanner: 'Show game library banner on cover'
+    - GridViewCoverLibraryBannerOpacity(0.5, 1.0): 'Opacity of library banner'
