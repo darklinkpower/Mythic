@@ -130,3 +130,9 @@ Packages:
       - 'GridView: Added library banners for Groupees and Legacy Games library plugin because Jeshibu was angry at me :('
       - 'GridView: Library banners moved to top of cover images'
       - 'GridView: Show generic library banner for games with a library that does not have a specific banner'
+  - Version: 1.16
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-04-28
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.16/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_16.pthm
+    Changelog:
+      - 'GridView: Fix favorites and DuplicateHider icons placement and hover darkening background being inconsistent if Library Banners are enabled'
