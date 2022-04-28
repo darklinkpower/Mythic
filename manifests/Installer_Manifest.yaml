@@ -122,3 +122,11 @@ Packages:
       - 'Filters Panel: Use hand cursor for filter selection box buttons'
       - 'Grid View: Added library banners to covers. Disabled by default. Can be enabled with option in ThemeModifier extension. Includes option to configure the banner opacity.'
       - 'SearhBox: Use hand mouse for text delete button'
+  - Version: 1.15
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-04-27
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.15/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_15.pthm
+    Changelog:
+      - 'GridView: Added library banners for Groupees and Legacy Games library plugin because Jeshibu was angry at me :('
+      - 'GridView: Library banners moved to top of cover images'
+      - 'GridView: Show generic library banner for games with a library that does not have a specific banner'
