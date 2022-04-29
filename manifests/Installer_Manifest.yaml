@@ -142,3 +142,9 @@ Packages:
     PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.17/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_17.pthm
     Changelog:
       - 'GridView: Implemented banners for game platform. Special thanks to the Playnite community for making these banners.'
+  - Version: 1.18
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-04-29
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.18/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_18.pthm
+    Changelog:
+      - 'GridView: Added additional platform banners (By NatParable)'
