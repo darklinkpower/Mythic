@@ -148,3 +148,14 @@ Packages:
     PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.18/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_18.pthm
     Changelog:
       - 'GridView: Added additional platform banners (By NatParable)'
+  - Version: 1.19
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-05-04
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.19/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_19.pthm
+    Changelog:
+      - 'DetailsView: Hide Reviews Viewer extension tab for games not from Steam or PC games'
+      - 'GridView: Added additional platform banners (By NatParable)'
+      - 'GridView: Fix Oculus library banner not displaying'
+      - 'GridView: Hide Reviews Viewer section for games not from Steam or PC games'
+      - 'GridView: PC games without a library plugin banner will use a PC platform banner'
+      - 'GridView: Reduce memory used by banner images'
