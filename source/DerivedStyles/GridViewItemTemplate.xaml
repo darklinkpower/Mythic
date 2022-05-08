@@ -61,7 +61,7 @@
                                         </Style>
                                     </TextBlock.Style>
                                 </TextBlock>
-                                
+
                                 <TextBlock x:Name="PluginId"
                                            Visibility="Collapsed">
                                     <TextBlock.Style>
@@ -306,7 +306,7 @@
                                         </Style>
                                     </Image.Style>
                                 </Image>
-                                
+
                                 <Image x:Name="LibraryBanner" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Center"
                                        RenderOptions.BitmapScalingMode="Fant"
                                        Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Source, Converter={StaticResource NullToVisibilityConverter}}"
@@ -413,7 +413,7 @@
                                         </Style>
                                     </Image.Style>
                                 </Image>
-                                
+
                                 <Image x:Name="UnknownBanner" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Center"
                                        RenderOptions.BitmapScalingMode="Fant"
                                        Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Source, Converter={StaticResource NullToVisibilityConverter}}"
@@ -437,12 +437,12 @@
                                         </Style>
                                     </Image.Style>
                                 </Image>
-                                
+
                                 <Image Name="PART_ImageCover" Grid.Row="1" Height="{Settings GridItemHeight}"
                                        RenderOptions.BitmapScalingMode="Fant" StretchDirection="Both"
                                        HorizontalAlignment="Center" VerticalAlignment="Top"
                                        Stretch="{Settings CoverArtStretch}" />
-                                
+
                                 <Grid Grid.RowSpan="2">
                                     <Border Background="#99000000" x:Name="TextGameName" Visibility="Collapsed">
                                         <TextBlock Text="{Binding DisplayName}"
@@ -452,6 +452,10 @@
                                                    HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                     </Border>
                                     <Border Background="#AA000000" x:Name="BorderMouseOver" Visibility="Collapsed" />
+                                    <Border Name="AnimatedIsGamePlayingBorder" Tag="False"
+                                            Style="{DynamicResource PlayingBorderAnimation}" IsHitTestVisible="False" />
+                                    <TextBlock Name="EnablePlayingBorderAnimation" Visibility="Collapsed"
+                                               Tag="{DynamicResource GridViewEnablePlayingBorderAnimation}" />
                                     <Border Name="ShineBackground" Tag="False" IsHitTestVisible="False"
                                             Style="{DynamicResource AnimatedCoverShineBackground}" />
                                     <TextBlock Name="EnableHighlightAnimation" Visibility="Collapsed"
@@ -536,6 +540,14 @@
                             </MultiDataTrigger.Conditions>
                             <Setter Property="Tag" Value="True" TargetName="ShineBackground" />
                         </MultiDataTrigger>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsVisible}" Value="True" />
+                                <Condition Binding="{Binding ElementName=EnablePlayingBorderAnimation, Path=Tag}" Value="True" />
+                                <Condition Binding="{Binding IsRunning}" Value="True" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="Tag" Value="True" TargetName="AnimatedIsGamePlayingBorder" />
+                        </MultiDataTrigger>
                         <DataTrigger Binding="{Settings ShowGridItemBackground}" Value="True">
                             <Setter Property="Padding" Value="2,5,2,5" TargetName="ShowGameName" />
                             <Setter Property="TextAlignment" Value="Center" TargetName="ShowGameName" />
@@ -575,6 +587,28 @@
         </Setter>
     </Style>
 
+    <Style x:Key="PlayingBorderAnimation" TargetType="Border">
+        <Setter Property="Opacity" Value="-0.10" />
+        <Setter Property="Visibility" Value="Collapsed" />
+        <Setter Property="Background" Value="#ffffff" />
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" Value="True">
+                <Setter Property="Visibility" Value="Visible" />
+                <DataTrigger.EnterActions>
+                    <BeginStoryboard x:Name="BorderStoryboard">
+                        <Storyboard RepeatBehavior="Forever">
+                            <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                             To="0.25" Duration="0:00:1.60" AutoReverse="True"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </DataTrigger.EnterActions>
+                <DataTrigger.ExitActions>
+                    <StopStoryboard BeginStoryboardName="BorderStoryboard" />
+                </DataTrigger.ExitActions>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+    
     <Style x:Key="AnimatedCoverShineBackground" TargetType="Border">
         <Setter Property="Opacity" Value="0.00" />
         <Setter Property="Background">
