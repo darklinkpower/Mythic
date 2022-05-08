@@ -172,7 +172,7 @@
                                                 <Grid.Resources>
                                                     <Style x:Key="Icon" TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}">
                                                         <Setter Property="Width" Value="24"/>
-                                                        <Setter Property="Foreground" Value="{DynamicResource DetailsIcons2BackgroundBrush}"/>
+                                                        <Setter Property="Foreground" Value="{DynamicResource GlyphBrush}"/>
                                                     </Style>
                                                     <Style TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}">
                                                         <Setter Property="Foreground" Value="{DynamicResource DetailsDarkForegroundBrush}" />

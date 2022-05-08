@@ -228,21 +228,6 @@
     <SolidColorBrush x:Key="SidebarItemSelectedForegroundBrush" Color="#f5f5f5" />
     <SolidColorBrush x:Key="TabItemForegroundBrush" Color="#9a9a9a" />
     
-    <LinearGradientBrush x:Key="DetailsIconsBackgroundBrush" StartPoint="0.5,1.0" EndPoint="0.5,0.0">
-        <GradientStop Color="#ff0000" Offset="0.3" />
-        <GradientStop Color="#ff0000" Offset="0.95" />
-    </LinearGradientBrush>
-
-    <LinearGradientBrush x:Key="DetailsIcons2BackgroundBrush" StartPoint="0.5,1.0" EndPoint="0.5,0.0">
-        <GradientStop Color="#ff0000" Offset="0.4" />
-        <GradientStop Color="#ff0000" Offset="0.95" />
-    </LinearGradientBrush>
-
-    <LinearGradientBrush x:Key="DetailsIcons3BackgroundBrush" StartPoint="0.5,1.0" EndPoint="0.5,0.0">
-        <GradientStop Color="#ff0000" Offset="0.4" />
-        <GradientStop Color="#ff0000" Offset="0.95" />
-    </LinearGradientBrush>
-
     <Color x:Key="GlyphBrushAlternativeColor">#ff0000</Color>
     <SolidColorBrush x:Key="GlyphBrushAlternativeBrush" Color="{DynamicResource GlyphBrushAlternativeColor}" />
 
