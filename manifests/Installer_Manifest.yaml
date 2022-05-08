@@ -165,3 +165,12 @@ Packages:
     PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.20/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_20.pthm
     Changelog:
       - 'Grid View: Added a highlight animation to covers of games that are running. Enabled by default, can be enabled or disabled with ThemeModifier extension'
+  - Version: 1.21
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-05-08
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.21/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_21.pthm
+    Changelog:
+      - 'Grid View: Added ThemeModifier option to place Description at the bottom (After extensions sections). Disabled by default.'
+      - 'Grid View: Fix optional details icons using a different color than on Details View'
+      - 'Grid View: Improved performance of cover highlight animations'
+      - 'Grid View: Made glow border of playing games static. Can be enabled with ThemeModifier extension'
