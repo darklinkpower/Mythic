@@ -159,3 +159,9 @@ Packages:
       - 'GridView: Hide Reviews Viewer section for games not from Steam or PC games'
       - 'GridView: PC games without a library plugin banner will use a PC platform banner'
       - 'GridView: Reduce memory used by banner images'
+  - Version: 1.20
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-05-07
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.20/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_20.pthm
+    Changelog:
+      - 'Grid View: Added a highlight animation to covers of games that are running. Enabled by default, can be enabled or disabled with ThemeModifier extension'
