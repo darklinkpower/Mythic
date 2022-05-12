@@ -181,3 +181,9 @@ Packages:
     Changelog:
       - 'Grid View: Added ThemeModifier extension option to use rounded covers'
       - 'Grid View: Removed playing game border and added animation instead (Again...). Can be enabled with ThemeModifier extension'
+  - Version: 1.23
+    RequiredApiVersion: 2.1.0
+    ReleaseDate: 2022-05-11
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.23/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_23.pthm
+    Changelog:
+      - 'Details View: Fix theme not allowing to use Playnite Vertical spacing setting'
