@@ -62,6 +62,7 @@
     <Color x:Key="HoverColor">#373538</Color>
     <Color x:Key="GlyphColor">#433de7</Color>
     <Color x:Key="GlyphColorSecondary">#2f3543</Color>
+    <Color x:Key="DataChangeNotifColor">#ffa500</Color>
     <!---->
     <Color x:Key="HighlightGlyphColor">#373538</Color>
     <Color x:Key="PopupBackgroundColor">#121212</Color>
@@ -133,7 +134,7 @@
     <SolidColorBrush x:Key="SecondaryBrush" Color="{DynamicResource GlyphColorSecondary}" />
     <SolidColorBrush x:Key="MainPanelBackgroundBrush" Color="{DynamicResource MainColor}" />
     <SolidColorBrush x:Key="CheckBoxCheckMarkBkBrush" Color="{DynamicResource ControlBackgroundColorDark}" />
-
+    <SolidColorBrush x:Key="DataChangeNotifBrush" Color="{DynamicResource DataChangeNotifColor}" />
     <SolidColorBrush x:Key="CheckboxBorderBrush" Color="#141414" />
     
     <SolidColorBrush x:Key="NormalBorderBrushControls" Color="{DynamicResource NormalBorderControlsColor}" />
