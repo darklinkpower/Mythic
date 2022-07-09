@@ -255,6 +255,7 @@
     
     <SolidColorBrush x:Key="MenusSeparatorBrush" Color="#6b6b6b" />
     <SolidColorBrush x:Key="MenusHoverBackgroundBrush" Color="#0066da" />
+    <SolidColorBrush x:Key="SearchViewWindowBackgroundBrush" Color="#262626" />
 
     <!-- Noise Brush obtained from https://github.com/felixkmh/StartPage-for-Playnite/-->
     <ImageBrush x:Key="DarkNoiseBrush" ImageSource="{ThemeFile 'Images/dark_noise.png'}" TileMode="Tile" Viewport="0,0,100,100" ViewportUnits="Absolute"
