@@ -10,8 +10,8 @@
     <sys:Boolean x:Key="DetailsViewDisplayGameNameIfLogoVisible">True</sys:Boolean>
     <sys:Boolean x:Key="GridViewDisplayGameNameIfLogoVisible">True</sys:Boolean>
     <sys:Double x:Key="DetailsBackgroundDarkenLayerOpacity">1.0</sys:Double>
-    <Visibility x:Key="DetailsViewDetailsIconsVisibility">Collapsed</Visibility>
-    <Visibility x:Key="GridViewDetailsIconsVisibility">Collapsed</Visibility>
+    <Visibility x:Key="DetailsViewDetailsIconsVisibility">Visible</Visibility>
+    <Visibility x:Key="GridViewDetailsIconsVisibility">Visible</Visibility>
     <Visibility x:Key="GridViewCoverSubtitleVisibility">Visible</Visibility>
     <sys:Boolean x:Key="DetailsViewAllowUseOfLogos">true</sys:Boolean>
     <sys:Boolean x:Key="GridViewAllowUseOfLogos">true</sys:Boolean>
@@ -19,10 +19,9 @@
     <sys:Boolean x:Key="GridViewLibraryGameShowFavorite">true</sys:Boolean>
     <sys:Boolean x:Key="GridViewShowHltbDataGrid">True</sys:Boolean>
     <sys:Boolean x:Key="GridViewEnableCoverShineAnimation">False</sys:Boolean>
-    <sys:Boolean x:Key="GridViewCoverDisplayLibraryBanner">False</sys:Boolean>
-    <sys:Double x:Key="GridViewCoverLibraryBannerOpacity">1.0</sys:Double>
+    <sys:Boolean x:Key="GridViewCoverDisplayLibraryBanner">True</sys:Boolean>
     <sys:Boolean x:Key="GridViewCoverUseRoundedCorners">True</sys:Boolean>
-    <sys:Boolean x:Key="GridViewEnablePlayingGlowBorder">False</sys:Boolean>
+    <sys:Boolean x:Key="GridViewEnablePlayingGlowBorder">True</sys:Boolean>
     <sys:Boolean x:Key="GridViewPlaceDescriptionAtBottom">False</sys:Boolean>
     <sys:Boolean x:Key="LibraryUseNoiseOpacityLayer">True</sys:Boolean>
     <!--region end-->
