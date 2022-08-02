@@ -132,6 +132,7 @@
                                             </TextBlock>
 
                                             <DockPanel Margin="0,0,0,0">
+                                                <ContentControl x:Name="PlayState_GameStateSwitchControl" Height="40" Margin="0,0,10,0" />
                                                 <ContentControl x:Name="ScreenshotsVisualizer_PluginButton" Margin="0,0,10,0"
                                                             Height="40" MaxWidth="150" DockPanel.Dock="Left">
                                                     <ContentControl.Style>
