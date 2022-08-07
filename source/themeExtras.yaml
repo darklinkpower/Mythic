@@ -1,11 +1,7 @@
 ThemeId: Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8
-Recommendations:
-- AddonName: DuplicateHider
-  AddonId: felixkmh_DuplicateHider_Plugin
-  Features:
 PersistentPaths:
 - Images/Banners
-BannerBySpecIdPath: Images/Banners/PlatformSpecId
-BannerByPlatformNamePath: Images/Banners/PlatformName
+BannersBySpecIdPath: Images/Banners/PlatformSpecId
+BannersByPlatformNamePath: Images/Banners/PlatformName
 BannersByPluginIdPath: Images/Banners/PluginId
 DefaultBannerPath: Images/Banners/UnknownLibrary.png
