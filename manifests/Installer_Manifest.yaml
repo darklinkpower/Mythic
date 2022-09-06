@@ -187,3 +187,16 @@ Packages:
     PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.23/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_23.pthm
     Changelog:
       - 'Details View: Fix theme not allowing to use Playnite Vertical spacing setting'
+  - Version: 1.24
+    RequiredApiVersion: 2.2.0
+    ReleaseDate: 2022-09-06
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.24/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_24.pthm
+    Changelog:
+      - 'Updated to Playnite 10 changes and made relevant modifications'
+      - 'Added GamersGate library plugin banner'
+      - 'DetailsView and GridView: Add support to display current players on Steam via NewsViewer extension control'
+      - 'DetailsView and GridView: Add support to PlayState extension game status switcher button'
+      - 'Extension manifests changes'
+      - 'GridView: Playing game highlight will now darken the game cover'
+      - 'GridView: Removed theme banners implementation and added support to display banners with ThemeExtras extension'
+      - 'Misc changes and fixes'   
