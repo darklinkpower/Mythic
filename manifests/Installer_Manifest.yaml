@@ -199,4 +199,11 @@ Packages:
       - 'Extension manifests changes'
       - 'GridView: Playing game highlight will now darken the game cover'
       - 'GridView: Removed theme banners implementation and added support to display banners with ThemeExtras extension'
-      - 'Misc changes and fixes'   
+      - 'Misc changes and fixes'
+  - Version: 1.25
+    RequiredApiVersion: 2.3.0
+    ReleaseDate: 2022-09-22
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.25/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_25.pthm
+    Changelog:
+      - 'GridView: Added shadow effect to covers. Disabled by default. Can be configured with ThemeModifier extension'
+      - 'Update to Playnite 10.1 changes'
