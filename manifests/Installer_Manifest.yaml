@@ -207,3 +207,12 @@ Packages:
     Changelog:
       - 'GridView: Added shadow effect to covers. Disabled by default. Can be configured with ThemeModifier extension'
       - 'Update to Playnite 10.1 changes'
+  - Version: 1.26
+    RequiredApiVersion: 2.3.0
+    ReleaseDate: 2022-10-08
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.26/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_26.pthm
+    Changelog:
+      - 'Added additional platform banners'
+      - 'Details: Changed icon used for Install Directory'
+      - 'Fix options to hide game name from details if logo is displayed not working'
+      - 'GridView: Fix banners from some platforms not being detected and displayed'
