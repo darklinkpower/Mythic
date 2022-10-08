@@ -240,7 +240,7 @@
 
                                                 <Label Name="PART_ElemInstallDirectory" >
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="&#xef43;" Style="{StaticResource Icon}"
+                                                        <TextBlock Text="&#xEC5B;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource GridViewDetailsIconsVisibility}" />
                                                         <TextBlock Text="{DynamicResource LOCGameInstallDirTitle}" />
