@@ -666,8 +666,8 @@
                                                             <Setter Property="HorizontalContentAlignment" Value="Left"/>
                                                         </Style>
                                                     </WrapPanel.Resources>
-                                                    <DockPanel Visibility="{Binding Visibility, ElementName=PART_ElemLastPlayed, Mode=OneWay}" Margin="0,5,15,5">
-                                                        <Viewbox Stretch="Uniform" Height="35">
+                                                    <DockPanel Visibility="{Binding Visibility, ElementName=PART_ElemLastPlayed, Mode=OneWay}" Margin="0,5,12,5">
+                                                        <Viewbox Stretch="Uniform" Height="28">
                                                             <TextBlock Text="&#xEC45;" FontFamily="{StaticResource FontIcoFont}" Foreground="{DynamicResource DetailsPanelFillIconBackgroundBrush}" />
                                                         </Viewbox>
                                                         <StackPanel Margin="10,0,0,0" VerticalAlignment="Center">
@@ -675,8 +675,8 @@
                                                             <TextBlock Name="PART_TextLastActivity" MinWidth="85"/>
                                                         </StackPanel>
                                                     </DockPanel>
-                                                    <DockPanel Visibility="{Binding Visibility, ElementName=PART_ElemPlayTime, Mode=OneWay}" Margin="0,5,15,5">
-                                                        <Viewbox Stretch="Uniform" Height="35">
+                                                    <DockPanel Visibility="{Binding Visibility, ElementName=PART_ElemPlayTime, Mode=OneWay}" Margin="0,5,12,5">
+                                                        <Viewbox Stretch="Uniform" Height="28">
                                                             <TextBlock Text="&#xEEDC;" FontFamily="{StaticResource FontIcoFont}" Foreground="{DynamicResource DetailsPanelFillIconBackgroundBrush}" />
                                                         </Viewbox>
                                                         <StackPanel Margin="10,0,0,0" VerticalAlignment="Center">
@@ -684,8 +684,8 @@
                                                             <TextBlock Name="PART_TextPlayTime"/>
                                                         </StackPanel>
                                                     </DockPanel>
-                                                    <DockPanel Visibility="{Binding Visibility, ElementName=PART_ElemCompletionStatus, Mode=OneWay}" Margin="0,5,15,5">
-                                                        <Viewbox Stretch="Uniform" Height="40">
+                                                    <DockPanel Visibility="{Binding Visibility, ElementName=PART_ElemCompletionStatus, Mode=OneWay}" Margin="0,5,12,5">
+                                                        <Viewbox Stretch="Uniform" Height="33">
                                                             <TextBlock Text="&#xEED6;" FontFamily="{StaticResource FontIcoFont}" Foreground="{DynamicResource DetailsPanelFillIconBackgroundBrush}" />
                                                         </Viewbox>
                                                         <StackPanel Margin="10,0,0,0" VerticalAlignment="Center">
@@ -694,7 +694,7 @@
                                                         </StackPanel>
                                                     </DockPanel>
 
-                                                    <DockPanel Margin="0,5,15,5">
+                                                    <DockPanel Margin="0,5,12,5">
                                                         <DockPanel.Style>
                                                             <Style TargetType="{x:Type DockPanel}">
                                                                 <Setter Property="Visibility" Value="Collapsed" />
@@ -705,7 +705,7 @@
                                                                 </Style.Triggers>
                                                             </Style>
                                                         </DockPanel.Style>
-                                                        <Viewbox Stretch="Uniform" Height="30">
+                                                        <Viewbox Stretch="Uniform" Height="24">
                                                             <TextBlock Text="&#xEDD7;" FontFamily="{StaticResource FontIcoFont}" Foreground="{DynamicResource DetailsPanelFillIconBackgroundBrush}" />
                                                         </Viewbox>
 
@@ -749,7 +749,7 @@
                                                         </StackPanel>
                                                     </DockPanel>
                                                     
-                                                    <DockPanel Margin="5,5,15,5">
+                                                    <DockPanel Margin="5,5,0,5">
                                                         <DockPanel.Style>
                                                             <Style TargetType="{x:Type DockPanel}">
                                                                 <Setter Property="Visibility" Value="Collapsed" />
@@ -760,14 +760,14 @@
                                                                 </Style.Triggers>
                                                             </Style>
                                                         </DockPanel.Style>
-                                                        <Viewbox Stretch="Uniform" Height="30">
+                                                        <Viewbox Stretch="Uniform" Height="24">
                                                             <Path Stretch="Fill" Fill="{DynamicResource DetailsPanelFillIconBackgroundBrush}" Data="m 157.80154 541.46802 v -400 h 97.14286 97.14286 
                                                                 v 238.57143 238.57143 h 40 40 V 380.03945 141.46802 h 97.14285 97.14286 v 400 400 
                                                                 h -97.14286 -97.14285 v -81.42857 -81.42857 h -40 -40 v 81.42857 81.42857 H 254.9444 157.80154 Z"/>
                                                         </Viewbox>
                                                         <StackPanel Margin="10,0,0,0" VerticalAlignment="Center">
                                                             <Label Content="HowLongToBeat" Foreground="{DynamicResource DetailsViewDetailsLabelForegroundBrush}" />
-                                                            <ContentControl x:Name="HowLongToBeat_PluginProgressBar" Margin="0,0,0,0" VerticalAlignment="Center" Width="250" HorizontalAlignment="Left"/>
+                                                            <ContentControl x:Name="HowLongToBeat_PluginProgressBar" Margin="0,0,0,0" VerticalAlignment="Center" Width="214" HorizontalAlignment="Left"/>
                                                         </StackPanel>
                                                     </DockPanel>
 
