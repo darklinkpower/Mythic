@@ -98,108 +98,107 @@
                                     <RowDefinition Height="Auto" />
                                     <RowDefinition Height="*" />
                                 </Grid.RowDefinitions>
-                                <DockPanel Margin="0,20,0,15" MaxWidth="{DynamicResource DetailsViewDetailsMaxWidth}" Grid.Row="1" Background="Transparent">
-                                    <StackPanel VerticalAlignment="Bottom" DockPanel.Dock="Left">
-                                        <WrapPanel>
-                                            <Image Name="PART_ImageIcon" MaxHeight="48" MaxWidth="48" DockPanel.Dock="Left" 
+                                <DockPanel Margin="0,20,0,15" MaxWidth="{DynamicResource DetailsViewDetailsMaxWidth}" Grid.Row="1">
+                                    <!--GridConverterGridPanelCloseButton-->
+                                    <WrapPanel DockPanel.Dock="Left">
+                                        <Image Name="PART_ImageIcon" MaxHeight="48" MaxWidth="48" DockPanel.Dock="Left" 
                                                    Margin="0,0,10,0" VerticalAlignment="Center" RenderOptions.BitmapScalingMode="Fant">
-                                                <Image.Effect>
-                                                    <DropShadowEffect BlurRadius="15" ShadowDepth="0" Color="#0d0d0d" Opacity="0.20"/>
-                                                </Image.Effect>
-                                            </Image>
+                                            <Image.Effect>
+                                                <DropShadowEffect BlurRadius="15" ShadowDepth="0" Color="#0d0d0d" Opacity="0.20"/>
+                                            </Image.Effect>
+                                        </Image>
 
-                                            <Border DockPanel.Dock="Left"
-                                                    Tag="{DynamicResource DetailsViewDisplayGameNameIfLogoVisible}">
-                                                <Border.Style>
-                                                    <Style TargetType="Border">
-                                                        <Setter Property="Visibility" Value="Visible" />
+                                        <Border DockPanel.Dock="Left"
+                                                Tag="{DynamicResource DetailsViewDisplayGameNameIfLogoVisible}">
+                                            <Border.Style>
+                                                <Style TargetType="Border">
+                                                    <Setter Property="Visibility" Value="Visible" />
+                                                    <Style.Triggers>
+                                                        <MultiDataTrigger>
+                                                            <MultiDataTrigger.Conditions>
+                                                                <Condition Binding="{Binding Tag, RelativeSource={RelativeSource Self}, FallbackValue=False}" Value="False" />
+                                                                <Condition Binding="{Binding ElementName=ExtraMetadataLoader_LogoLoaderControl, Path=Visibility, FallbackValue=Collapsed}" Value="Visible" />
+                                                                <Condition Binding="{PluginSettings Plugin=ExtraMetadataLoader, Path=IsLogoAvailable, FallbackValue=False}" Value="True" />
+                                                            </MultiDataTrigger.Conditions>
+                                                            <Setter Property="Visibility" Value="Collapsed" />
+                                                        </MultiDataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Border.Style>
+                                            <TextBlock FontFamily="{DynamicResource FontFamily}" Name="PART_TextDisplayName"
+                                                       FontSize="{DynamicResource FontSizeLargest}" Margin="0,0,30,0" 
+                                                       TextWrapping="Wrap" VerticalAlignment="Center" Foreground="{DynamicResource TextBrush}">
+                                                <TextBlock.Effect>
+                                                    <DropShadowEffect ShadowDepth="1" RenderingBias="Quality" />
+                                                </TextBlock.Effect>
+                                            </TextBlock>
+                                        </Border>
+
+                                        <DockPanel Margin="0,0,0,0">
+                                            <ContentControl x:Name="PlayState_GameStateSwitchControl" Height="40" Margin="0,0,10,0" />
+                                            <ContentControl x:Name="ScreenshotsVisualizer_PluginButton" Margin="0,0,10,0"
+                                                            Height="40" MaxWidth="150" DockPanel.Dock="Left">
+                                                <ContentControl.Style>
+                                                    <Style TargetType="ContentControl">
+                                                        <Setter Property="Visibility" Value="Collapsed" />
                                                         <Style.Triggers>
-                                                            <MultiDataTrigger>
-                                                                <MultiDataTrigger.Conditions>
-                                                                    <Condition Binding="{Binding Tag, RelativeSource={RelativeSource Self}, FallbackValue=False}" Value="False" />
-                                                                    <Condition Binding="{Binding ElementName=ExtraMetadataLoader_LogoLoaderControl, Path=Visibility, FallbackValue=Collapsed}" Value="Visible" />
-                                                                    <Condition Binding="{PluginSettings Plugin=ExtraMetadataLoader, Path=IsLogoAvailable, FallbackValue=False}" Value="True" />
-                                                                </MultiDataTrigger.Conditions>
-                                                                <Setter Property="Visibility" Value="Collapsed" />
-                                                            </MultiDataTrigger>
+                                                            <DataTrigger Binding="{PluginSettings Plugin=ScreenshotsVisualizer, Path=HasData, FallbackValue=False}" Value="True">
+                                                                <Setter Property="Visibility" Value="Visible" />
+                                                            </DataTrigger>
                                                         </Style.Triggers>
                                                     </Style>
-                                                </Border.Style>
-                                                <TextBlock FontFamily="{DynamicResource FontFamily}" Name="PART_TextDisplayName"
-                                                           FontSize="{DynamicResource FontSizeLargest}" Margin="0,0,30,0" 
-                                                           TextWrapping="Wrap" VerticalAlignment="Center" Foreground="{DynamicResource TextBrush}">
-                                                    <TextBlock.Effect>
-                                                        <DropShadowEffect ShadowDepth="1" RenderingBias="Quality" />
-                                                    </TextBlock.Effect>
-                                                </TextBlock>
-                                            </Border>
-                                            
-                                            <DockPanel Margin="0,0,0,0">
-                                                <ContentControl x:Name="PlayState_GameStateSwitchControl" Height="40" Margin="0,0,10,0" />
-                                                <ContentControl x:Name="ScreenshotsVisualizer_PluginButton" Margin="0,0,10,0"
-                                                            Height="40" MaxWidth="150" DockPanel.Dock="Left">
-                                                    <ContentControl.Style>
-                                                        <Style TargetType="ContentControl">
-                                                            <Setter Property="Visibility" Value="Collapsed" />
-                                                            <Style.Triggers>
-                                                                <DataTrigger Binding="{PluginSettings Plugin=ScreenshotsVisualizer, Path=HasData, FallbackValue=False}" Value="True">
-                                                                    <Setter Property="Visibility" Value="Visible" />
-                                                                </DataTrigger>
-                                                            </Style.Triggers>
-                                                        </Style>
-                                                    </ContentControl.Style>
-                                                </ContentControl>
-                                                <ContentControl x:Name="HowLongToBeat_PluginButton" Height="40" VerticalAlignment="Center" Margin="0,0,10,0" DockPanel.Dock="Left">
-                                                    <ContentControl.Style>
-                                                        <Style TargetType="ContentControl">
-                                                            <Setter Property="Visibility" Value="Collapsed" />
-                                                            <Style.Triggers>
-                                                                <DataTrigger Binding="{PluginSettings Plugin=HowLongToBeat, Path=EnableIntegrationButton, FallbackValue=False}" Value="True">
-                                                                    <Setter Property="Visibility" Value="Visible" />
-                                                                </DataTrigger>
-                                                            </Style.Triggers>
-                                                        </Style>
-                                                    </ContentControl.Style>
-                                                </ContentControl>
-                                                <ContentControl x:Name="SuccessStory_PluginButton" Height="40" VerticalAlignment="Center" Margin="0,0,10,0" DockPanel.Dock="Left" >
-                                                    <ContentControl.Style>
-                                                        <Style TargetType="ContentControl">
-                                                            <Setter Property="Visibility" Value="Collapsed" />
-                                                            <Style.Triggers>
-                                                                <DataTrigger Binding="{PluginSettings Plugin=SuccessStory, Path=EnableIntegrationButton, FallbackValue=False}" Value="True">
-                                                                    <Setter Property="Visibility" Value="Visible" />
-                                                                </DataTrigger>
-                                                            </Style.Triggers>
-                                                        </Style>
-                                                    </ContentControl.Style>
-                                                </ContentControl>
-                                                <ContentControl x:Name="GameActivity_PluginButton" Height="40" VerticalAlignment="Center" Margin="0,0,10,0" DockPanel.Dock="Left">
-                                                    <ContentControl.Style>
-                                                        <Style TargetType="ContentControl">
-                                                            <Setter Property="Visibility" Value="Visible" />
-                                                            <Style.Triggers>
-                                                                <DataTrigger Binding="{PluginSettings Plugin=GameActivity, Path=HasData, FallbackValue=False}" Value="True">
-                                                                    <Setter Property="Visibility" Value="Visible" />
-                                                                </DataTrigger>
-                                                            </Style.Triggers>
-                                                        </Style>
-                                                    </ContentControl.Style>
-                                                </ContentControl>
+                                                </ContentControl.Style>
+                                            </ContentControl>
+                                            <ContentControl x:Name="HowLongToBeat_PluginButton" Height="40" VerticalAlignment="Center" Margin="0,0,10,0" DockPanel.Dock="Left">
+                                                <ContentControl.Style>
+                                                    <Style TargetType="ContentControl">
+                                                        <Setter Property="Visibility" Value="Collapsed" />
+                                                        <Style.Triggers>
+                                                            <DataTrigger Binding="{PluginSettings Plugin=HowLongToBeat, Path=EnableIntegrationButton, FallbackValue=False}" Value="True">
+                                                                <Setter Property="Visibility" Value="Visible" />
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </ContentControl.Style>
+                                            </ContentControl>
+                                            <ContentControl x:Name="SuccessStory_PluginButton" Height="40" VerticalAlignment="Center" Margin="0,0,10,0" DockPanel.Dock="Left" >
+                                                <ContentControl.Style>
+                                                    <Style TargetType="ContentControl">
+                                                        <Setter Property="Visibility" Value="Collapsed" />
+                                                        <Style.Triggers>
+                                                            <DataTrigger Binding="{PluginSettings Plugin=SuccessStory, Path=EnableIntegrationButton, FallbackValue=False}" Value="True">
+                                                                <Setter Property="Visibility" Value="Visible" />
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </ContentControl.Style>
+                                            </ContentControl>
+                                            <ContentControl x:Name="GameActivity_PluginButton" Height="40" VerticalAlignment="Center" Margin="0,0,10,0" DockPanel.Dock="Left">
+                                                <ContentControl.Style>
+                                                    <Style TargetType="ContentControl">
+                                                        <Setter Property="Visibility" Value="Visible" />
+                                                        <Style.Triggers>
+                                                            <DataTrigger Binding="{PluginSettings Plugin=GameActivity, Path=HasData, FallbackValue=False}" Value="True">
+                                                                <Setter Property="Visibility" Value="Visible" />
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </ContentControl.Style>
+                                            </ContentControl>
 
-                                                <ContentControl x:Name="SystemChecker_PluginButton" Height="40" VerticalAlignment="Center" Margin="0,0,10,0" DockPanel.Dock="Left"/>
-                                                <ContentControl x:Name="CheckLocalizations_PluginButton" Height="40" VerticalAlignment="Center" Margin="0,0,10,0" DockPanel.Dock="Left"/>
-                                                
-                                                <ContentControl x:Name="NewsViewer_PlayersInGameViewerControl"
+                                            <ContentControl x:Name="SystemChecker_PluginButton" Height="40" VerticalAlignment="Center" Margin="0,0,10,0" DockPanel.Dock="Left"/>
+                                            <ContentControl x:Name="CheckLocalizations_PluginButton" Height="40" VerticalAlignment="Center" Margin="0,0,10,0" DockPanel.Dock="Left"/>
+
+                                            <ContentControl x:Name="NewsViewer_PlayersInGameViewerControl"
                                                             DockPanel.Dock="Left" VerticalAlignment="Center">
-                                                    <ContentControl.Resources>
-                                                        <Style TargetType="Button" BasedOn="{StaticResource PlayersCountButtonStyle}">
-                                                            <Setter Property="Margin" Value="0,0,0,0" />
-                                                        </Style>
-                                                    </ContentControl.Resources>
-                                                </ContentControl>
-                                            </DockPanel>
-                                        </WrapPanel>
-                                    </StackPanel>
+                                                <ContentControl.Resources>
+                                                    <Style TargetType="Button" BasedOn="{StaticResource PlayersCountButtonStyle}">
+                                                        <Setter Property="Margin" Value="0,0,0,0" />
+                                                    </Style>
+                                                </ContentControl.Resources>
+                                            </ContentControl>
+                                        </DockPanel>
+                                    </WrapPanel>
                                 </DockPanel>
 
                                 <DockPanel MaxWidth="{DynamicResource DetailsViewDetailsMaxWidth}" Grid.Row="2" >

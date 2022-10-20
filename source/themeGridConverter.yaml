@@ -1,0 +1,5 @@
+﻿Replacements:
+- OriginalBlock: "<!--GridConverterGridPanelCloseButton-->"
+  ReplacementBlock: >
+      <Button DockPanel.Dock="Right" VerticalAlignment="Top" Content="r" FontFamily="Marlett" Style="{DynamicResource SimpleButton}" Command="{MainViewModel CloseGameSideBarCommand}" Margin="10,0,0,0" />
+Removals:
