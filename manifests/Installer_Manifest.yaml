@@ -222,3 +222,10 @@ Packages:
     PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.27/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_27.pthm
     Changelog:
       - 'Fix theme failing to load for some Playnite installs'
+  - Version: 1.28
+    RequiredApiVersion: 2.3.0
+    ReleaseDate: 2022-10-20
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.28/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_28.pthm
+    Changelog:
+      - 'DetailsView: Add support to display LibraryManagement extension Features icons'
+      - 'Fix button to close Grid View details Panel not being available when using the Details To Grid View Converter extension'
