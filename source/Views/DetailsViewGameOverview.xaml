@@ -264,13 +264,13 @@
                                                         </Style.Triggers>
                                                     </Style>
                                                 </Border.Style>
-                                                <Image Name="PART_ImageCover" Height="{Settings GameDetailsCoverHeight}" MaxWidth="300"
+                                                <Image Name="PART_ImageCover" MaxHeight="{Settings GameDetailsCoverHeight}" MaxWidth="300"
                                                        StretchDirection="Both" Stretch="Uniform"
                                                        RenderOptions.BitmapScalingMode="Fant"/>
                                             </Border>
 
                                             <ContentControl x:Name="BackgroundChanger_PluginCoverImage"
-                                                            Height="{Settings GameDetailsCoverHeight}">
+                                                            MaxHeight="{Settings GameDetailsCoverHeight}">
                                                 <ContentControl.Style>
                                                     <Style TargetType="ContentControl">
                                                         <Setter Property="Visibility" Value="Collapsed" />
