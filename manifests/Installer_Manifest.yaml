@@ -249,3 +249,9 @@ Packages:
     PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.31/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_31.pthm
     Changelog:
       - 'Fix displaying white border on bottom and top of game cover when it cannot scale to the configured cover height setting'
+  - Version: 1.32
+    RequiredApiVersion: 2.4.0
+    ReleaseDate: 2023-01-02
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.32/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_32.pthm
+    Changelog:
+      - 'Grid View: Added ThemeModifier extension option to disable zoom on hover for covers'
