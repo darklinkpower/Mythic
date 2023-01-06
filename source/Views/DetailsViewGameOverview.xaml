@@ -165,23 +165,13 @@
                                     </WrapPanel>
                                 </DockPanel>
 
-                                <DockPanel Grid.Row="2" MaxWidth="{DynamicResource DetailsViewDetailsMaxWidth}">
-                                    <DockPanel.Style>
-                                        <Style TargetType="DockPanel">
-                                            <Setter Property="Visibility" Value="Collapsed" />
-                                            <Style.Triggers>
-                                                <DataTrigger Binding="{PluginSettings Plugin=LibraryManagement, Path=EnableIntegrationFeatures, FallbackValue=False}" Value="True">
-                                                    <Setter Property="Visibility" Value="Visible" />
-                                                </DataTrigger>
-                                            </Style.Triggers>
-                                        </Style>
-                                    </DockPanel.Style>
+                                <DockPanel Grid.Row="2" MaxWidth="{DynamicResource DetailsViewDetailsMaxWidth}"
+                                           Visibility="{PluginSettings Plugin=LibraryManagement, Path=EnableIntegrationFeatures, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}">
                                     <ContentControl x:Name="LibraryManagement_PluginFeaturesIconList" Height="35" Margin="0,0,0,0"
                                                     HorizontalAlignment="Left" 
-                                                    Opacity="0.85" 
-                                                    Visibility="{PluginSettings Plugin=LibraryManagement, Path=EnableIntegrationFeatures, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                                                    Opacity="0.85" />
                                 </DockPanel>
-                                
+
                                 <DockPanel MaxWidth="{DynamicResource DetailsViewDetailsMaxWidth}" Grid.Row="3" >
                                     <StackPanel DockPanel.Dock="Right" Width="300" Margin="2,0,0,0">
                                         <StackPanel.Resources>
