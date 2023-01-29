@@ -177,6 +177,22 @@
                                            VerticalAlignment="Center"
                                            Padding="3,4,2,2" />
                             </DockPanel>
+
+                            <DockPanel x:Name="CompStatusDockPanel" Width="{Settings GridItemWidth}"
+                                       Visibility="{DynamicResource GridViewCoverCompStatusSubtitleVisibility}">
+                                <TextBlock Text="&#xEC74;" FontSize="{DynamicResource FontSizeSmall}"
+                                           FontFamily="{StaticResource FontIcoFont}"
+                                           TextAlignment="Left" VerticalAlignment="Center"
+                                           Padding="2,4,2,5" Margin="0,0,0,-2"
+                                           Foreground="{DynamicResource GridViewCoverSubtitleBrush}" />
+                                <TextBlock Text="{Binding CompletionStatus.Name, Mode=OneWay, IsAsync=True}"
+                                           Foreground="{DynamicResource GridViewCoverSubtitleBrush}"
+                                           FontSize="{DynamicResource FontSizeSmall}"
+                                           Style="{DynamicResource BaseTextBlockStyle}"                                                                   
+                                           TextAlignment="Left" TextTrimming="CharacterEllipsis"
+                                           VerticalAlignment="Center"
+                                           Padding="3,4,2,2" />
+                            </DockPanel>
                         </StackPanel>
                     </Border>
                     <ControlTemplate.Triggers>
