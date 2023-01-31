@@ -263,3 +263,10 @@ Packages:
       - 'Details View and Grid View: Added support for custom UI elements of CheckDLC extension'
       - 'DetailsView: Support to display game supported languages via CheckLocalization extension support'
       - 'Grid View: Changes to animation in game cover when game is running'
+  - Version: 1.34
+    RequiredApiVersion: 2.4.0
+    ReleaseDate: 2023-01-30
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.34/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_34.pthm
+    Changelog:
+      - 'Details View: Add separator between details list sections'
+      - 'Grid View: Add support to display games completion status. Can be enabled with ThemeModifier extension'
