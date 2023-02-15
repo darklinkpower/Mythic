@@ -270,3 +270,11 @@ Packages:
     Changelog:
       - 'Details View: Add separator between details list sections'
       - 'Grid View: Add support to display games completion status. Can be enabled with ThemeModifier extension'
+  - Version: 1.35
+    RequiredApiVersion: 2.4.0
+    ReleaseDate: 2023-02-15
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.35/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_35.pthm
+    Changelog:
+      - 'Grid View: Adjustments to darkening layer of uninstalled games'
+      - 'Grid View: Fix completion status cover icon displaying when the game does not have a Completion Status set'
+      - 'Update extension links'
