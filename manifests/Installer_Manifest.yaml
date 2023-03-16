@@ -278,3 +278,10 @@ Packages:
       - 'Grid View: Adjustments to darkening layer of uninstalled games'
       - 'Grid View: Fix completion status cover icon displaying when the game does not have a Completion Status set'
       - 'Update extension links'
+  - Version: 1.36
+    RequiredApiVersion: 2.4.0
+    ReleaseDate: 2023-03-15
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.36/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_36.pthm
+    Changelog:
+      - 'Details View and Grid View: Support to display game added date'
+      - 'Grid View: Made notes background transparent'
