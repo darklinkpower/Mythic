@@ -367,6 +367,25 @@
                                                 </Grid>
                                             </Border>
 
+                                            <Border Name="PART_ElemAdded">
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="Auto" SharedSizeGroup="Left"/>
+                                                        <ColumnDefinition Width="*" />
+                                                    </Grid.ColumnDefinitions>
+
+                                                    <Label Grid.Column="0">
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <TextBlock Text="&#xEC45;" Style="{StaticResource Icon}"
+                                                               FontFamily="{StaticResource FontIcoFont}" 
+                                                               Visibility="{DynamicResource DetailsViewDetailsIconsVisibility}" />
+                                                            <TextBlock Text="{DynamicResource LOCDateAddedLabel}" />
+                                                        </StackPanel>
+                                                    </Label>
+                                                    <TextBlock Grid.Column="1" Name="PART_TextAdded" />
+                                                </Grid>
+                                            </Border>
+                                            
                                             <Border Name="PART_ElemLibrary">
                                                 <Grid>
                                                     <Grid.ColumnDefinitions>
@@ -452,7 +471,7 @@
 
                                                     <Label Grid.Column="0">
                                                         <StackPanel Orientation="Horizontal">
-                                                            <TextBlock Text="" Style="{StaticResource Icon}"
+                                                            <TextBlock Text="&#xEC45;" Style="{StaticResource Icon}"
                                                                FontFamily="{StaticResource FontIcoFont}" 
                                                                Visibility="{DynamicResource DetailsViewDetailsIconsVisibility}" />
                                                             <TextBlock Text="{DynamicResource LOCGameReleaseDateTitle}" />
