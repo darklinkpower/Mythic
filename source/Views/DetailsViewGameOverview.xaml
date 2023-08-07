@@ -1027,6 +1027,7 @@
                                                 <TextBox Name="PART_TextNotes" IsReadOnly="True"
                                                      BorderThickness="0" Foreground="{DynamicResource DetailsDarkForegroundBrush}"
                                                      AcceptsReturn="True" TextWrapping="Wrap"
+                                                         VerticalScrollBarVisibility="Auto" MaxHeight="300"
                                                      Margin="0,15,0,5" Padding="0" Background="Transparent"/>
                                             </StackPanel>
                                             
