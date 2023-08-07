@@ -7,11 +7,14 @@
         <Setter Property="BorderBrush" Value="{DynamicResource PopupBorderBrush}" />
         <Setter Property="BorderThickness" Value="{DynamicResource PopupBorderThickness}" />
         <Setter Property="FontWeight" Value="Normal" />
+        <Setter Property="Padding" Value="{DynamicResource PopupMenuPadding}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type GameMenu}">
-                    <Border BorderBrush="{TemplateBinding BorderBrush}" CornerRadius="{DynamicResource GeneralMenuCornerRadius}"
+                    <Border BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="{DynamicResource PopupCornerRadius}"
+                            Padding="{TemplateBinding Padding}"
                             Background="{TemplateBinding Background}"
                             Grid.IsSharedSizeScope="True">
                         <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
