@@ -95,10 +95,10 @@
                                 </Grid>
 
                                 <Border Grid.Row="1" Background="{DynamicResource CoversButtonsBrush}" x:Name="BorderDarkFade" Visibility="Collapsed" />
-                                <TextBlock Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Top"
+                                <TextBlock Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Top" ClipToBounds="True"
                                             Text="&#xF000;" Foreground="{DynamicResource GlyphHighlightBrush}"
                                             Opacity="0.95" FontSize="16"
-                                            Margin="8,5,5,5"
+                                            Padding="8,5,5,5"
                                             DockPanel.Dock="Right"
                                             FontFamily="{DynamicResource FontIcoFont}"
                                             Tag="{DynamicResource GridViewLibraryGameShowFavorite}">
@@ -115,7 +115,7 @@
                                                     <Setter Property="Effect">
                                                         <Setter.Value>
                                                             <DropShadowEffect RenderingBias="Performance"
-                                                                              BlurRadius="15" ShadowDepth="0" Color="#000000" />
+                                                                              BlurRadius="8" ShadowDepth="0" Color="#000000" />
                                                         </Setter.Value>
                                                     </Setter>
                                                 </MultiDataTrigger>
