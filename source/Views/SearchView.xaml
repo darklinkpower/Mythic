@@ -218,7 +218,7 @@
                                     <Border x:Name="HoverRectangle" IsHitTestVisible="False" Visibility="Collapsed"
                                             Background="{DynamicResource HighlightGlyphBrush}" CornerRadius="{DynamicResource ControlCornerRadius}" />
                                     <Border x:Name="SelectedRectangle" IsHitTestVisible="False" Visibility="Collapsed"
-                                            Background="{DynamicResource GlyphBrush}" CornerRadius="{DynamicResource ControlCornerRadius}"/>
+                                            Background="{DynamicResource TopPanelItemHoverBackgroundBrush}" CornerRadius="{DynamicResource ControlCornerRadius}"/>
                                     <Border Padding="{TemplateBinding Padding}" Background="Transparent"
                                             BorderThickness="0,1,0,0" BorderBrush="#3b393c">
                                         <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"

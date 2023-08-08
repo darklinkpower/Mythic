@@ -101,7 +101,7 @@
         <Setter Property="Background" Value="{DynamicResource TopPanelFilterToggleBackgroundBrush}" />
         <Setter Property="Focusable" Value="False" />
         <Setter Property="Margin" Value="10,6,0,6" />
-        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource ButtonTextBrush}" />
         <Setter Property="Cursor" Value="Hand" />
         <Setter Property="Template">
             <Setter.Value>
@@ -114,6 +114,7 @@
                                        VerticalAlignment="Center" HorizontalAlignment="Center"
                                        Foreground="{TemplateBinding Foreground}"/>
                             <TextBlock Text="{DynamicResource LOCFilterActiveLabel}"
+                                       Foreground="{TemplateBinding Foreground}"
                                        Style="{DynamicResource BaseTextBlockStyle}"
                                        Margin="3,0,0,0" VerticalAlignment="Center"
                                        Name="TextFilter" />
@@ -141,7 +142,7 @@
         <Setter Property="Margin" Value="10,6,0,6" />
         <Setter Property="MinWidth" Value="35" />
         <Setter Property="WindowChrome.IsHitTestVisibleInChrome" Value="True" />
-        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource ButtonTextBrush}" />
         <Setter Property="Focusable" Value="False" />
         <Setter Property="Cursor" Value="Hand" />
         <Setter Property="Template">
@@ -156,7 +157,7 @@
                                     Margin="20,0,0,0" Background="{DynamicResource GlyphBrush}"
                                     HorizontalAlignment="Right" VerticalAlignment="Bottom">
                                 <TextBlock Text="{Api Notifications.Count}" FontSize="12"
-                                           Foreground="{DynamicResource TextBrush}"
+                                           Foreground="{DynamicResource ForegroundColorForGlyphBackg}"
                                            HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             </Border>
                         </Grid>

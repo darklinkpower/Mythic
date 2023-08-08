@@ -9,12 +9,17 @@
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="FontSize" Value="{DynamicResource FontSizeLarge}" />
         <Setter Property="Background" Value="{DynamicResource GlyphBrush}" />
-        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundColorForGlyphBackg}" />
         <Setter Property="Cursor" Value="Hand"/>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#5651e9" />
+                <Setter Property="Background" Value="{DynamicResource GlyphHighlightBrush}" />
+                <Setter Property="Foreground" Value="{DynamicResource ForegroundColorForGlyphBackg}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource GlyphBrush}" />
+            </Trigger>
+            <Trigger Property="IsFocused" Value="True">
+                <Setter Property="Background" Value="{DynamicResource GlyphHighlightBrush}" />
+                <Setter Property="Foreground" Value="{DynamicResource ForegroundColorForGlyphBackg}" />
             </Trigger>
         </Style.Triggers>
     </Style>

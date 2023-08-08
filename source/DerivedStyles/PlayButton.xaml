@@ -3,7 +3,7 @@
 
     <Style x:Key="PlayButton" TargetType="{x:Type Button}" BasedOn="{StaticResource BaseStyle}">
         <Setter Property="Background" Value="Transparent" />
-        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+        <Setter Property="Foreground" Value="#121212" />
         <Setter Property="BorderBrush" Value="{DynamicResource NormalBorderBrush}" />
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="Padding" Value="10,5,10,5" />
@@ -34,7 +34,7 @@
 
     <Style x:Key="PlayButtonViews" TargetType="{x:Type Button}">
         <Setter Property="Background" Value="Transparent" />
-        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+        <Setter Property="Foreground" Value="#121212" />
         <Setter Property="BorderBrush" Value="{DynamicResource NormalBorderBrush}" />
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="Padding" Value="10,5,10,5" />
@@ -60,14 +60,14 @@
                                             <Canvas>
                                                 <Canvas.Resources>
                                                     <Style TargetType="Path">
-                                                        <Setter Property="Stroke" Value="{DynamicResource TextBrush}"/>
+                                                        <Setter Property="Stroke" Value="#121212"/>
                                                         <Setter Property="StrokeThickness" Value="0.8"/>
                                                         <Setter Property="StrokeLineJoin" Value="Miter"/>
                                                         <Setter Property="StrokeStartLineCap" Value="Flat"/>
                                                         <Setter Property="StrokeEndLineCap" Value="Flat"/>
                                                         <Style.Triggers>
                                                             <DataTrigger Binding="{Binding IsMouseOver, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Viewbox}}}"  Value="True">
-                                                                <Setter Property="Stroke" Value="{DynamicResource TextBrush}"/>
+                                                                <Setter Property="Stroke" Value="#121212"/>
                                                             </DataTrigger>
                                                         </Style.Triggers>
                                                     </Style>
@@ -125,14 +125,8 @@
 
     <Style x:Key="PlayButtonBorderBackground" TargetType="Border">
         <Style.Resources>
-            <Color x:Key="PlayButtonBackgroundColor">#433de7</Color>
-            <Color x:Key="PlayButtonHighlightBackgroundColor">#5651e9</Color>
-            <!--<Color x:Key="PlayButtonBackgroundColor">#ffffff</Color>
-            <Color x:Key="PlayButtonHighlightBackgroundColor">#ffffff</Color>-->
-            <!--<Color x:Key="PlayButtonBackgroundColor">#ff2b30</Color>
-            <Color x:Key="PlayButtonHighlightBackgroundColor">#ff5c5f</Color>-->
-            <!--<Color x:Key="PlayButtonBackgroundColor">#ff0208</Color>
-            <Color x:Key="PlayButtonHighlightBackgroundColor">#ff2b30</Color>-->
+            <Color x:Key="PlayButtonBackgroundColor">#cfcfcf</Color>
+            <Color x:Key="PlayButtonHighlightBackgroundColor">#f5f5f5</Color>
             <SolidColorBrush x:Key="PlayButtonBackgroundBrush" Color="{StaticResource PlayButtonBackgroundColor}" />
         </Style.Resources>
         <Setter Property="Background" Value="{StaticResource PlayButtonBackgroundBrush}" />

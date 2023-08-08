@@ -30,7 +30,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type GameListItem}">
-                    <Border BorderThickness="{Settings GridItemMargin}" BorderBrush="{DynamicResource ButtonBackgroundBrush}"
+                    <Border BorderThickness="{Settings GridItemMargin}" BorderBrush="#363636"
                             Background="Transparent"
                             CornerRadius="{DynamicResource GridViewCoverCornerRadius}" >
                         <StackPanel Name="PART_PanelHost" Width="{Settings GridItemWidth}"
@@ -214,7 +214,7 @@
                         <DataTrigger Binding="{Settings ShowGridItemBackground}" Value="True">
                             <Setter Property="Padding" Value="2,5,2,5" TargetName="ShowGameName" />
                             <Setter Property="TextAlignment" Value="Center" TargetName="ShowGameName" />
-                            <Setter Property="Background" Value="{DynamicResource GlyphBrush}" TargetName="ShowGameNameBorder" />
+                            <Setter Property="Background" Value="#363636" TargetName="ShowGameNameBorder" />
                         </DataTrigger>
                         <DataTrigger Binding="{Binding IsInstalled}" Value="False">
                             <Setter Property="Content" Value="&#xef08;" TargetName="PART_ButtonPlay" />
