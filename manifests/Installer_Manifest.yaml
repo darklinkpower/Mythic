@@ -303,3 +303,9 @@ Packages:
       - 'Grid View: Library view items layout changes to improve performance. Duplicate Hider extension selector on covers removed for performance reasons.'
       - 'SearchView: Fix some items images not properly scaling'
       - 'Style changes to menus and popups.'
+  - Version: 1.39
+    RequiredApiVersion: 2.5.0
+    ReleaseDate: 2023-08-07
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.39/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_39.pthm
+    Changelog:
+      - 'Grid View: Improved visibility of favorite icon on game covers'
