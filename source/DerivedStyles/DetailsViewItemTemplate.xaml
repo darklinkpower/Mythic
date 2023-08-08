@@ -115,12 +115,13 @@
         <Setter Property="BorderThickness" Value="0,0,0,0" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Cursor" Value="Hand" />
         <Setter Property="ClipToBounds" Value="False"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate>
                     <Grid>
-                        <Border x:Name="IconBackground" CornerRadius="8" Background="{DynamicResource OpaqueHighlightBrush}" Opacity="1" Visibility="Hidden">
+                        <Border x:Name="IconBackground" CornerRadius="8" Background="{DynamicResource GlyphBrush}" Opacity="1" Visibility="Hidden">
                         </Border>
                         <StackPanel Orientation="Horizontal" Opacity="{Binding Game.IsInstalled, Converter={StaticResource OpacityBoolConverter}}">
                             <Image Source="{Binding Icon}" RenderOptions.BitmapScalingMode="Fant" Margin="3"/>
