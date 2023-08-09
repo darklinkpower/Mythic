@@ -136,6 +136,14 @@
                                         </Border>
 
                                         <DockPanel Margin="0,0,0,0">
+
+                                            <ContentControl x:Name="DuplicateHider_SourceSelector"
+                                                            DockPanel.Dock="Left" VerticalAlignment="Center"
+                                                            VerticalContentAlignment="Center"   
+                                                            Margin="0,0,10,0"  
+                                                            Height="24"
+                                                            RenderOptions.BitmapScalingMode="Fant" />
+                                            
                                             <ContentControl x:Name="PlayState_GameStateSwitchControl" Height="40" Margin="0,0,10,0"
                                                             Visibility="{PluginSettings Plugin=PlayState, Path=IsControlVisible, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}" />
                                             <ContentControl x:Name="ScreenshotsVisualizer_PluginButton" Margin="0,0,10,0"
@@ -157,9 +165,7 @@
                                             <ContentControl x:Name="NewsViewer_PlayersInGameViewerControl"
                                                             DockPanel.Dock="Left" VerticalAlignment="Center">
                                                 <ContentControl.Resources>
-                                                    <Style TargetType="Button" BasedOn="{StaticResource PlayersCountButtonStyle}">
-                                                        <Setter Property="Margin" Value="0,0,0,0" />
-                                                    </Style>
+                                                    <Style TargetType="Button" BasedOn="{StaticResource PlayersCountButtonStyle}" />
                                                 </ContentControl.Resources>
                                             </ContentControl>
                                         </DockPanel>

@@ -108,7 +108,7 @@
                                                     <Setter Property="Effect">
                                                         <Setter.Value>
                                                             <DropShadowEffect RenderingBias="Performance"
-                                                                              BlurRadius="8" ShadowDepth="0" Color="#000000" />
+                                                                              BlurRadius="6" ShadowDepth="0" Color="#000000" />
                                                         </Setter.Value>
                                                     </Setter>
                                                 </MultiDataTrigger>
