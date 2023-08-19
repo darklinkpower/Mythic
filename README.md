@@ -50,6 +50,24 @@ The theme provides extensive support for a wide range of available Playnite exte
 ...and more...
 
 ## Screenshots
+
+<details>
+<summary>Settings used in screenshots (Click to expand)</summary>
+
+
+![Screenshot](https://raw.githubusercontent.com/darklinkpower/Mythic/master/screenshots/settings_01.jpg)
+
+![Screenshot](https://raw.githubusercontent.com/darklinkpower/Mythic/master/screenshots/settings_02.jpg)
+
+![Screenshot](https://raw.githubusercontent.com/darklinkpower/Mythic/master/screenshots/settings_03.jpg)
+
+![Screenshot](https://raw.githubusercontent.com/darklinkpower/Mythic/master/screenshots/settings_04.jpg)
+
+![Screenshot](https://raw.githubusercontent.com/darklinkpower/Mythic/master/screenshots/settings_05.jpg)
+
+![Screenshot](https://raw.githubusercontent.com/darklinkpower/Mythic/master/screenshots/settings_06.jpg)
+</details>
+
 ![Screenshot](https://raw.githubusercontent.com/darklinkpower/Mythic/master/screenshots/screenshot_01.webp)
 
 ![Screenshot](https://raw.githubusercontent.com/darklinkpower/Mythic/master/screenshots/screenshot_02.webp)
