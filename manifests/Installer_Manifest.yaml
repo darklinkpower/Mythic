@@ -317,3 +317,10 @@ Packages:
       - 'Details View: Added DuplicateHider extension selector to game details'
       - 'Grid View: Improved performance when covers dropshadows are enabled'
       - 'Grid View: Fix covers rounded corners not applying when dropshadow effect is also enabled'
+  - Version: 1.41
+    RequiredApiVersion: 2.5.0
+    ReleaseDate: 2023-08-18
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.41/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_41.pthm
+    Changelog:
+      - 'Grid View: Make game name text Semibold and remove Dropshadow effect'
+      - 'TopPanel: Adjustment to items padding'
