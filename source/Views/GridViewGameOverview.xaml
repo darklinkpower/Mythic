@@ -103,12 +103,8 @@
                                             </Style>
                                         </Border.Style>
                                         <TextBlock Name="PART_TextDisplayName" FontSize="{DynamicResource FontSizeLarger}"
-                                                   TextWrapping="Wrap" 
-                                                   VerticalAlignment="Center" Foreground="{DynamicResource TextBrush}">
-                                            <TextBlock.Effect>
-                                                <DropShadowEffect ShadowDepth="3"/>
-                                            </TextBlock.Effect>
-                                        </TextBlock>
+                                                   TextWrapping="Wrap" FontWeight="SemiBold"
+                                                   VerticalAlignment="Center" Foreground="{DynamicResource TextBrush}" />
                                     </Border>
                                     
                                 </DockPanel>
