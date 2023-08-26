@@ -90,7 +90,7 @@
     <Color x:Key="GlyphColorSecondary">#2f3543</Color>
     <Color x:Key="DataChangeNotifColor">#ffa500</Color>
     <!---->
-    <Color x:Key="HighlightGlyphColor">#373538</Color>
+    <Color x:Key="HighlightGlyphColor">#29f9f9f9</Color>
     <Color x:Key="PopupBackgroundColor">#202020</Color>
     <Color x:Key="PopupBorderColor">#2b2b2b</Color>
     <Color x:Key="BackgroundToneColor">#262c38</Color>
@@ -125,12 +125,12 @@
 
     <Color x:Key="TitleWindowStateHoverColor">#54b2de</Color>
     <Color x:Key="TitleWindowCloseHoverColor">#e62e4c</Color>
-    <Color x:Key="ControlsBackgroundColor">#e6282828</Color>
+    <Color x:Key="ControlsBackgroundColor">#0Ffbfbfb</Color>
 
-    <Color x:Key="TopPanelItemBackgroundColor">#e6282828</Color>
+    <Color x:Key="TopPanelItemBackgroundColor">#14f3f3f3</Color>
     <Color x:Key="TopPanelItemHoverBackgroundColor">#e0646464</Color>
-    <Color x:Key="TopPanelSearchBoxBackgroundColor">#e6282828</Color>
-    <Color x:Key="TopPanelFilterToggleBackgroundColor">#e6282828</Color>
+    <Color x:Key="TopPanelSearchBoxBackgroundColor">#14f3f3f3</Color>
+    <Color x:Key="TopPanelFilterToggleBackgroundColor">#14f3f3f3</Color>
 
     <SolidColorBrush x:Key="TopPanelItemBackgroundBrush" Color="{DynamicResource TopPanelItemBackgroundColor}" />
     <SolidColorBrush x:Key="TopPanelItemHoverBackgroundBrush" Color="{DynamicResource TopPanelItemHoverBackgroundColor}" />
@@ -162,7 +162,7 @@
     <SolidColorBrush x:Key="MainPanelBackgroundBrush" Color="{DynamicResource MainColor}" />
     <SolidColorBrush x:Key="CheckBoxCheckMarkBkBrush" Color="{DynamicResource ControlBackgroundColorDark}" />
     <SolidColorBrush x:Key="DataChangeNotifBrush" Color="{DynamicResource DataChangeNotifColor}" />
-    <SolidColorBrush x:Key="CheckboxBorderBrush" Color="{DynamicResource StandardWindowBackgroundColor}" />
+    <SolidColorBrush x:Key="CheckboxBorderBrush" Color="#14121212" />
     
     <SolidColorBrush x:Key="NormalBorderBrushControls" Color="{DynamicResource NormalBorderControlsColor}" />
     <SolidColorBrush x:Key="NormalBorderBrushControlsHover" Color="{DynamicResource NormalBorderControlsHoverColor}" />
@@ -261,7 +261,7 @@
     <Color x:Key="GlyphBrushAlternativeColor">#ff0000</Color>
     <SolidColorBrush x:Key="GlyphBrushAlternativeBrush" Color="{DynamicResource GlyphBrushAlternativeColor}" />
 
-    <SolidColorBrush x:Key="DetailsPanelFillBackgroundBrush" Color="#e6282828" />
+    <SolidColorBrush x:Key="DetailsPanelFillBackgroundBrush" Color="#0Ffbfbfb" />
     <SolidColorBrush x:Key="DetailsPanelFillIconBackgroundBrush" Color="#a0a0a0" />
     <Color x:Key="DetailsDarkForegroundColor">#939393</Color>
     <SolidColorBrush x:Key="DetailsDarkForegroundBrush" Color="{DynamicResource DetailsDarkForegroundColor}" />
@@ -276,10 +276,7 @@
 
     <SolidColorBrush x:Key="DetailsViewLibraryHoverBackgroundBrush" Color="#e0646464" />
 
-    <LinearGradientBrush x:Key="DetailsViewLibrarySelectedBackgroundBrush" StartPoint="0.0,0.5" EndPoint="1.0,0.5">
-        <GradientStop Color="#373737" Offset="0.4" />
-        <GradientStop Color="#373737" Offset="0.95" />
-    </LinearGradientBrush>
+    <SolidColorBrush x:Key="DetailsViewLibrarySelectedBackgroundBrush" Color="#29f9f9f9" />
 
     <SolidColorBrush x:Key="MenusSeparatorBrush" Color="#373737" />
     <SolidColorBrush x:Key="MenusHoverBackgroundBrush" Color="#0066da" />
