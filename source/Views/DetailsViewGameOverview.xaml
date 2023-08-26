@@ -187,7 +187,7 @@
                                 </DockPanel>
                                 
                                 <DockPanel MaxWidth="{DynamicResource DetailsViewDetailsMaxWidth}" Grid.Row="4" >
-                                    <StackPanel DockPanel.Dock="Right" Width="300" Margin="2,0,0,0">
+                                    <StackPanel DockPanel.Dock="Right" Width="300" Margin="2,67,0,0">
                                         <StackPanel.Resources>
                                             <Style TargetType="ItemsControl">
                                                 <Setter Property="VerticalAlignment" Value="Center" />
@@ -700,7 +700,7 @@
                                         <!--#regionend-->
                                     </StackPanel>
                                     <StackPanel Margin="0,0,25,0">
-                                        <TabControl Margin="0,0,0,0" Style="{StaticResource TabControlDetailsView}">
+                                        <TabControl x:Name="TabControl" Margin="0,0,0,0" Style="{StaticResource TabControlDetailsView}">
                                             <TabItem x:Name="TabVideo">
                                                 <TabItem.Header>
                                                     <TextBlock Text="{DynamicResource LOCExtra_Metadata_Loader_VideoLabel}"
