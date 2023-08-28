@@ -324,3 +324,11 @@ Packages:
     Changelog:
       - 'Grid View: Make game name text Semibold and remove Dropshadow effect'
       - 'TopPanel: Adjustment to items padding'
+  - Version: 1.42
+    RequiredApiVersion: 2.5.0
+    ReleaseDate: 2023-08-28
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.42/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_42.pthm
+    Changelog:
+      - 'Details View: Add margin above panel containing cover, logo and details'
+      - 'General adjustments to controls colors and opacity'
+      - 'Grid View: Increased opacity of uninstalled game dark border'
