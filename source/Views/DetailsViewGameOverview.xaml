@@ -128,11 +128,7 @@
                                             </Border.Style>
                                             <TextBlock FontFamily="{DynamicResource FontFamily}" Name="PART_TextDisplayName"
                                                        FontSize="{DynamicResource FontSizeLargest}" Margin="0,0,30,0" 
-                                                       TextWrapping="Wrap" VerticalAlignment="Center" Foreground="{DynamicResource TextBrush}">
-                                                <TextBlock.Effect>
-                                                    <DropShadowEffect ShadowDepth="1" RenderingBias="Quality" />
-                                                </TextBlock.Effect>
-                                            </TextBlock>
+                                                       TextWrapping="Wrap" VerticalAlignment="Center" Foreground="{DynamicResource TextBrush}" />
                                         </Border>
 
                                         <DockPanel Margin="0,0,0,0">
