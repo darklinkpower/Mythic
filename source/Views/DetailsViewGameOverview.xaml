@@ -700,7 +700,8 @@
                                         <!--#regionend-->
                                     </StackPanel>
                                     <StackPanel Margin="0,0,25,0">
-                                        <TabControl x:Name="TabControl" Margin="0,0,0,0" Style="{StaticResource TabControlDetailsView}">
+                                        <TabControl x:Name="TabControl" Margin="0,0,0,0" Style="{StaticResource TabControlDetailsView}"
+                                                    Focusable="False">
                                             <TabItem x:Name="TabVideo">
                                                 <TabItem.Header>
                                                     <TextBlock Text="{DynamicResource LOCExtra_Metadata_Loader_VideoLabel}"
