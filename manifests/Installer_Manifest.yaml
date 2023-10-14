@@ -343,3 +343,9 @@ Packages:
       - 'Details View: Remove dropshadow effect from game name'
       - 'Grid View: Enable cover hover shine animation by default'
       - 'ListBox and Explorer Panel: Trim text if it does not fit in available width'
+  - Version: 1.44
+    RequiredApiVersion: 2.5.0
+    ReleaseDate: 2023-10-14
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.44/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_44.pthm
+    Changelog:
+      - 'Details View: Increase maximum value for Details View width option in ThemeModifier extension'
