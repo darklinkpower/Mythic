@@ -349,3 +349,12 @@ Packages:
     PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.44/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_44.pthm
     Changelog:
       - 'Details View: Increase maximum value for Details View width option in ThemeModifier extension'
+  - Version: 1.45
+    RequiredApiVersion: 2.5.0
+    ReleaseDate: 2023-10-30
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.45/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_45.pthm
+    Changelog:
+      - 'Added: Legendary library plugin banner'
+      - 'Improved: performance when rounded corners are enabled'
+      - 'Improved: Tray icon rendering quality'
+      - 'Changed: Make unfavorite icon in game menu yellow'
