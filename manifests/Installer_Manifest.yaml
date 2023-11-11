@@ -358,3 +358,10 @@ Packages:
       - 'Improved: performance when rounded corners are enabled'
       - 'Improved: Tray icon rendering quality'
       - 'Changed: Make unfavorite icon in game menu yellow'
+  - Version: 1.46
+    RequiredApiVersion: 2.5.0
+    ReleaseDate: 2023-11-10
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.46/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_46.pthm
+    Changelog:
+      - 'Added: Support for Game Relations extension'
+      - 'Details View: Use rounded corners for Extra Metadata Loader video control'
