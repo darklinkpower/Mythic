@@ -1,4 +1,6 @@
 Constants:
+    - "Top Panel"
+    - ShowNavigationButtons: 'Show navigation buttons'
     - "Library"
     - LibraryUseNoiseOpacityLayer: 'Use noise opacity layer'
     - "Top Panel"
