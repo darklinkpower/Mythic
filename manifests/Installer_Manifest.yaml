@@ -365,3 +365,12 @@ Packages:
     Changelog:
       - 'Added: Support for Game Relations extension'
       - 'Details View: Use rounded corners for Extra Metadata Loader video control'
+  - Version: 1.47
+    RequiredApiVersion: 2.5.0
+    ReleaseDate: 2024-03-14
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.47/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_47.pthm
+    Changelog:
+      - 'Added: Button to toggle favorite status in game details when using the ThemeExtras extension.'
+      - 'Added: Dropdown menu in game details to change the completion status when using the ThemeExtras extension.'
+      - 'Added: Display website icons next to links on game details when using the ThemeExtras extension.'
+      - 'Added: Navigation buttons in TopPanel when using the ThemeExtras extension. Can be disabled with ThemeModifier extension.'
