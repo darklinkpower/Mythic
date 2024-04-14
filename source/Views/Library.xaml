@@ -5,6 +5,7 @@
                     mc:Ignorable="d">
 
     <Style TargetType="{x:Type Library}">
+        <Setter Property="Tag" Value="Library" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Library}">
@@ -18,9 +19,13 @@
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
                         <FadeImage x:Name="PART_ImageBackground"
+                                   ImageDarkeningBrush="#666666"
                                    Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"
                                    HorizontalAlignment="Center" VerticalAlignment="Top" />
 
+                        <Border Grid.RowSpan="2" Visibility="{Binding ElementName=NoiseBorder, Path=Visibility}"
+                                Background="{DynamicResource FadeBrushImage}" />
+                        
                         <Border x:Name="NoiseBorder" Grid.RowSpan="2" Grid.ColumnSpan="2"
                                 Tag="{DynamicResource LibraryUseNoiseOpacityLayer}"
                                 Background="{StaticResource DarkNoiseBrush}" IsHitTestVisible="False">
@@ -29,10 +34,10 @@
                                     <Setter Property="Visibility" Value="Visible" />
                                     <Setter Property="OpacityMask">
                                         <Setter.Value>
-                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1.0">
+                                            <LinearGradientBrush StartPoint="0,0" EndPoint="1.0,0">
                                                 <LinearGradientBrush.GradientStops>
-                                                    <GradientStop Color="#80FFFFFF" Offset="0.2"/>
-                                                    <GradientStop Color="#F2FFFFFF" Offset="0.8"/>
+                                                    <GradientStop Color="#BFFFFFFF" Offset="0.2"/>
+                                                    <GradientStop Color="#A6FFFFFF" Offset="0.50"/>
                                                 </LinearGradientBrush.GradientStops>
                                             </LinearGradientBrush>
                                         </Setter.Value>
@@ -49,24 +54,45 @@
                             </Border.Style>
                         </Border>
                         
-                        <TopPanel DockPanel.Dock="Top" Grid.Row="0" />
-                        
-                        <DockPanel Grid.Row="1">
-                            <FilterPanel x:Name="PART_FilterPanel"
+                        <DockPanel Grid.RowSpan="2">
+                            <DockPanel.Style>
+                                <Style TargetType="DockPanel">
+                                    <Setter Property="Margin" Value="60,0,0,0" />
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Settings SidebarPosition}" Value="Right">
+                                            <Setter Property="Margin" Value="0,0,60,0" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Settings SidebarPosition}" Value="Top">
+                                            <Setter Property="Margin" Value="0,60,0,0" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Settings SidebarPosition}" Value="Bottom">
+                                            <Setter Property="Margin" Value="0,0,0,60" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Settings ShowSidebar}" Value="False">
+                                            <Setter Property="Margin" Value="0,0,0,0" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </DockPanel.Style>
+                            <TopPanel DockPanel.Dock="Top" />
+                            <DockPanel DockPanel.Dock="Top" >
+                                <FilterPanel x:Name="PART_FilterPanel"
                                          DockPanel.Dock="{Settings FilterPanelPosition}"
                                          Width="{Settings FilterPanelWitdh}"
                                          Visibility="{Settings FilterPanelVisible}"/>
 
-                            <ExplorerPanel Visibility="{Settings ExplorerPanelVisible}"
+                                <ExplorerPanel Visibility="{Settings ExplorerPanelVisible}"
                                            DockPanel.Dock="{Settings ExplorerPanelPosition}"
                                            Width="{Settings ExplorerPanelWitdh}"/>
-                            
-                            <Grid DockPanel.Dock="Left">                                
-                                <LibraryDetailsView x:Name="PART_ViewDetails" />
-                                <LibraryGridView x:Name="PART_ViewGrid" />
-                                <LibraryListView x:Name="PART_ViewList" />
-                            </Grid>
+
+                                <Grid DockPanel.Dock="Left">
+                                    <LibraryDetailsView x:Name="PART_ViewDetails" />
+                                    <LibraryGridView x:Name="PART_ViewGrid" />
+                                    <LibraryListView x:Name="PART_ViewList" />
+                                </Grid>
+                            </DockPanel>
                         </DockPanel>
+                        
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

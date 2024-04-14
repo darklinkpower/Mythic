@@ -35,13 +35,41 @@
                                     </ThicknessAnimationUsingKeyFrames>
                                 </Storyboard>
                             </Grid.Resources>
+
+                            <Grid>
+                                <Border>
+                                    <Border.Style>
+                                        <Style TargetType="Border">
+                                            <Setter Property="Margin" Value="60,0,0,0" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Settings SidebarPosition}" Value="Right">
+                                                    <Setter Property="Margin" Value="0,0,60,0" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Settings SidebarPosition}" Value="Top">
+                                                    <Setter Property="Margin" Value="0,60,0,0" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Settings SidebarPosition}" Value="Bottom">
+                                                    <Setter Property="Margin" Value="0,0,0,60" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Settings ShowSidebar}" Value="False">
+                                                    <Setter Property="Margin" Value="0,0,0,0" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding ElementName=PART_ContentView, Path=DataContext.ActiveView.Tag, TargetNullValue='', FallbackValue=''}" Value="Library">
+                                                    <Setter Property="Margin" Value="0" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Border.Style>
+
+                                    <ContentControl Name="PART_ContentView" />
+                                </Border>
+                                <DockPanel>
+                                    <Sidebar x:Name="PART_Sidebar" Panel.ZIndex="999"
+                                         DockPanel.Dock="{Settings SidebarPosition}" />
+
+                                </DockPanel>
+                            </Grid>
                             
-                            <DockPanel>
-                                <Sidebar x:Name="PART_Sidebar" Panel.ZIndex="999"
-                                         DockPanel.Dock="{Settings SidebarPosition}" />                             
-                                <ContentControl Name="PART_ContentView"
-                                                DockPanel.Dock="Top" />
-                            </DockPanel>                            
                             <NotificationPanel x:Name="PART_Notifications"  
                                                WindowChrome.IsHitTestVisibleInChrome="True"
                                                Width="260"

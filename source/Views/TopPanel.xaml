@@ -181,7 +181,7 @@
                 <ControlTemplate TargetType="{x:Type TopPanel}">
                     <Border Height="58" BorderBrush="{DynamicResource PanelSeparatorBrush}"
                             Background="{TemplateBinding Background}"
-                            d:DesignWidth="1280" Margin="0,10,0,10"
+                            d:DesignWidth="1280" Margin="0,20,0,20"
                             d:DataContext="{x:Static DesignMainViewModel.DesignIntance}">
                         <Border.Style>
                             <Style TargetType="Border">

@@ -129,8 +129,8 @@
     <Color x:Key="TitleWindowCloseHoverColor">#e62e4c</Color>
     <Color x:Key="ControlsBackgroundColor">#0Ffbfbfb</Color>
 
-    <Color x:Key="TopPanelItemBackgroundColor">#14f3f3f3</Color>
-    <Color x:Key="TopPanelItemHoverBackgroundColor">#e0646464</Color>
+    <Color x:Key="TopPanelItemBackgroundColor">Transparent</Color>
+    <Color x:Key="TopPanelItemHoverBackgroundColor">#14f3f3f3</Color>
     <Color x:Key="TopPanelSearchBoxBackgroundColor">#14f3f3f3</Color>
     <Color x:Key="TopPanelFilterToggleBackgroundColor">#14f3f3f3</Color>
 
@@ -290,5 +290,4 @@
     <ImageBrush x:Key="WhiteNoiseBrush" ImageSource="{ThemeFile 'Images/white_noise.png'}" TileMode="Tile" Viewport="0,0,100,100" ViewportUnits="Absolute"
                     Opacity="1.0" popt:Freeze="True"/>
     <BitmapImage x:Key="InnerGlowBitmap" UriSource="{ThemeFile 'Images/innerglow.png'}" popt:Freeze="True" CacheOption="OnLoad" />
-    
 </ResourceDictionary>
