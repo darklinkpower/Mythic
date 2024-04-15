@@ -381,3 +381,11 @@ Packages:
     Changelog:
       - 'Changed: Added rounded corners to EML video player'
       - 'Changed: Changed default cover image aspect ratio to 2:3'
+  - Version: 1.49
+    RequiredApiVersion: 2.5.0
+    ReleaseDate: 2024-04-14
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.49/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_49.pthm
+    Changelog:
+      - 'Changed: background and text colors of items in Sidebar and Top panel.'
+      - 'Changed: Increased padding to Sidebar and Top panel.'
+      - 'Changed: Game background image will now display behind the sidebar, using all the window area.'
