@@ -818,6 +818,16 @@
                                                     
                                                 </StackPanel>
                                             </TabItem>
+
+                                            <TabItem Visibility="{PluginSettings Plugin=VNDBNexus, Path=IsControlVisible, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                                <TabItem.Header>
+                                                    <TextBlock Text="VNDB"
+                                                               FontSize="{DynamicResource FontSizeLarger}" />
+                                                </TabItem.Header>
+                                                <StackPanel Orientation="Vertical" Background="{TemplateBinding Background}" Margin="0,15,0,0">
+                                                    <ContentControl x:Name="VNDBNexus_VndbVisualNovelViewControl" />
+                                                </StackPanel>
+                                            </TabItem>
                                             
                                             <!--region SuccessStory-->
                                             <TabItem Visibility="{PluginSettings Plugin=SuccessStory, Path=HasData, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}">
