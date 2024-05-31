@@ -757,6 +757,16 @@
                                                 </Grid>
                                             </TabItem>
 
+                                            <TabItem Visibility="{PluginSettings Plugin=SteamScreenshots, Path=IsControlVisible, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                                <TabItem.Header>
+                                                    <TextBlock Text="{DynamicResource LOC_SteamScreenshots_SteamScreenshotsLabel}"
+                                                               FontSize="{DynamicResource FontSizeLarger}" />
+                                                </TabItem.Header>
+                                                <StackPanel Orientation="Vertical" Background="{TemplateBinding Background}" Margin="0,15,0,0">
+                                                    <ContentControl x:Name="SteamScreenshots_SteamScreenshotsViewControl" />
+                                                </StackPanel>
+                                            </TabItem>
+                                            
                                             <TabItem Visibility="{Binding ElementName=GameRelationsVisibilityProxy, Path=Tag}">
                                                 <TabItem.Header>
                                                     <TextBlock Text="{DynamicResource LOCGameRelations_RelatedGamesLabel}"
