@@ -396,3 +396,9 @@ Packages:
     Changelog:
       - 'Added: support for panel of VNDB Nexus extension. Note: if there is overlap of extension sections, reset the order with the ThemeModifier extension options.'
       - 'Changed: Made progress bar of items in the sidebar smaller'
+  - Version: 1.51
+    RequiredApiVersion: 2.5.0
+    ReleaseDate: 2024-05-31
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.51/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_51.pthm
+    Changelog:
+      - 'Added: Support for Steam Screenshots extension'
