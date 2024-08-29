@@ -128,6 +128,7 @@
                                             </Border.Style>
                                             <TextBlock FontFamily="{DynamicResource FontFamily}" Name="PART_TextDisplayName"
                                                        FontSize="{DynamicResource FontSizeLargest}" Margin="0,0,30,0" 
+                                                       FontWeight="Medium"
                                                        TextWrapping="Wrap" VerticalAlignment="Center" Foreground="{DynamicResource TextBrush}" />
                                         </Border>
 
@@ -181,13 +182,13 @@
 
                                 <DockPanel Grid.Row="3" MaxWidth="{DynamicResource DetailsViewDetailsMaxWidth}"
                                            Visibility="{PluginSettings Plugin=CheckLocalizations, Path=EnableIntegrationFlags, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}">
-                                    <ContentControl x:Name="CheckLocalizations_PluginFlags" Height="30" Margin="8,0,0,0"
+                                    <ContentControl x:Name="CheckLocalizations_PluginFlags" Height="20" Margin="8,0,0,0"
                                                     HorizontalAlignment="Left" 
                                                     Opacity="0.85" />
                                 </DockPanel>
                                 
                                 <DockPanel MaxWidth="{DynamicResource DetailsViewDetailsMaxWidth}" Grid.Row="4" >
-                                    <StackPanel DockPanel.Dock="Right" Width="300" Margin="2,67,0,0">
+                                    <StackPanel DockPanel.Dock="Right" Width="{DynamicResource DetailsViewDetailsColumnWidth}" Margin="2,67,0,0">
                                         <StackPanel.Resources>
                                             <Style TargetType="ItemsControl">
                                                 <Setter Property="VerticalAlignment" Value="Center" />
@@ -233,7 +234,7 @@
                                                         </Style.Triggers>
                                                     </Style>
                                                 </Border.Style>
-                                                <Image Name="PART_ImageCover" MaxHeight="{Settings GameDetailsCoverHeight}" MaxWidth="300"
+                                                <Image Name="PART_ImageCover" MaxHeight="{Settings GameDetailsCoverHeight}" MaxWidth="{DynamicResource DetailsViewDetailsColumnWidth}"
                                                        StretchDirection="Both" Stretch="Uniform"
                                                        RenderOptions.BitmapScalingMode="Fant"/>
                                             </Border>
@@ -273,7 +274,7 @@
                                                 Margin="0,20,0,0"
                                                 Height="50" VerticalAlignment="Stretch"
                                                 Name="PART_ButtonContextAction" Style="{DynamicResource ContextButtonViews}" />
-                                        <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Margin="0,10,0,10">
+                                        <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Width="{DynamicResource DetailsViewDetailsColumnWidth}" Margin="0,10,0,10">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="*" />
                                                 <ColumnDefinition Width="*" />
@@ -715,8 +716,8 @@
                                         </StackPanel>
                                         <!--#regionend-->
                                     </StackPanel>
-                                    <StackPanel Margin="0,0,25,0">
-                                        <TabControl x:Name="TabControl" Margin="0,0,0,0" Style="{StaticResource TabControlDetailsView}"
+                                    <StackPanel Margin="0,0,60,0">
+                                        <TabControl x:Name="TabControl" Margin="0,25,0,0" Style="{StaticResource TabControlDetailsView}"
                                                     Focusable="False">
                                             <TabItem x:Name="TabVideo">
                                                 <TabItem.Header>
@@ -923,9 +924,9 @@
                                             <!--endregion-->
                                         </TabControl>
 
-                                        <StackPanel Margin="0,25,0,0">
+                                        <StackPanel Margin="0,0,0,0">
 
-                                            <Grid>
+                                            <Grid Margin="0,40,0,0">
                                                 <Border Background="{DynamicResource DetailsPanelFillBackgroundBrush}" CornerRadius="6" />
                                                 <WrapPanel Margin="10">
                                                     <WrapPanel.Resources>
@@ -1078,7 +1079,7 @@
                                                 </WrapPanel>
                                             </Grid>
 
-                                            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,20,0,0">
+                                            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,40,0,0">
                                                 <Grid.ColumnDefinitions>
                                                     <ColumnDefinition Width="*" />
                                                     <ColumnDefinition Width="*" />
@@ -1163,7 +1164,7 @@
                                                 </DockPanel>
                                             </Grid>
 
-                                            <StackPanel Margin="0,20,0,0">
+                                            <StackPanel Margin="0,40,0,0">
                                                 <StackPanel.Style>
                                                     <Style TargetType="StackPanel">
                                                         <Setter Property="Visibility" Value="Collapsed" />
@@ -1193,7 +1194,7 @@
 
                                             </StackPanel>
                                             
-                                            <StackPanel Name="PART_ElemDescription" Margin="0,20,0,0">
+                                            <StackPanel Name="PART_ElemDescription" Margin="0,40,0,0">
                                                 <TextBlock Text="{DynamicResource LOCGameDescriptionTitle}" 
                                                        Foreground="{DynamicResource TextBrush}"
                                                        FontWeight="Bold" Style="{DynamicResource BaseTextBlockStyle}" 
