@@ -48,12 +48,11 @@
 
     <Style TargetType="{x:Type Button}" x:Key="PlayersCountButtonStyle">
         <Setter Property="Background" Value="{DynamicResource DetailsViewGrouCountBackgroundBrush}"/>
-        <Setter Property="Foreground" Value="#D9000000"/>
+        <Setter Property="Foreground" Value="{DynamicResource TextBrush}"/>
         <Setter Property="BorderBrush" Value="Transparent"/>
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="FontSize" Value="12" />
         <Setter Property="FontFamily" Value="{DynamicResource FontFamily}" />
-        <Setter Property="FontWeight" Value="SemiBold" />
         <Setter Property="Cursor" Value="Hand" />
         <Setter Property="Padding" Value="7,2,7,2" />
         <Setter Property="VerticalAlignment" Value="Center" />

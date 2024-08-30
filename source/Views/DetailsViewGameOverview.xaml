@@ -1105,7 +1105,7 @@
 
                                                         <Label Content="{DynamicResource LOCGenreLabel}"
                                                                Foreground="{DynamicResource DetailsDarkForegroundBrush}" />
-                                                        <Grid Margin="0,0,0,10">
+                                                        <Grid Margin="0,10,0,10">
                                                             <ItemsControl ItemsSource="{Binding Game.Genres}" Margin="0,3,0,3">
                                                                 <ItemsControl.ItemsPanel>
                                                                     <ItemsPanelTemplate>
@@ -1144,7 +1144,7 @@
 
                                                         <Label Content="{DynamicResource LOCFeatureLabel}"
                                                                Foreground="{DynamicResource DetailsDarkForegroundBrush}" />
-                                                        <Grid Margin="0,0,0,10">
+                                                        <Grid Margin="0,10,0,10">
                                                             <ItemsControl ItemsSource="{Binding Game.Features}" Margin="0,3,0,3">
                                                                 <ItemsControl.ItemsPanel>
                                                                     <ItemsPanelTemplate>

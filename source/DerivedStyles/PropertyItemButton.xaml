@@ -48,41 +48,37 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
+
     <Style x:Key="PropertyItemFeedPanelButton" TargetType="Button">
         <Setter Property="FontSize" Value="{DynamicResource FontSize}" />
-        <Setter Property="Margin" Value="0,4,10,4" />
-        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Margin" Value="0,2,4,2" />
+        <Setter Property="Padding" Value="8,4,8,4" />
+        <Setter Property="Background" Value="{DynamicResource ButtonBackgroundBrush}" />
         <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
-                    <TextBlock FontSize="{TemplateBinding FontSize}" FontWeight="Medium"
-                               Foreground="{TemplateBinding Foreground}"
-                               Text="{TemplateBinding Content, Converter={StaticResource ObjectToStringConverter}}"
-                               TextWrapping="NoWrap" Style="{DynamicResource HoverNoUnderlineStyle}"/>
-                    <ControlTemplate.Triggers>
-                        <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsMouseOver}" Value="True" >
-
-                        </DataTrigger>
-                    </ControlTemplate.Triggers>
+                    <Grid Margin="{TemplateBinding Margin}">
+                        <Border Name="BorderMouseOver" Background="{TemplateBinding Background}"
+                                CornerRadius="{DynamicResource ControlCornerRadius}"
+                                Padding="{TemplateBinding Padding}">
+                            <TextBlock FontSize="{TemplateBinding FontSize}" 
+                                   VerticalAlignment="Center"
+                                   Foreground="{TemplateBinding Foreground}"
+                                   Text="{TemplateBinding Content, Converter={StaticResource ObjectToStringConverter}}"
+                                   TextWrapping="NoWrap"/>
+                        </Border>
+                    </Grid>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter Property="Cursor" Value="Hand" />
+                <Setter Property="Background" Value="{DynamicResource ControlHoverBackgroundBrush}" />
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
-            </Trigger>
-        </Style.Triggers>
-    </Style>
-
-    <Style TargetType="TextBlock" x:Key="HoverNoUnderlineStyle">
-        <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="False">
-                <Setter Property="TextBlock.TextDecorations" Value="Underline" />
             </Trigger>
         </Style.Triggers>
     </Style>
