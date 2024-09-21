@@ -402,3 +402,13 @@ Packages:
     PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.51/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_51.pthm
     Changelog:
       - 'Added: Support for Steam Screenshots extension'
+  - Version: 1.52
+    RequiredApiVersion: 2.5.0
+    ReleaseDate: 2024-09-21
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.52/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_52.pthm
+    Changelog:
+      - 'Change the default value in some theme options'
+      - 'Details View: Minor adjustments to margins'
+      - 'Details View: Minor style changes to players count and genres item styling'
+      - 'Fixed: HLTB rows showing even if they have no data after its latest update'
+      - 'Reorder ThemeModifier extension sections'
