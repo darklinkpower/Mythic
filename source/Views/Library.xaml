@@ -72,7 +72,7 @@
                                         </Setter.Value>
                                     </Setter>
                                     <Style.Triggers>
-                                        <DataTrigger Binding="{Binding ElementName=PART_ImageBackground, Path=ActualHeight}" Value="0">
+                                        <DataTrigger Binding="{Binding ElementName=PART_ImageBackground, Path=Source}" Value="{x:Null}">
                                             <Setter Property="Visibility" Value="Collapsed" />
                                         </DataTrigger>
                                         <DataTrigger Binding="{Binding Tag, RelativeSource={RelativeSource Self}, FallbackValue=False}" Value="False" >

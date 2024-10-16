@@ -105,7 +105,7 @@
     <Color x:Key="WindowPanelSeparatorColor">Transparent</Color>
 
     <Color x:Key="NormalBorderControlsColor">#e6282828</Color>
-    <Color x:Key="NormalBorderControlsHoverColor">#e0646464</Color>
+    <Color x:Key="NormalBorderControlsHoverColor">#29f9f9f9</Color>
     <Color x:Key="NormalBorderControlsHoverTransparencyColor">#4c919191</Color>
     <Color x:Key="DetailsViewGrouCountBackgroundColor">#555555</Color>
 
@@ -134,9 +134,9 @@
     <Color x:Key="ControlsBackgroundColor">#0Ffbfbfb</Color>
 
     <Color x:Key="TopPanelItemBackgroundColor">Transparent</Color>
-    <Color x:Key="TopPanelItemHoverBackgroundColor">#14f3f3f3</Color>
-    <Color x:Key="TopPanelSearchBoxBackgroundColor">#14f3f3f3</Color>
-    <Color x:Key="TopPanelFilterToggleBackgroundColor">#14f3f3f3</Color>
+    <Color x:Key="TopPanelItemHoverBackgroundColor">#0Ffbfbfb</Color>
+    <Color x:Key="TopPanelSearchBoxBackgroundColor">#0Ffbfbfb</Color>
+    <Color x:Key="TopPanelFilterToggleBackgroundColor">#0Ffbfbfb</Color>
 
     <SolidColorBrush x:Key="TopPanelItemBackgroundBrush" Color="{DynamicResource TopPanelItemBackgroundColor}" />
     <SolidColorBrush x:Key="TopPanelItemHoverBackgroundBrush" Color="{DynamicResource TopPanelItemHoverBackgroundColor}" />
@@ -159,7 +159,7 @@
     <SolidColorBrush x:Key="HighlightGlyphBrush" Color="{DynamicResource HighlightGlyphColor}" />
     <SolidColorBrush x:Key="PopupBorderBrush" Color="{DynamicResource PopupBorderColor}" />
     <SolidColorBrush x:Key="TooltipBackgroundBrush" Color="{DynamicResource PopupBackgroundColor}" />
-    <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="#e6282828" />
+    <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="{DynamicResource ControlsBackgroundColor}" />
     <SolidColorBrush x:Key="GridItemBackgroundBrush" Color="{DynamicResource GridItemBackgroundColor}" />
     <SolidColorBrush x:Key="PanelSeparatorBrush" Color="{DynamicResource PanelSeparatorColor}" />
     <SolidColorBrush x:Key="WindowPanelSeparatorBrush" Color="{DynamicResource WindowPanelSeparatorColor}" />
@@ -280,9 +280,9 @@
     <SolidColorBrush x:Key="GridViewCoverSubtitleBrush" Color="#b7b7b7" />
     <SolidColorBrush x:Key="GridViewSeparatorBrush" Color="#4Dc2c2c2" />
 
-    <SolidColorBrush x:Key="DetailsViewLibraryHoverBackgroundBrush" Color="#e0646464" />
+    <SolidColorBrush x:Key="DetailsViewLibraryHoverBackgroundBrush" Color="{DynamicResource NormalBorderControlsHoverColor}" />
 
-    <SolidColorBrush x:Key="DetailsViewLibrarySelectedBackgroundBrush" Color="#29f9f9f9" />
+    <SolidColorBrush x:Key="DetailsViewLibrarySelectedBackgroundBrush" Color="{DynamicResource NormalBorderControlsHoverColor}" />
 
     <SolidColorBrush x:Key="MenusSeparatorBrush" Color="#373737" />
     <SolidColorBrush x:Key="MenusHoverBackgroundBrush" Color="#0066da" />
