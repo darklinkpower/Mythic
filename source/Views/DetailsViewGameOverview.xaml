@@ -1133,7 +1133,7 @@
                                                             </Style>
                                                         </StackPanel.Style>
 
-                                                        <Label Content="{DynamicResource LOCGenreLabel}"
+                                                        <Label Content="{DynamicResource LOCGenresLabel}"
                                                                Foreground="{DynamicResource DetailsDarkForegroundBrush}" />
                                                         <Grid Margin="0,10,0,10">
                                                             <ItemsControl ItemsSource="{Binding Game.Genres}" Margin="0,3,0,3">
@@ -1172,7 +1172,7 @@
                                                             </Style>
                                                         </StackPanel.Style>
 
-                                                        <Label Content="{DynamicResource LOCFeatureLabel}"
+                                                        <Label Content="{DynamicResource LOCFeaturesLabel}"
                                                                Foreground="{DynamicResource DetailsDarkForegroundBrush}" />
                                                         <Grid Margin="0,10,0,10">
                                                             <ItemsControl ItemsSource="{Binding Game.Features}" Margin="0,3,0,3">
