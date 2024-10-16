@@ -5,6 +5,7 @@
 
     <!--Theme settings region start-->
 
+    <sys:Boolean x:Key="LibraryUseLowPerformanceBlurBackground">False</sys:Boolean>
     <sys:Double x:Key="TopPanelSearchBoxWidth">240</sys:Double>
     <sys:Double x:Key="DetailsViewDetailsMaxWidth">1150</sys:Double>
     <sys:Double x:Key="DetailsViewDetailsColumnWidth">320</sys:Double>

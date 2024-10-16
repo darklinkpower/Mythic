@@ -2,6 +2,7 @@ Constants:
     - "Top Panel"
     - ShowNavigationButtons: 'Show navigation buttons'
     - "Library"
+    - LibraryUseLowPerformanceBlurBackground: 'Use low performance blurred game background image'
     - LibraryUseNoiseOpacityLayer: 'Use noise opacity layer'
     - "Top Panel"
     - TopPanelSearchBoxWidth(180,300): 'Width of Search box'
