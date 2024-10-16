@@ -29,7 +29,7 @@
                         <ContentPresenter x:Name="Content" />
                         <TextBlock x:Name="ZoomOnHoverProxy" Visibility="Collapsed"
                                    Tag="{DynamicResource GridViewCoverZoomOnHover}" />
-                        <Border x:Name="SelectionBorder" BorderThickness="3" Margin="-3"
+                        <Border x:Name="SelectionBorder" BorderThickness="3" Margin="-6"
                                 Tag="{DynamicResource GridViewCoverUseRoundedCorners}">
                             <Border.Style>
                                 <Style TargetType="Border">

@@ -77,7 +77,7 @@
     <CornerRadius x:Key="GridViewCoverCornerRadius">5</CornerRadius>
     <CornerRadius x:Key="GridViewCoverGridBackgroundDisabledCornerRadius">5,5,0,0</CornerRadius>
     <CornerRadius x:Key="GridViewShowGameNameCornerRadius">0,0,5,5</CornerRadius>
-    <CornerRadius x:Key="GridViewSelectionBorderCornerRadius">7</CornerRadius>
+    <CornerRadius x:Key="GridViewSelectionBorderCornerRadius">9</CornerRadius>
     <CornerRadius x:Key="DetailsViewCoverCornerRadius">5</CornerRadius>
     <CornerRadius x:Key="PopupCornerRadius">5</CornerRadius>
     <Thickness x:Key="PopupMenuPadding">10,8,10,8</Thickness>
