@@ -47,7 +47,7 @@
     </Style>
 
     <Style TargetType="{x:Type Button}" x:Key="PlayersCountButtonStyle">
-        <Setter Property="Background" Value="{DynamicResource OpaqueHighlightBrush}"/>
+        <Setter Property="Background" Value="{DynamicResource ControlHoverBackgroundBrush}"/>
         <Setter Property="Foreground" Value="{DynamicResource TextBrush}"/>
         <Setter Property="BorderBrush" Value="Transparent"/>
         <Setter Property="BorderThickness" Value="0" />

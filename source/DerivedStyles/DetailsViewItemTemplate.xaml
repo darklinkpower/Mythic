@@ -9,7 +9,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type GameListItem}">
-                    <Border Name="PART_PanelHost" Padding="10,3,0,3" Background="Transparent"
+                    <Border Name="PART_PanelHost" Padding="8,4,8,4" Background="Transparent"
                             d:DataContext="{x:Static DesignMainViewModel.DesignSelectedGameIntance}">
                         <DockPanel>
                             <TextBlock Text="&#xF000;" Foreground="{DynamicResource GlyphBrush}"
@@ -111,7 +111,7 @@
             <Setter.Value>
                 <ControlTemplate>
                     <Grid>
-                        <Border x:Name="IconBackground" CornerRadius="8" Background="{DynamicResource GlyphBrush}" Opacity="1" Visibility="Hidden">
+                        <Border x:Name="IconBackground" CornerRadius="8" Background="{DynamicResource ControlHoverBackgroundBrush}" Opacity="1" Visibility="Hidden">
                         </Border>
                         <StackPanel Orientation="Horizontal" Opacity="{Binding Game.IsInstalled, Converter={StaticResource OpacityBoolConverter}}">
                             <Image Source="{Binding Icon}" RenderOptions.BitmapScalingMode="Fant" Margin="3"/>
@@ -127,7 +127,7 @@
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter Property="Border.Visibility" Value="Visible" TargetName="IconBackground"/>
-                            <Setter Property="Border.Background" Value="{DynamicResource OpaqueHighlightBrushBright}" TargetName="IconBackground"/>
+                            <Setter Property="Border.Background" Value="{DynamicResource ControlHoverBackgroundBrush}" TargetName="IconBackground"/>
                             <Setter Property="Border.Opacity" Value="1" TargetName="IconBackground"/>
                             <Trigger.EnterActions>
                                 <BeginStoryboard>
@@ -154,7 +154,7 @@
                         </Trigger>
                         <DataTrigger Binding="{Binding IsCurrent}" Value="True">
                             <Setter Property="Border.Visibility" Value="Visible" TargetName="IconBackground"/>
-                            <Setter Property="Border.Background" Value="{DynamicResource OpaqueHighlightBrush}" TargetName="IconBackground"/>
+                            <Setter Property="Border.Background" Value="{DynamicResource ControlHoverBackgroundBrush}" TargetName="IconBackground"/>
                             <Setter Property="Border.Opacity" Value="1" TargetName="IconBackground"/>
                         </DataTrigger>
                     </ControlTemplate.Triggers>

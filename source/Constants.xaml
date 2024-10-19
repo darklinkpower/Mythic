@@ -178,7 +178,7 @@
     <SolidColorBrush x:Key="NormalBorderBrushControlsHoverTransparency" Color="{DynamicResource NormalBorderControlsHoverTransparencyColor}" Opacity="0.4"/>
 
     <SolidColorBrush x:Key="DetailsViewGameListBackground" Color="Transparent" />
-    <SolidColorBrush x:Key="DetailsViewGrouCountBackgroundBrush" Color="{DynamicResource DetailsViewGrouCountBackgroundColor}" />
+    <SolidColorBrush x:Key="DetailsViewGrouCountBackgroundBrush" Color="{DynamicResource ControlsBackgroundColor}" />
 
     <SolidColorBrush x:Key="ButtonTextBrush" Color="{DynamicResource ButtonsTextBrushColor}" />
     <SolidColorBrush x:Key="PurpleButtonBrush" Color="{DynamicResource PurpleButtonBrushColor}" />

@@ -7,8 +7,9 @@
                     mc:Ignorable="d">
 
     <Style x:Key="ExpanderDownHeaderStyle" TargetType="{x:Type ToggleButton}">
-        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+        <Setter Property="Foreground" Value="White" />
         <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="Opacity" Value="1" />
         <Setter Property="Cursor" Value="Hand" />
         <Setter Property="Template">
             <Setter.Value>
@@ -27,7 +28,7 @@
                                             <RotateTransform/>
                                         </Setter.Value>
                                     </Setter>
-                                    <Setter Property="Foreground" Value="{DynamicResource GlyphBrush}"/>
+                                    
                                     <Style.Triggers>
                                         <DataTrigger Binding="{Binding IsChecked, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ToggleButton}}}"  Value="True">
                                             <DataTrigger.EnterActions>
@@ -69,7 +70,7 @@
                         <Trigger Property="IsChecked" Value="True">
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Opacity" Value="0.75" />
+                            <Setter Property="Opacity" Value="0.80" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -78,6 +79,7 @@
     </Style>
 
     <Style TargetType="{x:Type Expander}">
+        <Setter Property="Foreground" Value="{DynamicResource DetailsDarkForegroundBrush}" />
         <Setter Property="Background" Value="{DynamicResource ExpanderBackgroundBrush}" />
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="BorderBrush" Value="Transparent" />

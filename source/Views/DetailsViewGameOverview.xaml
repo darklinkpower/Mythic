@@ -167,18 +167,7 @@
                                 
                                 <DockPanel MaxWidth="{DynamicResource DetailsViewDetailsMaxWidth}" Grid.Row="4" >
                                     <StackPanel DockPanel.Dock="Right" Width="{DynamicResource DetailsViewDetailsColumnWidth}" Margin="2,67,0,0">
-                                        <StackPanel.Resources>
-                                            <Style TargetType="ItemsControl">
-                                                <Setter Property="VerticalAlignment" Value="Center" />
-                                            </Style>
-                                            <Style TargetType="Label" BasedOn="{StaticResource {x:Type Label}}">
-                                                <Setter Property="Margin" Value="0,4,8,4" />
-                                                <Setter Property="VerticalAlignment" Value="Top" />
-                                                <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
-                                            </Style>
-                                            <Style TargetType="Button" BasedOn="{StaticResource PropertyItemButton}" />
-                                        </StackPanel.Resources>
-                                        
+
                                         <!--#region Logo & Cover Image-->
                                         <Grid Margin="0,0,0,20"
                                               Tag="{DynamicResource DetailsViewAllowUseOfLogos}" >

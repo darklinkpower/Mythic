@@ -2,14 +2,14 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <Style x:Key="DetailsViewGroupStyle" TargetType="{x:Type GroupItem}">
-        <Setter Property="Foreground" Value="{DynamicResource TextBrushDarker}" />
+        <Setter Property="Foreground" Value="White" />
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="FontWeight" Value="Normal" />
         <Setter Property="Cursor" Value="Hand"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type GroupItem}">
-                    <ExpanderEx BorderThickness="0" SaveGameGroupId="{Binding Name, Mode=OneWay}" Foreground="#00d492"
+                    <ExpanderEx BorderThickness="0" SaveGameGroupId="{Binding Name, Mode=OneWay}"
                                 IsExpanded="True" Margin="0,3,0,0">
                         <ExpanderEx.Header>
                             <DockPanel Background="Transparent">
@@ -21,21 +21,21 @@
                                         <ColumnDefinition Width="*"/>
                                         <ColumnDefinition Width="Auto"/>
                                     </Grid.ColumnDefinitions>
-                                    <Border Grid.Column="1" CornerRadius="7" Background="{DynamicResource DetailsViewGrouCountBackgroundBrush}" Width="Auto">
+                                    <Border Grid.Column="1" CornerRadius="7" Visibility="{Settings ShowGroupCount}"
+                                            BorderThickness="0" BorderBrush="{DynamicResource TextBrush}"
+                                            Background="{DynamicResource ControlHoverBackgroundBrush}" Width="Auto">
                                         <TextBlock Text="{Binding Items.Count, Mode=OneWay, StringFormat={}{0}}"
-                                                   Foreground="#D9000000"
-                                                   FontSize="12" FontWeight="Bold"
+                                                   FontSize="12" FontWeight="Medium"
                                                    VerticalAlignment="Center" HorizontalAlignment="Center"
                                                    Style="{DynamicResource BaseTextBlockStyle}"
-                                                   TextAlignment="Center"
-                                                   Visibility="{Settings ShowGroupCount}"
+                                                   TextAlignment="Center"                                                 
                                                    Margin="7,0,7,0"/>
                                     </Border>
                                 </Grid>
                                 
-                                <TextBlock DockPanel.Dock="Left" Foreground="{DynamicResource DetailsViewDetailsLabelForegroundBrush}"
+                                <TextBlock DockPanel.Dock="Left" Foreground="{TemplateBinding Foreground}"
                                            VerticalAlignment="Center" HorizontalAlignment="Left" TextTrimming="CharacterEllipsis"
-                                           TextAlignment="Center" Margin="0,0,5,0" FontWeight="Bold">
+                                           TextAlignment="Center" Margin="0,0,5,0" FontWeight="SemiBold">
                                     <TextBlock.Style>
                                         <Style TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}">
                                             <Setter Property="Text" Value="{Binding Name, Converter={StaticResource ObjectToStringConverter}}" />
