@@ -101,7 +101,7 @@
     <Color x:Key="PopupBorderColor">#2b2b2b</Color>
     <Color x:Key="BackgroundToneColor">#262c38</Color>
     <Color x:Key="GridItemBackgroundColor">Transparent</Color>
-    <Color x:Key="PanelSeparatorColor">#373538</Color>
+    <Color x:Key="PanelSeparatorColor">#1affffff</Color>
     <Color x:Key="WindowPanelSeparatorColor">Transparent</Color>
 
     <Color x:Key="NormalBorderControlsColor">#e6282828</Color>
