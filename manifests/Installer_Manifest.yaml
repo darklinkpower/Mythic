@@ -418,3 +418,14 @@ Packages:
     PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.53/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_53.pthm
     Changelog:
       - 'Details View: Add dropshadow effect to cover image'
+  - Version: 1.54
+    RequiredApiVersion: 2.5.0
+    ReleaseDate: 2024-11-06
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.54/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_54.pthm
+    Changelog:
+      - 'Added: Game cover banners for library plugins: ATLauncher Instance Library, Big Fish Games library integration, EmuLibrary, Fanatical library integration, Game Jolt library integration, GameVault Library Integration, GOG OSS library integration, Google Play Games on PC Library, Humble Keys Library, LANCommander library integration, Meta Quest/Oculus Library Plugin, MultiMC Library Importer, Nile (Amazon) library integration, NowPlaying Game Cacher, RAWG library importer, RobotCache library integration, RomM Library Importer, Viveport library importer.'
+      - 'Added: option for ThemeModifier extension to use blurred image background with low performance requirements'
+      - 'Fixed: genres and features labels not using their plural form on Details View'
+      - 'Fixed: inconsistency in background color between controls'
+      - 'Fixed: Panel separator between Library and Details on Grid View not displaying when using Details to Grid View Converter extension'
+      - 'General polishing'
