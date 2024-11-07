@@ -17,7 +17,7 @@
                                   d:DataContext="{x:Static DesignMainViewModel.DesignSelectedGameDetailsIntance}"
                                   x:Name="PART_ScrollViewHost">
                         <Grid Margin="0,0,0,20">
-                            <Separator Background="{DynamicResource LibraryTopSeparatorBrush}" VerticalAlignment="Top" Margin="15,0,25,0" />
+                            
                             <!-- Background Image -->
                             <WrapPanel>
                                 <WrapPanel.Style>
@@ -91,7 +91,7 @@
                                 </WrapPanel.OpacityMask>
                             </WrapPanel>
 
-                            <Grid HorizontalAlignment="Stretch" Margin="20,0,20,0">
+                            <Grid HorizontalAlignment="Stretch" Margin="40,0,40,0">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="{Settings CalculatedGameDetailsIndentation}" />
                                     <RowDefinition Height="Auto" />
@@ -1110,7 +1110,7 @@
 
                                                 <DockPanel Grid.Column="0">
                                                     <Border Width="1" BorderThickness="0" Margin="0,0,15,0"
-                                                            Background="{DynamicResource DetailsSeparatorBrush}" />
+                                                            Background="{DynamicResource PanelSeparatorBrush}" />
                                                     <StackPanel Name="PART_ElemGenres">
                                                         <StackPanel.Style>
                                                             <Style TargetType="StackPanel">
@@ -1149,7 +1149,7 @@
 
                                                 <DockPanel Grid.Column="1">
                                                     <Border Width="1" BorderThickness="0" Margin="0,0,15,0"
-                                                            Background="{DynamicResource DetailsSeparatorBrush}" />
+                                                            Background="{DynamicResource PanelSeparatorBrush}" />
                                                     <StackPanel Name="PART_ElemFeatures">
                                                         <StackPanel.Style>
                                                             <Style TargetType="StackPanel">

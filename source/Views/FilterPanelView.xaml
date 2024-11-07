@@ -52,7 +52,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type FilterPanel}">
-                    <Border BorderBrush="{DynamicResource DetailsSeparatorBrush}"
+                    <Border BorderBrush="{DynamicResource PanelSeparatorBrush}"
                             d:DesignWidth="200">
                         <Border.Style>
                             <Style TargetType="Border">
@@ -89,7 +89,8 @@
                                           DockPanel.Dock="Left" VerticalAlignment="Center" />
                             </DockPanel>                            
                             <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto"
-                                      DockPanel.Dock="Top" Padding="0,0,0,15">
+                                          Margin="0,15,0,0"
+                                          DockPanel.Dock="Top" Padding="0,0,0,15">
                                 <StackPanel x:Name="PART_PanelItemsHost" />
                             </ScrollViewer>
                         </DockPanel>
