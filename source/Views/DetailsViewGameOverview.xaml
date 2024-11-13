@@ -945,6 +945,22 @@
                                                 </StackPanel>
                                             </TabItem>
                                             <!--endregion-->
+
+                                            <!--#region WebExplorer-->
+                                            <TabItem SnapsToDevicePixels="True" UseLayoutRounding="True"
+                                                     Visibility="{Binding ElementName=WebExplorer_BrowserHostViewControl, Path=Content.IsControlVisible, Converter={StaticResource BooleanToVisibilityConverter}, TargetNullValue=Collapsed, FallbackValue=Collapsed}">
+                                                <TabItem.Header>
+                                                    <TextBlock Text="{DynamicResource LOCWebExplorer_WebLabel}"
+                                                               FontSize="{DynamicResource FontSizeLarger}" />
+                                                </TabItem.Header>
+                                                <Border Background="{DynamicResource ControlBackgroundBrush}" Margin="0,15,0,0"
+                                                            SnapsToDevicePixels="True" UseLayoutRounding="True">
+                                                    <ContentControl x:Name="WebExplorer_BrowserHostViewControl"
+                                                                    Height="800"
+                                                                    Margin="0,5,0,5" />
+                                                </Border>
+                                            </TabItem>
+                                            <!--#endregion-->
                                         </TabControl>
 
                                         <StackPanel Margin="0,0,0,0">
