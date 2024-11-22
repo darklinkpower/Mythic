@@ -11,7 +11,7 @@
     <sys:Double x:Key="DetailsViewDetailsColumnWidth">320</sys:Double>
     <sys:Boolean x:Key="DetailsViewDisplayGameNameIfLogoVisible">True</sys:Boolean>
     <sys:Boolean x:Key="GridViewDisplayGameNameIfLogoVisible">True</sys:Boolean>
-    <sys:Double x:Key="DetailsBackgroundDarkenLayerOpacity">1.0</sys:Double>
+    <sys:Double x:Key="DetailsBackgroundDarkenLayerOpacityValue">0.73</sys:Double>
     <Visibility x:Key="DetailsViewDetailsIconsVisibility">Visible</Visibility>
     <Visibility x:Key="GridViewDetailsIconsVisibility">Visible</Visibility>
     <Visibility x:Key="GridViewCoverSubtitleVisibility">Visible</Visibility>

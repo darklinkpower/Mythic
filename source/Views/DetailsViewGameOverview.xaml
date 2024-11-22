@@ -19,9 +19,9 @@
                         <Grid Margin="0,0,0,20">
                             
                             <!-- Background Image -->
-                            <WrapPanel>
-                                <WrapPanel.Style>
-                                    <Style TargetType="{x:Type WrapPanel}">
+                            <Grid VerticalAlignment="Top">
+                                <Grid.Style>
+                                    <Style TargetType="{x:Type Grid}">
                                         <Setter Property="Visibility" Value="Visible" />
                                         <Style.Triggers>
                                             <MultiDataTrigger>
@@ -39,57 +39,36 @@
                                             </MultiDataTrigger>
                                         </Style.Triggers>
                                     </Style>
-                                </WrapPanel.Style>
-                                <Grid>
-                                    <FadeImage x:Name="PART_ImageBackground" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Top" />
-                                    <Border Background="{StaticResource DarkNoiseBrush}" IsHitTestVisible="False"
-                                            Opacity="{DynamicResource DetailsBackgroundDarkenLayerOpacity}">
-                                        <Border.OpacityMask>
-                                            <LinearGradientBrush StartPoint="0,1" EndPoint="0,0">
-                                                <LinearGradientBrush.GradientStops>
-                                                    <GradientStop Color="#F2FFFFFF" Offset="0.2"/>
-                                                    <GradientStop Color="#B3FFFFFF" Offset="0.8"/>
-                                                </LinearGradientBrush.GradientStops>
-                                            </LinearGradientBrush>
-                                        </Border.OpacityMask>
-                                    </Border>
-                                </Grid>
-                                <WrapPanel.OpacityMask>
+                                </Grid.Style>
+                                <FadeImage x:Name="PART_ImageBackground" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Top" />
+                                <Border Background="{StaticResource DarkNoiseBrush}" IsHitTestVisible="False"
+                                        Height="{Binding ElementName=PART_ImageBackground, Path=Height}"
+                                        Opacity="{DynamicResource DetailsBackgroundDarkenLayerOpacityValue}" />
+                                <Grid.OpacityMask>
                                     <RadialGradientBrush GradientOrigin="0.5,0" Center="0.5,0" RadiusX="2" RadiusY="0.9">
                                         <RadialGradientBrush.GradientStops>
                                             <GradientStop Color="Black" Offset="0.3" />
-                                            <GradientStop Color="Transparent" Offset="1" />
+                                            <GradientStop Color="Transparent" Offset="0.85" />
                                         </RadialGradientBrush.GradientStops>
                                     </RadialGradientBrush>
-                                </WrapPanel.OpacityMask>
-                            </WrapPanel>
+                                </Grid.OpacityMask>
+                            </Grid>
 
                             <!-- BackgroundChanger plugin background -->
-                            <WrapPanel>
-                                <Grid>
-                                    <ContentControl x:Name="BackgroundChanger_PluginBackgroundImage"
-                                                    HorizontalAlignment="Center" VerticalAlignment="Top" />
-                                    <Border Background="{StaticResource DarkNoiseBrush}" IsHitTestVisible="False"
-                                            Opacity="{DynamicResource DetailsBackgroundDarkenLayerOpacity}">
-                                        <Border.OpacityMask>
-                                            <LinearGradientBrush StartPoint="0,1" EndPoint="0,0">
-                                                <LinearGradientBrush.GradientStops>
-                                                    <GradientStop Color="#F2FFFFFF" Offset="0.2"/>
-                                                    <GradientStop Color="#B3FFFFFF" Offset="0.8"/>
-                                                </LinearGradientBrush.GradientStops>
-                                            </LinearGradientBrush>
-                                        </Border.OpacityMask>
-                                    </Border>
-                                </Grid>
-                                <WrapPanel.OpacityMask>
+                            <Grid VerticalAlignment="Top">
+                                <ContentControl x:Name="BackgroundChanger_PluginBackgroundImage"
+                                                HorizontalAlignment="Center" VerticalAlignment="Top" />
+                                <Border Background="{StaticResource DarkNoiseBrush}" IsHitTestVisible="False"
+                                        Opacity="{DynamicResource DetailsBackgroundDarkenLayerOpacityValue}" />
+                                <Grid.OpacityMask>
                                     <RadialGradientBrush GradientOrigin="0.5,0" Center="0.5,0" RadiusX="2" RadiusY="0.9">
                                         <RadialGradientBrush.GradientStops>
                                             <GradientStop Color="Black" Offset="0.3" />
-                                            <GradientStop Color="Transparent" Offset="1" />
+                                            <GradientStop Color="Transparent" Offset="0.85" />
                                         </RadialGradientBrush.GradientStops>
                                     </RadialGradientBrush>
-                                </WrapPanel.OpacityMask>
-                            </WrapPanel>
+                                </Grid.OpacityMask>
+                            </Grid>
 
                             <Grid HorizontalAlignment="Stretch" Margin="40,0,40,0">
                                 <Grid.RowDefinitions>
