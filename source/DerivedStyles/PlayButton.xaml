@@ -55,26 +55,10 @@
                                     <ColumnDefinition Width="Auto" />
                                 </Grid.ColumnDefinitions>
                                 <Border Grid.Column="0" Height="16" VerticalAlignment="Center">
-                                    <Viewbox Height="16" Width="16">
-                                        <Canvas Width="22" Height="22" Margin="0">
-                                            <Canvas>
-                                                <Canvas.Resources>
-                                                    <Style TargetType="Path">
-                                                        <Setter Property="Stroke" Value="#121212"/>
-                                                        <Setter Property="StrokeThickness" Value="0.8"/>
-                                                        <Setter Property="StrokeLineJoin" Value="Miter"/>
-                                                        <Setter Property="StrokeStartLineCap" Value="Flat"/>
-                                                        <Setter Property="StrokeEndLineCap" Value="Flat"/>
-                                                        <Style.Triggers>
-                                                            <DataTrigger Binding="{Binding IsMouseOver, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Viewbox}}}"  Value="True">
-                                                                <Setter Property="Stroke" Value="#121212"/>
-                                                            </DataTrigger>
-                                                        </Style.Triggers>
-                                                    </Style>
-                                                </Canvas.Resources>
-                                                <Path Data="F1 M 2.38 10.44 C 2.38 9.96 2.366666 9.233334 2.34 8.259999 C 2.326666 7.153333 2.32 6.326666 2.32 5.78 C 2.32 4.860001 2.353333 4.04 2.42 3.32 C 2.486666 2.466667 2.71 1.806667 3.09 1.34 C 3.47 0.873333 3.963333 0.639999 4.57 0.639999 C 5.176666 0.639999 5.84 0.886665 6.56 1.379999 C 9.173332 3.153334 12.446666 5.540001 16.379999 8.54 C 17.246666 9.193333 17.676666 9.889999 17.67 10.629999 C 17.663334 11.37 17.219999 12.066666 16.34 12.719999 C 14.286666 14.266666 12.619999 15.506666 11.34 16.439999 C 9.5 17.786667 7.806666 18.993332 6.26 20.059999 C 5.659999 20.473331 5.079999 20.666666 4.52 20.639999 C 3.96 20.613333 3.496666 20.383333 3.13 19.949999 C 2.763333 19.516666 2.546667 18.916666 2.48 18.15 C 2.413333 17.383333 2.38 16.506666 2.38 15.52 C 2.366666 14.92 2.373333 14.026667 2.4 12.84 C 2.426667 11.773334 2.44 10.973333 2.44 10.44 Z " />
-                                            </Canvas>
-                                        </Canvas>
+                                    <Viewbox Height="16" Width="16" VerticalAlignment="Center">
+                                        <Path Data="F1 M 5 15.976562 L 5 4.023438 C 5 3.795574 5.043945 3.58073 5.131836 3.378906 C 5.219727 3.177084 5.338542 2.999676 5.488281 2.84668 C 5.638021 2.693686 5.813802 2.573242 6.015625 2.485352 C 6.217448 2.397461 6.432292 2.353516 6.660156 2.353516 C 6.979167 2.353516 7.281901 2.444662 7.568359 2.626953 L 16.865234 8.59375 C 17.106119 8.74349 17.293293 8.943686 17.426758 9.194336 C 17.560221 9.444987 17.626953 9.713542 17.626953 10 C 17.626953 10.286459 17.560221 10.555014 17.426758 10.805664 C 17.293293 11.056315 17.106119 11.256511 16.865234 11.40625 L 7.568359 17.373047 C 7.301432 17.548828 7.001953 17.636719 6.669922 17.636719 C 6.442057 17.636719 6.225585 17.5944 6.020508 17.509766 C 5.81543 17.425131 5.638021 17.307943 5.488281 17.158203 C 5.338542 17.008463 5.219727 16.832682 5.131836 16.630859 C 5.043945 16.429037 5 16.210938 5 15.976562 Z M 6.669922 4.023438 L 6.669922 15.976562 L 15.957031 10 Z "
+                                              Fill="{TemplateBinding Foreground}" StrokeThickness="1" SnapsToDevicePixels="True"
+                                              VerticalAlignment="Center" HorizontalAlignment="Center" />
                                     </Viewbox>
                                 </Border>
                                 <ContentPresenter Grid.Column="1" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" RecognizesAccessKey="True" />
@@ -95,8 +79,8 @@
     <Style x:Key="ContextButtonViews" TargetType="{x:Type Button}">
         <Setter Property="Background" Value="#262626" />
         <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource NormalBorderBrush}" />
-        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="BorderBrush" Value="#9a9a9a" />
+        <Setter Property="BorderThickness" Value="1" />
         <Setter Property="Padding" Value="10,5,10,5" />
         <Setter Property="FontWeight" Value="Bold" />
         <Setter Property="FontSize" Value="{DynamicResource FontSizeLarge}" />
@@ -158,8 +142,8 @@
 
     <Style x:Key="ContextButtonBorderBackground" TargetType="Border">
         <Style.Resources>
-            <Color x:Key="ContextButtonBackgroundColor">#646464</Color>
-            <Color x:Key="ContextButtonHighlightBackgroundColor">#787878</Color>
+            <Color x:Key="ContextButtonBackgroundColor">#14121212</Color>
+            <Color x:Key="ContextButtonHighlightBackgroundColor">#805c5c5c</Color>
             <SolidColorBrush x:Key="ContextButtonBackgroundBrush" Color="{StaticResource ContextButtonBackgroundColor}" />
         </Style.Resources>
         <Setter Property="Background" Value="{StaticResource ContextButtonBackgroundBrush}" />
