@@ -57,20 +57,11 @@
                         
                         <Border x:Name="NoiseBorder"
                                 Tag="{DynamicResource LibraryUseNoiseOpacityLayer}"
+                                Opacity="0.715"
                                 Background="{StaticResource DarkNoiseBrush}" IsHitTestVisible="False">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="Visibility" Value="Visible" />
-                                    <Setter Property="OpacityMask">
-                                        <Setter.Value>
-                                            <LinearGradientBrush StartPoint="0,0" EndPoint="1.0,0">
-                                                <LinearGradientBrush.GradientStops>
-                                                    <GradientStop Color="#BFFFFFFF" Offset="0.2"/>
-                                                    <GradientStop Color="#A6FFFFFF" Offset="0.50"/>
-                                                </LinearGradientBrush.GradientStops>
-                                            </LinearGradientBrush>
-                                        </Setter.Value>
-                                    </Setter>
                                     <Style.Triggers>
                                         <DataTrigger Binding="{Binding ElementName=PART_ImageBackground, Path=Source}" Value="{x:Null}">
                                             <Setter Property="Visibility" Value="Collapsed" />
