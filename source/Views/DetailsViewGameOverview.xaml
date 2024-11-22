@@ -102,13 +102,13 @@
                                 <DockPanel Margin="0,20,0,15" MaxWidth="{DynamicResource DetailsViewDetailsMaxWidth}" Grid.Row="1">
                                     <!--GridConverterGridPanelCloseButton-->
                                     <WrapPanel DockPanel.Dock="Left">
-                                        <Image Name="PART_ImageIcon" MaxHeight="48" MaxWidth="48" DockPanel.Dock="Left" 
+                                        <Image Name="PART_ImageIcon" MaxHeight="32" MaxWidth="32" DockPanel.Dock="Left" 
                                                    Margin="0,0,10,0" VerticalAlignment="Center" RenderOptions.BitmapScalingMode="Fant">
                                             <Image.Effect>
                                                 <DropShadowEffect BlurRadius="15" ShadowDepth="0" Color="#0d0d0d" Opacity="0.20"/>
                                             </Image.Effect>
                                             <Image.Clip>
-                                                <RectangleGeometry RadiusX="4" RadiusY="4" Rect="0,0,48,48" />
+                                                <RectangleGeometry RadiusX="6" RadiusY="6" Rect="0,0,32,32" />
                                             </Image.Clip>
                                         </Image>
 
@@ -154,9 +154,42 @@
                                     </WrapPanel>
                                 </DockPanel>
 
-                                <DockPanel Grid.Row="2" MaxWidth="{DynamicResource DetailsViewDetailsMaxWidth}"
-                                           Visibility="{PluginSettings Plugin=LibraryManagement, Path=EnableIntegrationFeatures, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                <DockPanel Grid.Row="2" MaxWidth="{DynamicResource DetailsViewDetailsMaxWidth}">
+                                    <DockPanel.Style>
+                                        <Style TargetType="DockPanel">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding ElementName=TopCommunityScorePanel, Path=Visibility}" Value="Visible">
+                                                    <Setter Property="Visibility" Value="Visible" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding ElementName=LibraryManagement_PluginFeaturesIconList, Path=Visibility}" Value="Visible">
+                                                    <Setter Property="Visibility" Value="Visible" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </DockPanel.Style>
+                                    <StackPanel x:Name="TopCommunityScorePanel" Orientation="Horizontal"
+                                                DockPanel.Dock="Left"
+                                                Margin="0,0,10,0" ToolTip="{DynamicResource LOCCommunityScore}"
+                                                Visibility="{Binding ElementName=PART_TextCommunityScore, Path=Visibility}">
+                                        <ContentControl Content="{Binding Game.CommunityScore}"
+                                                        Padding="0,0,6,0"
+                                                        HorizontalAlignment="Left"
+                                                        VerticalAlignment="Center"
+                                                        Background="Transparent"
+                                                        Foreground="{DynamicResource TextBrush}"
+                                                        Height="18"
+                                                        ContentTemplate="{StaticResource FiveStarScoreTemplate}"/>
+
+                                        <TextBlock Text="{Binding Game.CommunityScore}"
+                                                   VerticalAlignment="Center"
+                                                   Foreground="{DynamicResource TextBrush}" />
+                                    </StackPanel>
+
                                     <ContentControl x:Name="LibraryManagement_PluginFeaturesIconList" Height="35" Margin="0,0,0,0"
+                                                    Visibility="{PluginSettings Plugin=LibraryManagement, Path=EnableIntegrationFeatures, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}"
+                                                    DockPanel.Dock="Left"
+                                                    VerticalAlignment="Center"
                                                     HorizontalAlignment="Left" 
                                                     Opacity="0.85" />
                                 </DockPanel>
@@ -643,7 +676,19 @@
                                                             <TextBlock Text="{DynamicResource LOCCommunityScore}" />
                                                         </StackPanel>
                                                     </Label>
-                                                    <TextBlock Grid.Column="1" Name="PART_TextCommunityScore" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{DynamicResource TextBlockGameScore}" />
+                                                    <StackPanel Orientation="Horizontal" Grid.Column="1"
+                                                                Visibility="{Binding ElementName=PART_TextCommunityScore, Path=Visibility}">
+                                                        <TextBlock Name="PART_TextCommunityScore" VerticalAlignment="Center"
+                                                                   Style="{DynamicResource TextBlockGameScore}" />
+                                                        <ContentControl Content="{Binding Game.CommunityScore}"
+                                                                        Padding="6,0,0,4"
+                                                                        HorizontalAlignment="Left"
+                                                                        VerticalAlignment="Center"
+                                                                        Background="Transparent"
+                                                                        Foreground="{Binding ElementName=PART_TextCommunityScore, Path=Foreground}"
+                                                                        Height="{Binding ElementName=PART_TextCommunityScore, Path=ActualHeight}"
+                                                                        ContentTemplate="{StaticResource FiveStarScoreTemplate}"/>
+                                                    </StackPanel>
                                                 </Grid>
                                             </Border>
 
@@ -662,7 +707,19 @@
                                                             <TextBlock Text="{DynamicResource LOCCriticScore}" />
                                                         </StackPanel>
                                                     </Label>
-                                                    <TextBlock Grid.Column="1" Name="PART_TextCriticScore" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{DynamicResource TextBlockGameScore}" />
+                                                    <StackPanel Orientation="Horizontal" Grid.Column="1"
+                                                                Visibility="{Binding ElementName=PART_TextCriticScore, Path=Visibility}">
+                                                        <TextBlock Name="PART_TextCriticScore" VerticalAlignment="Center"
+                                                                   Style="{DynamicResource TextBlockGameScore}" />
+                                                        <ContentControl Content="{Binding Game.CriticScore}"
+                                                                        Padding="6,0,0,4"
+                                                                        HorizontalAlignment="Left"
+                                                                        VerticalAlignment="Center"
+                                                                        Background="Transparent"
+                                                                        Foreground="{Binding ElementName=PART_TextCriticScore, Path=Foreground}"
+                                                                        Height="{Binding ElementName=PART_TextCriticScore, Path=ActualHeight}"
+                                                                        ContentTemplate="{StaticResource FiveStarScoreTemplate}"/>
+                                                    </StackPanel>
                                                 </Grid>
                                             </Border>
 
@@ -681,7 +738,20 @@
                                                             <TextBlock Text="{DynamicResource LOCUserScore}" />
                                                         </StackPanel>
                                                     </Label>
-                                                    <TextBlock Grid.Column="1" Name="PART_TextUserScore" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{DynamicResource TextBlockGameScore}" />
+                                                    <StackPanel Orientation="Horizontal" Grid.Column="1"
+                                                                HorizontalAlignment="Left" VerticalAlignment="Center"
+                                                                Visibility="{Binding ElementName=PART_TextUserScore, Path=Visibility}">
+                                                        <TextBlock Name="PART_TextUserScore" VerticalAlignment="Center"
+                                                                   Style="{DynamicResource TextBlockGameScore}" />
+                                                        <ContentControl Content="{Binding Game.UserScore}"
+                                                                        Padding="6,0,0,4"
+                                                                        HorizontalAlignment="Left"
+                                                                        VerticalAlignment="Center"
+                                                                        Background="Transparent"
+                                                                        Foreground="{Binding ElementName=PART_TextUserScore, Path=Foreground}"
+                                                                        Height="{Binding ElementName=PART_TextUserScore, Path=ActualHeight}"
+                                                                        ContentTemplate="{StaticResource FiveStarScoreTemplate}"/>
+                                                    </StackPanel>
                                                 </Grid>
                                             </Border>
 
