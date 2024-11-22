@@ -436,3 +436,15 @@ Packages:
     Changelog:
       - 'Added: Game cover banner for Riot Games Library plugin'
       - 'Added: Support to use web view component from Web Explorer extension'
+  - Version: 1.56
+    RequiredApiVersion: 2.5.0
+    ReleaseDate: 2024-11-22
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.56/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_56.pthm
+    Changelog:
+      - 'Added: Star ratings from 0 to 5 will now be displayed alongside the critic, user and community numerical scores, providing a clearer visual representation of the game ratings'
+      - 'Added: Community score value and stars representation below the game name on Details View'
+      - 'Changed: Icons on Details View & Grid View will now be displayed with rounded corners'
+      - 'Changed: Adjustments to game name font and margins of some elements on Details View'
+      - 'Changed: Icon used in Play button icon'
+      - 'Changed: Visual changed to button displayed when game is not installed'
+      - 'Improved: Improvements have been made to how game background images are rendered to improve performance'
