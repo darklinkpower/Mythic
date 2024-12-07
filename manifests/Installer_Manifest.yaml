@@ -448,3 +448,9 @@ Packages:
       - 'Changed: Icon used in Play button icon'
       - 'Changed: Visual changed to button displayed when game is not installed'
       - 'Improved: Improvements have been made to how game background images are rendered to improve performance'
+  - Version: 1.57
+    RequiredApiVersion: 2.5.0
+    ReleaseDate: 2024-12-06
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.57/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_57.pthm
+    Changelog:
+      - 'Added: Support to display GOG Second Class Watcher extension data on Details View and Grid View'
