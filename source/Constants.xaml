@@ -70,7 +70,7 @@
                   TopRight="0"
                   BottomRight="0"
                   BottomLeft="{StaticResource ControlCornerRadiusValue}"/>
-    <CornerRadius x:Key="ControlCornerRadiusViewPlayButtons">5</CornerRadius>
+    <CornerRadius x:Key="ControlCornerRadiusViewPlayButtons">10</CornerRadius>
     <CornerRadius x:Key="ControlCornerRadiusSmall">0</CornerRadius>
     <CornerRadius x:Key="MainMenuCornerRadius">0</CornerRadius>
     <CornerRadius x:Key="GeneralMenuCornerRadius">0</CornerRadius>
@@ -120,7 +120,7 @@
     <Color x:Key="ToggleButtonNotCheckedBorderColor">#6f6d70</Color>
     <Color x:Key="ToggleButtonNotCheckedHighlightBorderColor">#acabad</Color>
 
-    <Color x:Key="ThumbFillColor">#a6a6a6</Color>
+    <Color x:Key="ThumbFillColor">White</Color>
     <Color x:Key="ThumbFillHoverColor">#cacaca</Color>
 
     <Color x:Key="TextBoxBorderColor">#6f6d70</Color>
@@ -128,7 +128,7 @@
 
     <Color x:Key="TitleButtonsBorderBackgroundColor">#e6282828</Color>
 
-    <Color x:Key="StandardWindowTitleBackgroundColor">#0f0f0f</Color>
+    <Color x:Key="StandardWindowTitleBackgroundColor">Transparent</Color>
     <Color x:Key="StandardWindowBackgroundColor">#121212</Color>
 
     <Color x:Key="TitleWindowStateHoverColor">#54b2de</Color>
@@ -233,6 +233,8 @@
         <GradientStop Color="#002C3A67" Offset="0.7"/>
     </LinearGradientBrush>
 
+    <SolidColorBrush x:Key="PlayButtonBackgroundBrush" Color="#cfcfcf" />
+    <SolidColorBrush x:Key="PlayButtonTextBrush" Color="#121212" />
     <SolidColorBrush x:Key="WindowBackgourndBrush" Color="{DynamicResource StandardWindowBackgroundColor}" />
     <SolidColorBrush x:Key="ForegroundColorForGlyphBackg" Color="{DynamicResource StandardWindowBackgroundColor}" />
     

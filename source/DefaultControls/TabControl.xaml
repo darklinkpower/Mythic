@@ -217,7 +217,7 @@
                         </Trigger>
                         <Trigger Property="IsSelected" Value="True">
                             <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
-                            <Setter Property="BorderBrush" Value="{DynamicResource TextBrush}" TargetName="SelectedBorder" />
+                            <Setter Property="BorderBrush" Value="{DynamicResource GlyphBrush}" TargetName="SelectedBorder" />
                             <Setter Property="Visibility" Value="Visible" TargetName="SelectedBorder" />
                         </Trigger>
                         <Trigger Property="IsFocused" Value="True">

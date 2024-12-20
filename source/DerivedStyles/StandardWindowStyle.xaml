@@ -25,7 +25,7 @@
                         <sys:Boolean x:Key="True">True</sys:Boolean>
                     </ControlTemplate.Resources>
                     <AdornerDecorator>
-                        <Border x:Name="WindowBorder" BorderBrush="{DynamicResource PopupBorderBrush}" CornerRadius="0"
+                        <Border x:Name="WindowBorder" BorderBrush="Transparent" CornerRadius="0"
                                 BorderThickness="{TemplateBinding BorderThickness}"
                                 Background="{TemplateBinding Background}">
                             <Grid>
