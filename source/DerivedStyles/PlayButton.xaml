@@ -33,8 +33,8 @@
     </Style>
 
     <Style x:Key="PlayButtonViews" TargetType="{x:Type Button}">
-        <Setter Property="Background" Value="Transparent" />
-        <Setter Property="Foreground" Value="#121212" />
+        <Setter Property="Background" Value="{DynamicResource PlayButtonBackgroundBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource PlayButtonTextBrush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource NormalBorderBrush}" />
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="Padding" Value="10,5,10,5" />
@@ -46,26 +46,42 @@
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Grid x:Name="Grid">
                         <Border x:Name="DefaultBorder" BorderBrush="{TemplateBinding BorderBrush}"
-                                BorderThickness="{TemplateBinding BorderThickness}"
-                                Style="{DynamicResource PlayButtonBorderBackground}"
-                                Opacity="1" CornerRadius="{DynamicResource ControlCornerRadiusViewPlayButtons}">
-                            <Grid HorizontalAlignment="Center">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="Auto" />
-                                </Grid.ColumnDefinitions>
-                                <Border Grid.Column="0" Height="16" VerticalAlignment="Center">
-                                    <Viewbox Height="16" Width="16" VerticalAlignment="Center">
-                                        <Path Data="F1 M 5 15.976562 L 5 4.023438 C 5 3.795574 5.043945 3.58073 5.131836 3.378906 C 5.219727 3.177084 5.338542 2.999676 5.488281 2.84668 C 5.638021 2.693686 5.813802 2.573242 6.015625 2.485352 C 6.217448 2.397461 6.432292 2.353516 6.660156 2.353516 C 6.979167 2.353516 7.281901 2.444662 7.568359 2.626953 L 16.865234 8.59375 C 17.106119 8.74349 17.293293 8.943686 17.426758 9.194336 C 17.560221 9.444987 17.626953 9.713542 17.626953 10 C 17.626953 10.286459 17.560221 10.555014 17.426758 10.805664 C 17.293293 11.056315 17.106119 11.256511 16.865234 11.40625 L 7.568359 17.373047 C 7.301432 17.548828 7.001953 17.636719 6.669922 17.636719 C 6.442057 17.636719 6.225585 17.5944 6.020508 17.509766 C 5.81543 17.425131 5.638021 17.307943 5.488281 17.158203 C 5.338542 17.008463 5.219727 16.832682 5.131836 16.630859 C 5.043945 16.429037 5 16.210938 5 15.976562 Z M 6.669922 4.023438 L 6.669922 15.976562 L 15.957031 10 Z "
+                                BorderThickness="{TemplateBinding BorderThickness}"  Background="{TemplateBinding Background}"
+                                Opacity="1" CornerRadius="{DynamicResource ControlCornerRadiusViewPlayButtons}" />
+                        <Border x:Name="HighlightBorder" Background="#ffffff"
+                                Opacity="0" CornerRadius="{DynamicResource ControlCornerRadiusViewPlayButtons}" />
+                        <Grid HorizontalAlignment="Center">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Border Grid.Column="0" Height="16" VerticalAlignment="Center">
+                                <Viewbox Height="16" Width="16" VerticalAlignment="Center">
+                                    <Path Data="F1 M 5 15.976562 L 5 4.023438 C 5 3.795574 5.043945 3.58073 5.131836 3.378906 C 5.219727 3.177084 5.338542 2.999676 5.488281 2.84668 C 5.638021 2.693686 5.813802 2.573242 6.015625 2.485352 C 6.217448 2.397461 6.432292 2.353516 6.660156 2.353516 C 6.979167 2.353516 7.281901 2.444662 7.568359 2.626953 L 16.865234 8.59375 C 17.106119 8.74349 17.293293 8.943686 17.426758 9.194336 C 17.560221 9.444987 17.626953 9.713542 17.626953 10 C 17.626953 10.286459 17.560221 10.555014 17.426758 10.805664 C 17.293293 11.056315 17.106119 11.256511 16.865234 11.40625 L 7.568359 17.373047 C 7.301432 17.548828 7.001953 17.636719 6.669922 17.636719 C 6.442057 17.636719 6.225585 17.5944 6.020508 17.509766 C 5.81543 17.425131 5.638021 17.307943 5.488281 17.158203 C 5.338542 17.008463 5.219727 16.832682 5.131836 16.630859 C 5.043945 16.429037 5 16.210938 5 15.976562 Z M 6.669922 4.023438 L 6.669922 15.976562 L 15.957031 10 Z "
                                               Fill="{TemplateBinding Foreground}" StrokeThickness="1" SnapsToDevicePixels="True"
                                               VerticalAlignment="Center" HorizontalAlignment="Center" />
-                                    </Viewbox>
-                                </Border>
-                                <ContentPresenter Grid.Column="1" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" RecognizesAccessKey="True" />
-                            </Grid>
-                        </Border>
+                                </Viewbox>
+                            </Border>
+                            <ContentPresenter Grid.Column="1" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" RecognizesAccessKey="True" />
+                        </Grid>
                     </Grid>
                     <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="HighlightBorder" Storyboard.TargetProperty="Opacity" To="0.65" Duration="0:0:0.2" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="HighlightBorder" Storyboard.TargetProperty="Opacity" To="0.0" Duration="0:0:0.2" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
                         <Trigger Property="IsEnabled" Value="True" />
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter Property="Opacity" TargetName="Grid" Value="0.5" />
