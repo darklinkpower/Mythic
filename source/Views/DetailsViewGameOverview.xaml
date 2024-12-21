@@ -973,17 +973,6 @@
                                                 </StackPanel>
                                             </TabItem>
                                             <!--endregion-->
-                                            <!--region NewsViewer-->
-                                            <TabItem Visibility="{PluginSettings Plugin=NewsViewer, Path=ReviewsAvailable, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}">
-                                                <TabItem.Header>
-                                                    <TextBlock Text="{DynamicResource LOC_NewsViewer_NewsViewerControl_NewsLabel}"
-                                                               FontSize="{DynamicResource FontSizeLarger}" />
-                                                </TabItem.Header>
-                                                <StackPanel Orientation="Vertical" Margin="0,15,0,0">
-                                                    <ContentControl x:Name="NewsViewer_NewsViewerControl" Margin="0,5,0,5" FontWeight="Normal"/>
-                                                </StackPanel>
-                                            </TabItem>
-                                            <!--#endregion-->
 
                                             <!--region CheckDlc-->
                                             <TabItem Visibility="{PluginSettings Plugin=CheckDlc, Path=HasData, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}">
@@ -1262,6 +1251,17 @@
                                                 </DockPanel>
                                             </Grid>
 
+                                            <!--region NewsViewer-->
+                                            <StackPanel Margin="0,40,0,0"
+                                                        Visibility="{PluginSettings Plugin=NewsViewer, Path=ReviewsAvailable, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                                <TextBlock Text="{DynamicResource LOC_NewsViewer_NewsViewerControl_NewsLabel}"
+                                                       Foreground="{DynamicResource TextBrush}"
+                                                       FontWeight="Bold" Style="{DynamicResource BaseTextBlockStyle}"
+                                                           FontSize="{DynamicResource FontSizeLarger}"/>
+                                                <ContentControl x:Name="NewsViewer_NewsViewerControl" Margin="0,10,0,0" FontWeight="Normal"/>
+                                            </StackPanel>
+                                            <!--#endregion-->
+                                        
                                             <StackPanel Margin="0,40,0,0">
                                                 <StackPanel.Style>
                                                     <Style TargetType="StackPanel">
