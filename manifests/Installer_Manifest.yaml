@@ -454,3 +454,15 @@ Packages:
     PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.57/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_57.pthm
     Changelog:
       - 'Added: Support to display GOG Second Class Watcher extension data on Details View and Grid View'
+  - Version: 1.58
+    RequiredApiVersion: 2.5.0
+    ReleaseDate: 2024-12-21
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.58/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_58.pthm
+    Changelog:
+      - 'Added support to change some colors in ThemeModifier.'
+      - 'Details View: Adjust Play, More and Edit buttons heights'
+      - 'Details View: Align details elements in second column to the right'
+      - 'Details View: Change some details icons'
+      - 'Details View: Moved News Viewer extension news panel to make it more easily noticeable when information is available'
+      - 'PlayButton style changes'
+      - 'Slider: Use circle as Thumb'
