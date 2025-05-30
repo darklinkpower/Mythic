@@ -466,3 +466,9 @@ Packages:
       - 'Details View: Moved News Viewer extension news panel to make it more easily noticeable when information is available'
       - 'PlayButton style changes'
       - 'Slider: Use circle as Thumb'
+  - Version: 1.59
+    RequiredApiVersion: 2.5.0
+    ReleaseDate: 2025-05-30
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.59/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_59.pthm
+    Changelog:
+      - 'Updated ThemeExtras game banners: Added banners for Stove and Hikari Field Importer library plugins, added Microsoft Store source banner, and recreated Steam banner to reduce color banding and blurriness.'
