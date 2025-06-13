@@ -472,3 +472,9 @@ Packages:
     PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.59/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_59.pthm
     Changelog:
       - 'Updated ThemeExtras game banners: Added banners for Stove and Hikari Field Importer library plugins, added Microsoft Store source banner, and recreated Steam banner to reduce color banding and blurriness.'
+  - Version: 1.60
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-06-13
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.60/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_60.pthm
+    Changelog:
+      - 'Update to theme changes in Playnite v10.36'
