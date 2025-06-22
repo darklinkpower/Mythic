@@ -206,7 +206,7 @@
                                        Style="{DynamicResource TopPanelSearchBox}"
                                         Margin="12,6,0,6" DockPanel.Dock="Left"
                                         WindowChrome.IsHitTestVisibleInChrome="True"
-                                        Width="{DynamicResource TopPanelSearchBoxWidth}" Background="{DynamicResource TopPanelSearchBoxBackgroundBrush}" />
+                                        Width="{DynamicResource TopPanelSearchBoxWidthMythic}" Background="{DynamicResource TopPanelSearchBoxBackgroundBrush}" />
 
                             <Border Tag="{DynamicResource ShowNavigationButtons}"
                                     DockPanel.Dock="Left"

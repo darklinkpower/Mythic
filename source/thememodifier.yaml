@@ -8,11 +8,10 @@ Constants:
     - PlayButtonTextBrush: 'Play button text color'
     - "Top Panel"
     - ShowNavigationButtons: 'Show navigation buttons'
+    - TopPanelSearchBoxWidthMythic(80,600): 'Width of Search box'
     - "Library"
     - LibraryUseLowPerformanceBlurBackground: 'Use low performance blurred game background image'
     - LibraryUseNoiseOpacityLayer: 'Use noise opacity layer'
-    - "Top Panel"
-    - TopPanelSearchBoxWidth(180,300): 'Width of Search box'
     - "Details View"
     - DetailsViewDisplayGameNameIfLogoVisible: 'Display game name if logo is visible'
     - DetailsViewDetailsMaxWidth(1024,2400): 'Maximum width of details'
