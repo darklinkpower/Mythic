@@ -1,4 +1,4 @@
-AddonId: Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8
+﻿AddonId: Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8
 Packages:
   - Version: 0.1
     RequiredApiVersion: 2.1.0
@@ -485,3 +485,9 @@ Packages:
     Changelog:
       - 'Top Panel: Added option to configure the width of the search box'
       - 'Note: Added options can be configured using the ThemeModifier extension'
+  - Version: 1.62
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-09-25
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.62/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_62.pthm
+    Changelog:
+      - 'Add banner image for HoYoPlay library plugin games'
