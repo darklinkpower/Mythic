@@ -14,7 +14,7 @@
     <sys:Double x:Key="DetailsBackgroundDarkenLayerOpacityValue">0.73</sys:Double>
     <Visibility x:Key="DetailsViewDetailsIconsVisibility">Visible</Visibility>
     <Visibility x:Key="GridViewDetailsIconsVisibility">Visible</Visibility>
-    <Visibility x:Key="GridViewCoverSubtitleVisibility">Visible</Visibility>
+    <Visibility x:Key="GridViewCoverSubtitleVisibility">Collapsed</Visibility>
     <Visibility x:Key="GridViewCoverCompStatusSubtitleVisibility">Collapsed</Visibility>
     <sys:Boolean x:Key="DetailsViewAllowUseOfLogos">true</sys:Boolean>
     <sys:Boolean x:Key="GridViewAllowUseOfLogos">true</sys:Boolean>
