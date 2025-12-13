@@ -1,4 +1,4 @@
-﻿AddonId: Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8
+AddonId: Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8
 Packages:
   - Version: 0.1
     RequiredApiVersion: 2.1.0
@@ -491,3 +491,9 @@ Packages:
     PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.62/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_62.pthm
     Changelog:
       - 'Add banner image for HoYoPlay library plugin games'
+  - Version: 1.63
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-12-13
+    PackageUrl: https://github.com/darklinkpower/Mythic/releases/download/1.63/Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8_1_63.pthm
+    Changelog:
+      - 'Grid View: Disable showing playtime under game covers by default. Option can be configured using the ThemeModifier extension.'
